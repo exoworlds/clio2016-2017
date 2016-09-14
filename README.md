@@ -7,3 +7,10 @@ Clio calibration project by undergraduate intern for 2016-2017
 3. 
 
 ## Clio Linearity Data
+
+## Skills/Concepts Learning
+1. Adaptive Optics
+2. Infrared Cameras (Detectors, Dewars)
+3. Data Analysis, Image Processing
+4. Python
+5. 
