@@ -62,6 +62,15 @@ How to install:
     - hdu2.info()
     - scidata2 = hdu2[0].data
 
+## Mean and Median of Arrays
+>>> numpy.mean(scidata)
+55103.502431869507
+>>> numpy.mean(scidata[ds9y-10:ds9y+10,ds9x-10:ds9x+10])
+95234.822499999995
+>>> numpy.median(scidata)
+51244.0
+
+
 # Photutils
 [Using Photutils](http://photutils.readthedocs.org/en/latest/)
 
