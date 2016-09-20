@@ -12,13 +12,15 @@ ds9 is an application for displaying and working with FITS files.
 
     - It is included in the Anaconda distribution
     - How to install at Terminal:
-        - cd /Applications
-        - pip install git+https://github.com/ericmandel/pyds9.git#egg=pyds9
+        - sudo python -m pip install --no-deps pyds9
         - See here for more info: https://github.com/ericmandel/pyds9
 
 ## Astropy
 - Python 2.7, 3.3, 3.4 or 3.5
 - Numpy 1.7.0 or later
+
+How to install:
+- conda install astropy
 
 ## In Python: How to open a FITS file and display it in ds9:
 
