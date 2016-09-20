@@ -43,9 +43,9 @@ ds9 is an application for displaying and working with FITS files.
     - d.set_pyfits(hdu1)  #This will display the image in ds9, and it will print "1" to indicate success
 - How to look at the header:
 
-    - print hdu1[0].header   #The header is easier to look at in ds9 -- Go to File -> Header
-    - print hdu1[0].header["PASSBAND"]   #Prints the passband filter name
-    - print float(hdu1[0].header["INT"])   #Prints the exposure integration time
+    - print(hdu1[0].header)   #The header is easier to look at in ds9 -- Go to File -> Header
+    - print(hdu1[0].header["PASSBAND"])   #Prints the passband filter name
+    - print(float(hdu1[0].header["INT"]))   #Prints the exposure integration time
 - How to get the image into a data array:
 
     - scidata = hdu1[0].data
@@ -53,7 +53,7 @@ ds9 is an application for displaying and working with FITS files.
 
     - ds9x = 590
     - ds9y = 144
-    - print scidata[ds9y-1,ds9x-1]
+    - print(scidata[ds9y-1,ds9x-1])
 - Open a 2nd image:
     - fname2 = 'data/Linearity00002.fit'
     - hdu2 = astropy.io.fits.open(fname2)
