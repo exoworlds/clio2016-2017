@@ -52,7 +52,7 @@ How to install:
 
     - scidata = hdu1[0].data
 - How to print the countrate at a pixel:
-
+- Suppose you want the countrate at pixel [590,144] on the ds9 display:
     - ds9x = 590
     - ds9y = 144
     - print(scidata[ds9y-1,ds9x-1])
