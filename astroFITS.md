@@ -3,7 +3,7 @@
 FITS = Flexible Image Transport System
 One FITS file consists of a Header (info about the exposure, etc = Metadata) and the Data (the image part)
 
-ds9
+## ds9
 ds9 is an application for displaying and working with FITS files.
 
 - Download and install ds9:
@@ -16,7 +16,7 @@ ds9 is an application for displaying and working with FITS files.
         - pip install git+https://github.com/ericmandel/pyds9.git#egg=pyds9
         - See here for more info: https://github.com/ericmandel/pyds9
 
-From Python: How to open a FITS file and display it in ds9:
+## In Python: How to open a FITS file and display it in ds9:
 
 - Set up your data directory as follows:
     - Make a new folder in your home directory called "python"
