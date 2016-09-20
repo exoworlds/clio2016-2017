@@ -31,24 +31,24 @@ ds9 is an application for displaying and working with FITS files.
 
     - import astropy.io.fits
     - fname = 'data/Linearity00001.fit'
-    - hdu = astropy.io.fits.open(fname)
-    - hdu.info()
+    - hdu1 = astropy.io.fits.open(fname)
+    - hdu1.info()
 - How to display the FITS file in ds9:
 
     - from pyds9 import *
-    - print ds9_targets()
+    - print(ds9_targets())
         - If says "None" this means you do not have a ds9 session running -- Start up ds9 -- or Quit and re-start ds9
         - If it says something like " ['DS9:ds9 c0a8000f:50436']" then you are good to go
     - d = DS9()
-    - d.set_pyfits(hdu)  #This will display the image in ds9, and it will print "1" to indicate success
+    - d.set_pyfits(hdu1)  #This will display the image in ds9, and it will print "1" to indicate success
 - How to look at the header:
 
-    - print hdu[0].header   #The header is easier to look at in ds9 -- Go to File -> Header
-    - print hdu[0].header["PASSBAND"]   #Prints the passband filter name
-    - print float(hdu[0].header["INT"])   #Prints the exposure integration time
+    - print hdu1[0].header   #The header is easier to look at in ds9 -- Go to File -> Header
+    - print hdu1[0].header["PASSBAND"]   #Prints the passband filter name
+    - print float(hdu1[0].header["INT"])   #Prints the exposure integration time
 - How to get the image into a data array:
 
-    - scidata = hdu[0].data
+    - scidata = hdu1[0].data
 - How to print the countrate at a pixel:
 
     - ds9x = 590
