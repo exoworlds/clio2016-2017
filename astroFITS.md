@@ -19,9 +19,9 @@ ds9 is an application for displaying and working with FITS files.
 ## In Python: How to open a FITS file and display it in ds9:
 
 - Set up your data directory as follows:
-    - Make a new folder in your home directory called "python"
+    - Make a new folder in your home directory called "mypy"
     - Make 2 folders in there, one called "code" and one called "data"
-- Set up the paths (point to the "python" directory)
+- Set up the paths (point to the "mypy" directory)
 - Download the images - Place them in the directory "data"
 - How to read in the FITS file:
 
