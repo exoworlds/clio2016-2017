@@ -3,7 +3,8 @@ Date              Hours Worked      Worked On
 9/16/2016         2                 Installed, Notepad++, Git, Anaconda, pip. All seem to be function (No idea how to use most of them...). Photulis install failed (building wheel failed). Awaiting further instruction for troubleshooting + instruction
 9/17/2016         4                 Troubleshooted with Ubuntu computer for use with dewar, Practiced Python on Codecademy (syntax, strings/console output, conditionals/control flow, functions)
 9/19/2016         2                 Worked on dewar Ubuntu computer configuration, but couldn't connect to Internet. Assembled the dewar flask and started running the vaccuum in order to purge it of air.
+9/20/2016         ?                 Completed Functions and Lists/Dictionaries in Codeacademy's Python course. Finished GitHub intoductory tutorial
+
 To do:
 
-GitHub tutorial
 Upload .py files to github
