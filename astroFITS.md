@@ -26,7 +26,7 @@ ds9 is an application for displaying and working with FITS files.
 - How to read in the FITS file:
 
     - import astropy.io.fits
-    - fname = 'data/TrapNarrowHunsat00020.fit'
+    - fname = 'data/Linearity00001.fit'
     - hdu = astropy.io.fits.open(fname)
     - hdu.info()
 - How to display the FITS file in ds9:
@@ -51,7 +51,7 @@ ds9 is an application for displaying and working with FITS files.
     - ds9y = 144
     - print scidata[ds9y-1,ds9x-1]
 - Open a 2nd image:
-    - fname2 = 'data/Linearity00001.fit'
+    - fname2 = 'data/Linearity00002.fit'
     - hdu2 = astropy.io.fits.open(fname2)
     - hdu2.info()
     - scidata2 = hdu2[0].data
