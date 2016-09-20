@@ -31,9 +31,9 @@ How to install:
 - Download the images - Place them in the directory "data"
 - How to read in the FITS file:
 
-    - import astropy.io.fits
+    - from astropy.io import fits
     - fname = 'data/Linearity00001.fit'
-    - hdu1 = astropy.io.fits.open(fname)
+    - hdu1 = fits.open(fname)
     - hdu1.info()
 - How to display the FITS file in ds9:
 
