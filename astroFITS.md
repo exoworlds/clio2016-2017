@@ -18,8 +18,8 @@ ds9 is an application for displaying and working with FITS files.
 
 ## Astropy
 - Only works with Python 2.6, 2.7, 3.1 or 3.2 and Numpy 1.5.0 or later
+
 - python2.7 -m pip install astropy
-- 
 
 ## In Python: How to open a FITS file and display it in ds9:
 
