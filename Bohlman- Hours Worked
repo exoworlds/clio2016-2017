@@ -5,8 +5,11 @@
 9/19/2016         2                 Worked on dewar Ubuntu computer configuration, but couldn't connect to Internet. Assembled the dewar flask and started running the vaccuum in order to purge it of air.
 9/20/2016         3                 Completed Functions and Lists/Dictionaries in Codeacademy's Python course. Finished GitHub intoductory tutorial
 9/21/2016         2.25              Opened dewar, tried to instil astropy, ds9 and other necessary python programs, but couldn't. Starting thread on pyds9 to discuss error. Put temperature sensor inside of dewar and proceeded to reseal it in order to vaccuum it again. Awaiting further instructions.
-9/23/2016         4.25              tried to install astropy (no avail), learned how to work with fits images in python, started project of graphing integration time of fits images versus counts
+9/23/2016         4.25              tried to install astropy (no avail), learned how to work with fits images in python, started project of graphing integration time of fits images versus count, finished with plot of ints vs counts
 
 To do:
 
 Upload .py files to github
+save plot to file
+best fit line for plot
+write report in style of scientific journal
