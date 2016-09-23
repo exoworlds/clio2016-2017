@@ -1,0 +1,5 @@
+- Find the part of the image that is illuminated
+- Find the coordinates of the illuminated region
+- Get the median counts in each image within that illuminated region
+- Plot against the integration time
+- Find a polynomial fit to the integration time vs. counts plot
