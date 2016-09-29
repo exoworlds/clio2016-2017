@@ -7,7 +7,8 @@ Date              Hours Worked      Worked On
 9/21/2016         2.25              Opened dewar, tried to instil astropy, ds9 and other necessary python programs, but couldn't. Starting thread on pyds9 to discuss error. Put temperature sensor inside of dewar and proceeded to reseal it in order to vaccuum it again. Awaiting further instructions.
 9/23/2016         4.25              tried to install astropy (no avail), learned how to work with fits images in python, started project of graphing integration time of fits images versus count, finished with plot of ints vs counts
 9/27/2016         3.5               worked with phil and cooled the dewar with liquid nitrogen, project notes are on githubs
-9/28/2016         1                  worked with Phil on clio computer, got all of the drivers unzipped and installed, but phil has to work with them to make sure they're installed correctly. Computer project is now at standstill for me. Opened up dewar again to installnew equipment, but that will happen later.
+9/28/2016         1                 worked with Phil on clio computer, got all of the drivers unzipped and installed, but phil has to work with them to make sure they're installed correctly. Computer project is now at standstill for me. Opened up dewar again to installnew equipment, but that will happen later.
+9/29/2016         2.25              worked with python in analyzing fits images, uploaded the best line fit (up to 2000 ints) and the plot of ints vs counts, attempted to work on true counts vs. measured counts, very nearly there.
 
 To do:
 
