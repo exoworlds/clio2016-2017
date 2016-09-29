@@ -3,4 +3,4 @@
 - Get the median counts in each image within that illuminated region
 - Plot against the integration time
 - [PyPlot Plotting Tutorial](http://matplotlib.org/users/pyplot_tutorial.html)
-- Find a polynomial fit to the integration time vs. counts plot
+- Find a polynomial fit to the integration time vs. counts plot [Example](https://sites.google.com/site/scienceuprising/tools/useful-python-scripts/matplotlib/using-numpy-s-polyfit-in-combination-with-matplotlib-to-fit-data-points)
