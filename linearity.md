@@ -4,4 +4,5 @@
 - Plot against the integration time
 - [PyPlot Plotting Tutorial](http://matplotlib.org/users/pyplot_tutorial.html)
 - Find a polynomial fit to the integration time vs. counts plot [Example](https://sites.google.com/site/scienceuprising/tools/useful-python-scripts/matplotlib/using-numpy-s-polyfit-in-combination-with-matplotlib-to-fit-data-points)
-- How to make an array of integers: x = [i for i in range(10)]
+- How to make an array of integers:
+x = [i for i in range(10)]
