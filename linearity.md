@@ -7,6 +7,8 @@
 - How to make an array of integers: [Numpy Arrays](http://www.scipy-lectures.org/intro/numpy/operations.html)
 
 import numpy as np
+
 x = np.arange(100)
+
 y = 12.6 * x + 54.
 
