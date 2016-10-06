@@ -26,24 +26,30 @@ while i < imageAmount:
 	scidata = hdu1[0].data
 	
 	ints.append(float(hdu1[0].header["INT"]))
-	
 	counts.append(numpy.median(scidata[ds9x1:ds9x2,ds9y1:ds9y2]))
-	
-	print (str(ints[i])+"\t"+str(counts[i])+"\n")
-	
+		
 	i += 1
 
-#Best fit line, from 0 ints to 2000 ints
+# Use polyfit - 1st order - on original data
+coefficients1 = numpy.polyfit(ints[15:55],counts[15:55],1)
 
-# Use polyfit - 1st order
-coefficients1 = numpy.polyfit(ints[0:65],counts[0:65],1)
-print (coefficients1)
-polynomial1 = numpy.poly1d(coefficients1)
+number = 0
+end_number = 115
+true_counts = []
+
+while number < end_number:
+	true_counts.append(coefficients1[0]*ints[number] + coefficients1[1])
+	number+= 1
+	
+#Use a polyfit on the original true counts/measured counts graph
+coefficients2 = numpy.polyfit(true_counts[15:80],counts[15:80],3)
+polynomial_lin = numpy.poly1d(coefficients2)
+xpoints = numpy.linspace(0,60000,500)
 
 # Feed data into pyplot.
-xpoints = numpy.linspace(0.0,5000.0,10000)
-plt.plot(ints[0:114],counts[0:114],xpoints,polynomial1(xpoints))
-plt.ylabel('counts')
-plt.xlabel('ints')
+plt.plot(true_counts,counts,'k')
+plt.plot(xpoints,polynomial_lin(xpoints),'r')
+plt.ylabel('measured counts')
+plt.xlabel('true counts')
 
 plt.show()
