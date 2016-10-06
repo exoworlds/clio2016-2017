@@ -5,3 +5,8 @@ about a tenth of a meter. This will ensure that when the flask is cooled, there 
 In order to purge all of the air from the flask, a lower pump is ran in order to lower the pressure down to 1 millitorr.
 Then, a faster vaccuum is ran in order to take the flash the rest of the way. The second fan moves at about 5,000- 55,000 rpm.
 We hope it works.
+
+10/6/2016 - Detector in the dewar
+The real detector in the dewar is made up of 2 metal sheets with another metal bridge in between them (Melibdinum, Silicon, and MerCadTel 
+HgCdTe).Because the balance of 3 metals is very delicate, any sudden rapid changes in temperature may cause said detector to seperate 
+and explode.
