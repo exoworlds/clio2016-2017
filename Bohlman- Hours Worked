@@ -10,11 +10,15 @@ Date              Hours Worked      Worked On
 9/28/2016         1                 worked with Phil on clio computer, got all of the drivers unzipped and installed, but phil has to work with them to make sure they're installed correctly. Computer project is now at standstill for me. Opened up dewar again to installnew equipment, but that will happen later.
 9/29/2016         2.25              worked with python in analyzing fits images, uploaded the best line fit (up to 2000 ints) and the plot of ints vs counts, attempted to work on true counts vs. measured counts, very nearly there.
 10/03/2016        2                 worked with python in analyzing the error of the counts of each of the fits images, by using the desired linear relationship, a quadratic relationship, a cubic relationship, and a quartic relationship.
-10/05/2016        2                 worked with python in actually finishing the correct true counts vs. measured counts plots, cleaned up code, and made seperate plots of true vs measured c, a linear fit to good data of that, a quadratic fit to good data of that, a cubic fit to good data of that, and a quartic fit to good data of that,
+10/05/2016        2                 worked with python in actually finishing the correct true counts vs. measured counts plots, cleaned up code, and made seperate plots of true vs measured c, a linear fit to good data of that, a quadratic fit to good data of that, a cubic fit to good data of that, and a quartic fit to good data of that
+10/06/2016        3.25              worked with python in seeing which polynomial matched up with the linear fit the best for a bit, but then started working with the dewar. Opened the new detector and tried to install it, however, some problems were incurred. The detector was eventually sucsessfully installed, a temp. sensor was attached to it, and the dewar was closed and the vacuum pump started pumping.
+10/07/2016        3*
+
+
+*Claimed hours on timesheet
+
 
 To do:
 
-Upload .py files to github
-save plot to file
-best fit line for plot
+Jagged lines on plot: what do we do to mitagte that and fix best line curve?
 write report in style of scientific journal
