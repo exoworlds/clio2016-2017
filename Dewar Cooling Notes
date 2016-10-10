@@ -84,30 +84,12 @@ Time Elapsed (min)       Temp Sensor 3        Temp Sensor 4           Temp Senso
 2:36              272.19                    218.48                          282.9                 fin
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Time Elapsed (min) Temp Sensor 3      Temp Sensor 4                     Temp Sensor 7          Outer Vessel      Inner Vessel
+9:02                296.73            296.29                            294.32                  open
+9:09                296.59              295.01                          294.27                  closed, then opened
+9:12                 296.32                292.78                         294.1
+9:22                  294.41              273.71                          293.59                  stil slightly open
+9:32                291.05                  245.84                      291.29                    had to close because pressure was increwasing(?) and outer canister did not overflow, reopedned
+9:42              287.85                    226.13                      288.87                    still slightly open
+9:50              284.67                    219.77                      286.6
 
