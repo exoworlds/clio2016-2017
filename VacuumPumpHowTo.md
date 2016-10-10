@@ -1,6 +1,6 @@
 How to operate the LBTI vacuum pump:
 
-1. Seal dewar (check O-rings for dust)
+1. Seal dewar (check O-ring for dust)
 2. Close valve on Clio cryostat
 3. Connect vacuum pump (verify good O-ring seals)
 4. Make sure valves closed on pump
