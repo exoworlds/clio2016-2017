@@ -124,6 +124,17 @@ Time Elapsed (min)    Temp Sensor 3       Temp Sensor 4           Temp Sensor 7 
 5:34                  200.82              179.55                  175.90                  2e-5
 
 
-
+Time    Temp3   Temp7   Pressure  Note
+10:48   295.82  293.98  2e-4      Before fill start
+10:52   295.80  293.97  1.5e-4    Filling outer dewar
+11:06   295.67  293.91  1e-4      Still filling outer dewar
+11:09   295.63  293.89  1e-4      Tried a slightly different setup with the straw not all the way in - Fill 1
+11:11   295.59  293.88  3e-5      It's working -- got liquid overflow! Closed valve.
+11:18   295.47  293.83  5e-5      Fill 2 start (opened valve)
+11:21   295.40  293.80  3e-5      End of fill 2 (closed valve)
+11:26   295.26  293.74  9e-5      Just recording temps
+11:32   295.08  293.68  8e-5      ditto
+11:34   295.04  293.66  7e-5      Fill 3 start (opened valve)
+11:44   294.74  293.54  2e-4      End fill 3 (closed valve)
 
 
