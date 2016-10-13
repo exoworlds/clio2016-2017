@@ -142,6 +142,12 @@ Time    Temp3   Temp7   Pressure  Note
 11:51   294.50  293.44  3e-5      Fill 4 end
 11:57   294.29  293.36  6e-5      Fill 5 start
 11:59   294.22  293.33  3e-5      Fill 5 end
+12:03   294.10  293.28  6e-5      Fill 6 start (adjusted position of straw again -- had kind of fallen off)
+12:09   293.85  293.18  3e-5      Fill 6 end
+12:14   293.65  293.10  6e-5      Record
+12:16   293.53  293.01  3e-5      Fill 7 start -- another adjusted position of straw
+
+
 
 
 
