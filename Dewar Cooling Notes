@@ -146,7 +146,7 @@ Time    Temp3   Temp7   Pressure  Note
 12:09   293.85  293.18  3e-5      Fill 6 end
 12:14   293.65  293.10  6e-5      Record
 12:16   293.53  293.01  3e-5      Fill 7 start -- another adjusted position of straw
-12:45   290.52  291.98  3e-5      We're on our way
+12:45   290.52  291.98  3e-5      We're on our way  [Chris taking over]
 12:59   287.5   290.3   3e-5      Fill 8 start --adjusted position of straw
 1:10    284.87  288.71  3e-5      Cont'd filling
 1:22    281.75  287.37  3e-5      Cont'd filling
@@ -174,6 +174,38 @@ Time    Temp3   Temp7   Pressure  Note
 5:09    232.17  163.82  3e-5
 5:20    229.86  153.88  3e-5
 5:29    227.86  144.77  3e-5
+5:32    227.21  144.57  3e-5  Katie taking over [inner dewar]
+5:34    226.92  142.61  3e-5
+5:38    225.93  143.11  2e-5
+5:40    225.46  140.55  2e-5
+5:42    225.04  140.50  2e-5  Filling outer dewar for a bit
+5:49    223.59  141.97  3e-5  still outer
+5:53    222.80  142.60  3e-5  ditto
+6:16    218.08  144.87  1e-4  ditto
+6:25    216.12  143.32  1e-4  back to inner
+6:28    215.28  143.06  1e-4
+6:32    214.47  140.29  1e-4
+6:34    213.90  137.27  1e-4
+6:38    212.34  137.96  1e-3  filling outer
+6:43    209.44  138.52  3e-4  
+6:45    208.09  138.50  2e-4  back to inner -- back to 7 sec every minute (was experimenting with Chris's technique before)
+6:50    206.29  135.72  3e-4
+6:55    204.24  134.05  2e-4
+7:06    201.43  128.97  2e-4
+7:09    200.78  125.93  2e-4
+7:14    199.42  123.21  1e-4
+7:21    198.16  120.77  1e-4
+7:25    197.20  115.30  9e-5
+7:33    195.86  110.09  5e-5
+7:38    194.92  104.52  4e-5
+7:46    193.50  99.27   3e-5
+7:56    191.82  93.75   2e-5
+8:05    190.49  88.41   2e-5
+8:14    188.98  79.67   1e-5
+8:17    188.57  77.89   2e-5  Hooray!
+
+
+
 
 
 
