@@ -167,12 +167,13 @@ Time    Temp3   Temp7   Pressure  Note
 4:02    246.16  218.47  3e-5
 4:23    246.85  194.18  3E-5    Stopped inner filling
 4:28    240.79  195.06  3e-5    Started outer filling
-4:35    239.19  195.88  4e5     Stopped outer filling
+4:35    239.19  195.88  4e-5     Stopped outer filling
 4:40    238.5   192.2   3e-5    Started inner filling
 4:54    235.4   176.2   3e-5
 5:00    234.01  172.87  3e-5
 5:09    232.17  163.82  3e-5
 5:20    229.86  153.88  3e-5
+5:29    227.86  144.77  3e-5
 
 
 
