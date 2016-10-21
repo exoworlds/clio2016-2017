@@ -16,12 +16,13 @@ Date              Hours Worked      Worked On
 10/10/2016        4.5               cooling the dewar: an execise in patience and lack of liquid nitrogen
 10/13/2016        5                 cooling the dewar, take 2
 10/18/2016        4                 worked on python, seperated everything in modules, fgured out jagged line problem, discussed why the polynomial error lines do not work with the desired relationship
-
+10/19/2016        3                 worked on python, trying to get linearity to work, seperated detector from dewar and found out it was alright, WEAR GLOVES
+10/21/2016        3                 worked on python, started writing report, after adjusting and organizing some stuff, found that second order was almost fitting the desired relationship
 
 *Claimed hours on timesheet
 
 
 To do:
 SET UP DIFFERENT MODULES IN DIFFERENT FILES
-Jagged lines on plot: what do we do to mitagte that and fix best line curve?
-write report in style of scientific journal
+finishing writing report in style of scientific journal
+organize all of the files
