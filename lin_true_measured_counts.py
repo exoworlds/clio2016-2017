@@ -31,7 +31,7 @@ while i < imageAmount:
 	i += 1
 
 # Use polyfit - 1st order - on original data
-coefficients1 = numpy.polyfit(ints[30:60],counts[30:60],1)
+coefficients1 = numpy.polyfit(ints[30:54],counts[30:54],1)
 
 number = 0
 end_number = 115
@@ -40,18 +40,13 @@ true_counts = []
 while number < end_number:
 	true_counts.append(coefficients1[0]*ints[number] + coefficients1[1])
 	number+= 1
-	
-#Use a polyfit on the original true counts/measured counts graph
-coefficients2 = numpy.polyfit(true_counts[30:60],counts[30:60],1)
-polynomial_lin = numpy.poly1d(coefficients2)
-xpoints = numpy.linspace(7000,60000,500)
 
 # Feed data into pyplot.
 plt.plot(true_counts,counts,'b')
-plt.plot(xpoints,polynomial_lin(xpoints),'g')
+plt.plot(true_counts,true_counts,'g')
 plt.ylabel('measured counts')
 plt.xlabel('true counts')
-plt.title('True counts based on linear fit of data between 500ms and 1500 ms vs. measured counts',fontsize = 10) #- for lin fit
-plt.text(40000,2000,'True v. Measured: Blue, Linear Fit: Green', fontsize=9, horizontalalignment='center') #- for lin fit
+plt.title('True counts based on linear fit of data between 500ms and 1500 ms vs. measured counts',fontsize = 10)
+plt.text(40000,2000,'True v. Measured: Blue, Linear Fit: Green', fontsize=9, horizontalalignment='center')
 
 plt.show()
