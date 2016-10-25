@@ -18,7 +18,7 @@ Date              Hours Worked      Worked On
 10/18/2016        4                 worked on python, separated everything in modules, figured out jagged line problem, discussed why the polynomial error lines do not work with the desired relationship
 10/19/2016        3                 worked on python, trying to get linearity to work, separated detector from dewar and found out equipment was alright, WEAR GLOVES
 10/21/2016        3                 worked on python, started writing report, after adjusting and organizing some stuff, found that second order was almost fitting the desired relationship
-10/25/2016        ?                 worked on python, updated all 3 files and organized all of the notes, data, and code, on github and on laptop. Uploaded all to github. Discussed options for filling dewar, will probably happen beginning of next week.
+10/25/2016        2.5               worked on python, updated all 3 files and organized all of the notes, data, and code, on github and on laptop. Uploaded all to github. Discussed options for filling dewar, will probably happen beginning of next week. Cranked out a very rough copy of the report, to discuss with Katie later.
 
 To do:
 set up different modules in different files to allow for universal programming with those seoerate modules
