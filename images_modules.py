@@ -75,14 +75,14 @@ def make_true_counts():
 	number = 0
 	end_number = 23
 	while number < end_number:
-		true_counts_2.append(coefficients2[0]*ints[number]*ints[number] + coefficients2[1]*ints[number]+coefficients2[2])
+		true_counts_2.append(coefficients2[0]*ints[number]*ints[number] + coefficients2[1]*ints[number] + coefficients2[2])
 		number+= 1
 
 	coefficients3 = numpy.polyfit(raw_ints[lower:upper],raw_counts[lower:upper],3)
 	number = 0
 	end_number = 23
 	while number < end_number:
-		true_counts_3.append(coefficients3[0]*ints[number]*ints[number]*ints[number] + coefficients3[1]*ints[number]*ints[number]+coefficients3[2]*ints[number] + coefficients3[3])
+		true_counts_3.append(coefficients3[0]*ints[number]*ints[number]*ints[number] + coefficients3[1]*ints[number]*ints[number] + coefficients3[2]*ints[number] + coefficients3[3])
 		number+= 1
 
 	coefficients4 = numpy.polyfit(raw_ints[lower:upper],raw_counts[lower:upper],4)
@@ -105,45 +105,49 @@ def error_true_counts(true_counts):
 
 def print_graph():
 	# Feed data into pyplot.
-	#plt.plot(true_counts_1,error_1,'k')
-	#plt.plot(true_counts_2,error_2,'r')
-	#plt.plot(true_counts_3,error_3,'b')
+	"""
+	plt.plot(true_counts_1,error_1,'k')
+	plt.plot(true_counts_2,error_2,'r')
+	plt.plot(true_counts_3,error_3,'b')
 	#plt.plot(true_counts_4,error_4,'g')
-	#plt.plot(true_counts_5,error_5,'m')
-	#plt.plot(true_counts_6,error_6,'c')
-	#plt.vlines(counts[lower], -.2, .4)
-	#plt.vlines(counts[upper], -.2, .4)
-	#plt.ylabel('Error of linearity')
-	#plt.xlabel('true counts')
+	plt.vlines(counts[lower_adj], -.1, .4)
+	plt.vlines(counts[upper_adj], -.1, .4)
+	plt.ylabel('Error of linearity')
+	plt.xlabel('true counts')
+	plt.title('True counts based on linear fit of data between 500ms and 1500 ms vs. departure from linearity',fontsize = 9)
+	plt.text(40000,-.08,'Desired relationship: Black, 2nd order polynomial: Red, 3rd order polynomial: Blue', fontsize=7, horizontalalignment='center')
+	"""
 	#-------------------------------------#
+	"""
 	plt.plot(true_counts_1,counts,'k')
 	plt.plot(true_counts_2,counts,'r')
 	plt.plot(true_counts_3,counts,'b')
-	plt.plot(true_counts_4,counts,'g')
-	#plt.plot(true_counts_5,counts,'m')
-	#plt.plot(true_counts_6,counts,'c')
+	#plt.plot(true_counts_4,counts,'g')
 	plt.vlines(counts[lower_adj], 0, 60000)
 	plt.vlines(counts[upper_adj], 0, 60000)
 	plt.ylabel('measured counts')
 	plt.xlabel('true counts')
+	plt.title('True counts based on linear fit of data between 500ms and 1500 ms vs. measured counts',fontsize = 10)
+	plt.text(40000,2000,'Desired relationship: Black, 2nd order polynomial: Red, 3rd order polynomial: Blue', fontsize=9, horizontalalignment='center')
+	"""
+	#-------------------------------------#
+	"""
+	plt.title('Ints vs. measured counts with linearity correction',fontsize = 15)
+	plt.text(2500,2000,'Data: Black, Linearity correction: Red',fontsize=9, horizontalalignment='center')
+	plt.plot(raw_ints,raw_counts,'k')
+	plt.plot(ints,true_counts_2,'r')
+	"""
 
 	plt.show()
 	return
 
 open_images()
 avg_ints_counts()
-
-i = 0
-while i < 23:
-	print(str(ints[i])+"\t"+str(counts[i])+"\n")
-	i += 1
-	
 make_true_counts()
 
 error_1 = error_true_counts(true_counts_1)
 error_2 = error_true_counts(true_counts_2)
 error_3 = error_true_counts(true_counts_3)
 error_4 = error_true_counts(true_counts_4)
-
 
 print_graph()	
