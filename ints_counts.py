@@ -14,6 +14,9 @@ ds9x2 = 180
 ds9y1 = 20
 ds9y2 = 180
 
+print ("ints\tcounts\n")
+
+#Read in images for processing
 while i < imageAmount:
 	if i < 9:
 		fname = "Linearity0000"+str(i+1)+".fit"
@@ -29,28 +32,32 @@ while i < imageAmount:
 	
 	counts.append(numpy.median(scidata[ds9x1:ds9x2,ds9y1:ds9y2]))
 	
-	#print (str(ints[i])+"\t"+str(counts[i])+"\n")
+	print (str(ints[i])+"\t"+str(counts[i])+"\n")
 	
 	i += 1
 
 #Best fit line, from 0 ints to 2000 ints
 
 # Use polyfit - 1st order
-coefficients1 = numpy.polyfit(ints[30:50],counts[30:50],1)
+coefficients1 = numpy.polyfit(ints[30:54],counts[30:54],1)
 print (coefficients1)
 polynomial1 = numpy.poly1d(coefficients1)
 
-print(str(ints[30])+" "+str(ints[54]))
-
 # Feed data into pyplot.
 xpoints = numpy.linspace(0.0,5000.0,10000)
-plt.plot(ints[0:114],counts[0:114],xpoints,polynomial1(xpoints)) #- for lin fit
-#plt.plot(ints[0:114],counts[0:114])
-plt.ylabel('counts')
 plt.xlabel('ints')
-plt.title('Linear fit of data between 500ms and 1500 ms',fontsize = 17) #- for lin fit
-plt.text(2500,2000,'Data: Blue, Linear Fit: Green', fontsize=10, horizontalalignment='center') #- for lin fit
+plt.ylabel('counts')
+
+#For just ints and counts
+#plt.plot(ints[0:114],counts[0:114])
 #plt.title('Ints vs. Counts from Images',fontsize = 18)
 #plt.text(2500,2000,'Data: Blue', fontsize=10, horizontalalignment='center')
+
+
+#For data and lin fit
+plt.plot(ints[0:114],counts[0:114],xpoints,polynomial1(xpoints)) #- for lin fit
+plt.title('Linear fit of data between 500ms and 1500 ms',fontsize = 17)
+plt.text(2500,2000,'Data: Blue, Linear Fit: Green', fontsize=10, horizontalalignment='center') #- for lin fit
+
 
 plt.show()
