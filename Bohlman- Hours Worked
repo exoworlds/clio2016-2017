@@ -19,8 +19,9 @@ Date              Hours Worked      Worked On
 10/19/2016        3                 worked on python, trying to get linearity to work, separated detector from dewar and found out equipment was alright, WEAR GLOVES
 10/21/2016        3                 worked on python, started writing report, after adjusting and organizing some stuff, found that second order was almost fitting the desired relationship
 10/25/2016        2.5               worked on python, updated all 3 files and organized all of the notes, data, and code, on github and on laptop. Uploaded all to github. Discussed options for filling dewar, will probably happen beginning of next week. Cranked out a very rough copy of the report, to discuss with Katie later.
+10/26/2016        ?                 discussed very first draft of scientific journal, Katie gave me notes, brought up idea of testing original data set in order to check the process of my code
 
 To do:
-set up different modules in different files to allow for universal programming with those seoerate modules
-finishing writing report in style of scientific journal
-work on pyds9
+set up different modules in different files to allow for universal programming with those seperate modules
+revise writing report in style of scientific journal (rough draft)
+work on pyds9 fix(when Kate is gone)
