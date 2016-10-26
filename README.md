@@ -7,6 +7,7 @@ Clio calibration project by undergraduate intern for 2016-2017
 3. [Think Python book](http://www.greenteapress.com/thinkpython/thinkpython.pdf)
 4. [Python for Astronomers book](https://prappleizer.github.io/textbook.pdf)
 5. [Git tutorial](https://try.github.io/levels/1/challenges/1)
+6. [Example of working with 3-d FITS cube](https://python4astronomers.github.io/astropy/fits.html)
 
 ## Clio Linearity Data
 1. [2013A](https://zero.as.arizona.edu/wiki/pages/L7A5s5d/Calibration_Data__2013A.html)
