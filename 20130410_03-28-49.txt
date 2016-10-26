@@ -1,0 +1,567 @@
+; IDL Version 8.2.1, Mac OS X (darwin x86_64 m64)
+; Journal File for ktmorz@d111-226.lco.cl
+; Working directory: /Users/ktmorz/home/research/idl
+; Date: Wed Apr 10 03:28:49 2013
+ 
+;JOURNAL STARTED: /Users/ktmorz/home/research/idl/journals/20130410_03-28-49.txt
+path30 = '~/home/research/astronomy/magao/clio/n130330/'
+cube  = readclio(path30, 'linearity', findgen(21)+1, head=head)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;   0     0     0            linearity00001   400x 200    1 coadds x   0.043s --     3.4 um      3.40um -- 27mas/pix -- median=  5679.000 counts
+;   1     0     1            linearity00001   400x 200    1 coadds x   0.043s --     3.4 um      3.40um -- 27mas/pix -- median=  5698.000 counts
+;   2     0     2            linearity00001   400x 200    1 coadds x   0.043s --     3.4 um      3.40um -- 27mas/pix -- median=  5709.000 counts
+;   3     0     3            linearity00001   400x 200    1 coadds x   0.043s --     3.4 um      3.40um -- 27mas/pix -- median=  5719.000 counts
+;   4     0     4            linearity00001   400x 200    1 coadds x   0.043s --     3.4 um      3.40um -- 27mas/pix -- median=  5729.000 counts
+;   5     0     5            linearity00001   400x 200    1 coadds x   0.043s --     3.4 um      3.40um -- 27mas/pix -- median=  5735.000 counts
+;   6     0     6            linearity00001   400x 200    1 coadds x   0.043s --     3.4 um      3.40um -- 27mas/pix -- median=  5746.000 counts
+;   7     0     7            linearity00001   400x 200    1 coadds x   0.043s --     3.4 um      3.40um -- 27mas/pix -- median=  5751.000 counts
+;   8     0     8            linearity00001   400x 200    1 coadds x   0.043s --     3.4 um      3.40um -- 27mas/pix -- median=  5758.000 counts
+;   9     0     9            linearity00001   400x 200    1 coadds x   0.043s --     3.4 um      3.40um -- 27mas/pix -- median=  5764.000 counts
+;  10     1     0            linearity00002   400x 200    1 coadds x   0.100s --     3.4 um      3.40um -- 27mas/pix -- median=  6095.000 counts
+;  11     1     1            linearity00002   400x 200    1 coadds x   0.100s --     3.4 um      3.40um -- 27mas/pix -- median=  6113.000 counts
+;  12     1     2            linearity00002   400x 200    1 coadds x   0.100s --     3.4 um      3.40um -- 27mas/pix -- median=  6121.000 counts
+;  13     1     3            linearity00002   400x 200    1 coadds x   0.100s --     3.4 um      3.40um -- 27mas/pix -- median=  6128.000 counts
+;  14     1     4            linearity00002   400x 200    1 coadds x   0.100s --     3.4 um      3.40um -- 27mas/pix -- median=  6135.000 counts
+;  15     1     5            linearity00002   400x 200    1 coadds x   0.100s --     3.4 um      3.40um -- 27mas/pix -- median=  6141.000 counts
+;  16     1     6            linearity00002   400x 200    1 coadds x   0.100s --     3.4 um      3.40um -- 27mas/pix -- median=  6147.000 counts
+;  17     1     7            linearity00002   400x 200    1 coadds x   0.100s --     3.4 um      3.40um -- 27mas/pix -- median=  6155.000 counts
+;  18     1     8            linearity00002   400x 200    1 coadds x   0.100s --     3.4 um      3.40um -- 27mas/pix -- median=  6158.000 counts
+;  19     1     9            linearity00002   400x 200    1 coadds x   0.100s --     3.4 um      3.40um -- 27mas/pix -- median=  6165.000 counts
+;  20     2     0            linearity00003   400x 200    1 coadds x   0.150s --     3.4 um      3.40um -- 27mas/pix -- median=  6477.000 counts
+;  21     2     1            linearity00003   400x 200    1 coadds x   0.150s --     3.4 um      3.40um -- 27mas/pix -- median=  6494.000 counts
+;  22     2     2            linearity00003   400x 200    1 coadds x   0.150s --     3.4 um      3.40um -- 27mas/pix -- median=  6501.000 counts
+;  23     2     3            linearity00003   400x 200    1 coadds x   0.150s --     3.4 um      3.40um -- 27mas/pix -- median=  6508.000 counts
+;  24     2     4            linearity00003   400x 200    1 coadds x   0.150s --     3.4 um      3.40um -- 27mas/pix -- median=  6515.000 counts
+;  25     2     5            linearity00003   400x 200    1 coadds x   0.150s --     3.4 um      3.40um -- 27mas/pix -- median=  6523.000 counts
+;  26     2     6            linearity00003   400x 200    1 coadds x   0.150s --     3.4 um      3.40um -- 27mas/pix -- median=  6526.000 counts
+;  27     2     7            linearity00003   400x 200    1 coadds x   0.150s --     3.4 um      3.40um -- 27mas/pix -- median=  6532.000 counts
+;  28     2     8            linearity00003   400x 200    1 coadds x   0.150s --     3.4 um      3.40um -- 27mas/pix -- median=  6538.000 counts
+;  29     2     9            linearity00003   400x 200    1 coadds x   0.150s --     3.4 um      3.40um -- 27mas/pix -- median=  6539.000 counts
+;  30     3     0            linearity00004   400x 200    1 coadds x   0.200s --     3.4 um      3.40um -- 27mas/pix -- median=  6864.000 counts
+;  31     3     1            linearity00004   400x 200    1 coadds x   0.200s --     3.4 um      3.40um -- 27mas/pix -- median=  6881.000 counts
+;  32     3     2            linearity00004   400x 200    1 coadds x   0.200s --     3.4 um      3.40um -- 27mas/pix -- median=  6888.000 counts
+;  33     3     3            linearity00004   400x 200    1 coadds x   0.200s --     3.4 um      3.40um -- 27mas/pix -- median=  6895.000 counts
+;  34     3     4            linearity00004   400x 200    1 coadds x   0.200s --     3.4 um      3.40um -- 27mas/pix -- median=  6900.000 counts
+;  35     3     5            linearity00004   400x 200    1 coadds x   0.200s --     3.4 um      3.40um -- 27mas/pix -- median=  6906.000 counts
+;  36     3     6            linearity00004   400x 200    1 coadds x   0.200s --     3.4 um      3.40um -- 27mas/pix -- median=  6909.000 counts
+;  37     3     7            linearity00004   400x 200    1 coadds x   0.200s --     3.4 um      3.40um -- 27mas/pix -- median=  6913.000 counts
+;  38     3     8            linearity00004   400x 200    1 coadds x   0.200s --     3.4 um      3.40um -- 27mas/pix -- median=  6917.000 counts
+;  39     3     9            linearity00004   400x 200    1 coadds x   0.200s --     3.4 um      3.40um -- 27mas/pix -- median=  6920.000 counts
+;  40     4     0            linearity00005   400x 200    1 coadds x   0.300s --     3.4 um      3.40um -- 27mas/pix -- median=  7513.000 counts
+;  41     4     1            linearity00005   400x 200    1 coadds x   0.300s --     3.4 um      3.40um -- 27mas/pix -- median=  7527.000 counts
+;  42     4     2            linearity00005   400x 200    1 coadds x   0.300s --     3.4 um      3.40um -- 27mas/pix -- median=  7534.000 counts
+;  43     4     3            linearity00005   400x 200    1 coadds x   0.300s --     3.4 um      3.40um -- 27mas/pix -- median=  7540.000 counts
+;  44     4     4            linearity00005   400x 200    1 coadds x   0.300s --     3.4 um      3.40um -- 27mas/pix -- median=  7541.000 counts
+;  45     4     5            linearity00005   400x 200    1 coadds x   0.300s --     3.4 um      3.40um -- 27mas/pix -- median=  7547.000 counts
+;  46     4     6            linearity00005   400x 200    1 coadds x   0.300s --     3.4 um      3.40um -- 27mas/pix -- median=  7548.000 counts
+;  47     4     7            linearity00005   400x 200    1 coadds x   0.300s --     3.4 um      3.40um -- 27mas/pix -- median=  7553.000 counts
+;  48     4     8            linearity00005   400x 200    1 coadds x   0.300s --     3.4 um      3.40um -- 27mas/pix -- median=  7554.000 counts
+;  49     4     9            linearity00005   400x 200    1 coadds x   0.300s --     3.4 um      3.40um -- 27mas/pix -- median=  7559.000 counts
+;  50     5     0            linearity00006   400x 200    1 coadds x   0.400s --     3.4 um      3.40um -- 27mas/pix -- median=  7720.000 counts
+;  51     5     1            linearity00006   400x 200    1 coadds x   0.400s --     3.4 um      3.40um -- 27mas/pix -- median=  7727.000 counts
+;  52     5     2            linearity00006   400x 200    1 coadds x   0.400s --     3.4 um      3.40um -- 27mas/pix -- median=  7737.000 counts
+;  53     5     3            linearity00006   400x 200    1 coadds x   0.400s --     3.4 um      3.40um -- 27mas/pix -- median=  7742.000 counts
+;  54     5     4            linearity00006   400x 200    1 coadds x   0.400s --     3.4 um      3.40um -- 27mas/pix -- median=  7750.000 counts
+;  55     5     5            linearity00006   400x 200    1 coadds x   0.400s --     3.4 um      3.40um -- 27mas/pix -- median=  7750.000 counts
+;  56     5     6            linearity00006   400x 200    1 coadds x   0.400s --     3.4 um      3.40um -- 27mas/pix -- median=  7749.000 counts
+;  57     5     7            linearity00006   400x 200    1 coadds x   0.400s --     3.4 um      3.40um -- 27mas/pix -- median=  7754.000 counts
+;  58     5     8            linearity00006   400x 200    1 coadds x   0.400s --     3.4 um      3.40um -- 27mas/pix -- median=  7758.000 counts
+;  59     5     9            linearity00006   400x 200    1 coadds x   0.400s --     3.4 um      3.40um -- 27mas/pix -- median=  7755.000 counts
+;  60     6     0            linearity00007   400x 200    1 coadds x   0.500s --     3.4 um      3.40um -- 27mas/pix -- median=  7853.000 counts
+;  61     6     1            linearity00007   400x 200    1 coadds x   0.500s --     3.4 um      3.40um -- 27mas/pix -- median=  7865.000 counts
+;  62     6     2            linearity00007   400x 200    1 coadds x   0.500s --     3.4 um      3.40um -- 27mas/pix -- median=  7879.000 counts
+;  63     6     3            linearity00007   400x 200    1 coadds x   0.500s --     3.4 um      3.40um -- 27mas/pix -- median=  7876.000 counts
+;  64     6     4            linearity00007   400x 200    1 coadds x   0.500s --     3.4 um      3.40um -- 27mas/pix -- median=  7877.000 counts
+;  65     6     5            linearity00007   400x 200    1 coadds x   0.500s --     3.4 um      3.40um -- 27mas/pix -- median=  7881.000 counts
+;  66     6     6            linearity00007   400x 200    1 coadds x   0.500s --     3.4 um      3.40um -- 27mas/pix -- median=  7886.000 counts
+;  67     6     7            linearity00007   400x 200    1 coadds x   0.500s --     3.4 um      3.40um -- 27mas/pix -- median=  7890.000 counts
+;  68     6     8            linearity00007   400x 200    1 coadds x   0.500s --     3.4 um      3.40um -- 27mas/pix -- median=  7887.000 counts
+;  69     6     9            linearity00007   400x 200    1 coadds x   0.500s --     3.4 um      3.40um -- 27mas/pix -- median=  7886.000 counts
+;  70     7     0            linearity00008   400x 200    1 coadds x   0.750s --     3.4 um      3.40um -- 27mas/pix -- median=  8230.000 counts
+;  71     7     1            linearity00008   400x 200    1 coadds x   0.750s --     3.4 um      3.40um -- 27mas/pix -- median=  8246.000 counts
+;  72     7     2            linearity00008   400x 200    1 coadds x   0.750s --     3.4 um      3.40um -- 27mas/pix -- median=  8249.000 counts
+;  73     7     3            linearity00008   400x 200    1 coadds x   0.750s --     3.4 um      3.40um -- 27mas/pix -- median=  8253.000 counts
+;  74     7     4            linearity00008   400x 200    1 coadds x   0.750s --     3.4 um      3.40um -- 27mas/pix -- median=  8246.000 counts
+;  75     7     5            linearity00008   400x 200    1 coadds x   0.750s --     3.4 um      3.40um -- 27mas/pix -- median=  8254.000 counts
+;  76     7     6            linearity00008   400x 200    1 coadds x   0.750s --     3.4 um      3.40um -- 27mas/pix -- median=  8258.000 counts
+;  77     7     7            linearity00008   400x 200    1 coadds x   0.750s --     3.4 um      3.40um -- 27mas/pix -- median=  8261.000 counts
+;  78     7     8            linearity00008   400x 200    1 coadds x   0.750s --     3.4 um      3.40um -- 27mas/pix -- median=  8256.000 counts
+;  79     7     9            linearity00008   400x 200    1 coadds x   0.750s --     3.4 um      3.40um -- 27mas/pix -- median=  8259.000 counts
+;  80     8     0            linearity00009   400x 200    1 coadds x   1.000s --     3.4 um      3.40um -- 27mas/pix -- median=  8678.000 counts
+;  81     8     1            linearity00009   400x 200    1 coadds x   1.000s --     3.4 um      3.40um -- 27mas/pix -- median=  8692.000 counts
+;  82     8     2            linearity00009   400x 200    1 coadds x   1.000s --     3.4 um      3.40um -- 27mas/pix -- median=  8697.000 counts
+;  83     8     3            linearity00009   400x 200    1 coadds x   1.000s --     3.4 um      3.40um -- 27mas/pix -- median=  8692.000 counts
+;  84     8     4            linearity00009   400x 200    1 coadds x   1.000s --     3.4 um      3.40um -- 27mas/pix -- median=  8702.000 counts
+;  85     8     5            linearity00009   400x 200    1 coadds x   1.000s --     3.4 um      3.40um -- 27mas/pix -- median=  8701.000 counts
+;  86     8     6            linearity00009   400x 200    1 coadds x   1.000s --     3.4 um      3.40um -- 27mas/pix -- median=  8704.000 counts
+;  87     8     7            linearity00009   400x 200    1 coadds x   1.000s --     3.4 um      3.40um -- 27mas/pix -- median=  8709.000 counts
+;  88     8     8            linearity00009   400x 200    1 coadds x   1.000s --     3.4 um      3.40um -- 27mas/pix -- median=  8704.000 counts
+;  89     8     9            linearity00009   400x 200    1 coadds x   1.000s --     3.4 um      3.40um -- 27mas/pix -- median=  8705.000 counts
+;  90     9     0            linearity00010   400x 200    1 coadds x   1.250s --     3.4 um      3.40um -- 27mas/pix -- median=  9129.000 counts
+;  91     9     1            linearity00010   400x 200    1 coadds x   1.250s --     3.4 um      3.40um -- 27mas/pix -- median=  9139.000 counts
+;  92     9     2            linearity00010   400x 200    1 coadds x   1.250s --     3.4 um      3.40um -- 27mas/pix -- median=  9141.000 counts
+;  93     9     3            linearity00010   400x 200    1 coadds x   1.250s --     3.4 um      3.40um -- 27mas/pix -- median=  9142.000 counts
+;  94     9     4            linearity00010   400x 200    1 coadds x   1.250s --     3.4 um      3.40um -- 27mas/pix -- median=  9145.000 counts
+;  95     9     5            linearity00010   400x 200    1 coadds x   1.250s --     3.4 um      3.40um -- 27mas/pix -- median=  9145.000 counts
+;  96     9     6            linearity00010   400x 200    1 coadds x   1.250s --     3.4 um      3.40um -- 27mas/pix -- median=  9140.000 counts
+;  97     9     7            linearity00010   400x 200    1 coadds x   1.250s --     3.4 um      3.40um -- 27mas/pix -- median=  9146.000 counts
+;  98     9     8            linearity00010   400x 200    1 coadds x   1.250s --     3.4 um      3.40um -- 27mas/pix -- median=  9148.000 counts
+;  99     9     9            linearity00010   400x 200    1 coadds x   1.250s --     3.4 um      3.40um -- 27mas/pix -- median=  9149.000 counts
+; 100    10     0            linearity00011   400x 200    1 coadds x   1.500s --     3.4 um      3.40um -- 27mas/pix -- median=  9606.000 counts
+; 101    10     1            linearity00011   400x 200    1 coadds x   1.500s --     3.4 um      3.40um -- 27mas/pix -- median=  9621.000 counts
+; 102    10     2            linearity00011   400x 200    1 coadds x   1.500s --     3.4 um      3.40um -- 27mas/pix -- median=  9611.000 counts
+; 103    10     3            linearity00011   400x 200    1 coadds x   1.500s --     3.4 um      3.40um -- 27mas/pix -- median=  9611.000 counts
+; 104    10     4            linearity00011   400x 200    1 coadds x   1.500s --     3.4 um      3.40um -- 27mas/pix -- median=  9619.000 counts
+; 105    10     5            linearity00011   400x 200    1 coadds x   1.500s --     3.4 um      3.40um -- 27mas/pix -- median=  9617.000 counts
+; 106    10     6            linearity00011   400x 200    1 coadds x   1.500s --     3.4 um      3.40um -- 27mas/pix -- median=  9623.000 counts
+; 107    10     7            linearity00011   400x 200    1 coadds x   1.500s --     3.4 um      3.40um -- 27mas/pix -- median=  9619.000 counts
+; 108    10     8            linearity00011   400x 200    1 coadds x   1.500s --     3.4 um      3.40um -- 27mas/pix -- median=  9613.000 counts
+; 109    10     9            linearity00011   400x 200    1 coadds x   1.500s --     3.4 um      3.40um -- 27mas/pix -- median=  9607.000 counts
+; 110    11     0            linearity00012   400x 200    1 coadds x   1.750s --     3.4 um      3.40um -- 27mas/pix -- median= 10035.000 counts
+; 111    11     1            linearity00012   400x 200    1 coadds x   1.750s --     3.4 um      3.40um -- 27mas/pix -- median= 10059.000 counts
+; 112    11     2            linearity00012   400x 200    1 coadds x   1.750s --     3.4 um      3.40um -- 27mas/pix -- median= 10056.000 counts
+; 113    11     3            linearity00012   400x 200    1 coadds x   1.750s --     3.4 um      3.40um -- 27mas/pix -- median= 10056.000 counts
+; 114    11     4            linearity00012   400x 200    1 coadds x   1.750s --     3.4 um      3.40um -- 27mas/pix -- median= 10055.000 counts
+; 115    11     5            linearity00012   400x 200    1 coadds x   1.750s --     3.4 um      3.40um -- 27mas/pix -- median= 10057.000 counts
+; 116    11     6            linearity00012   400x 200    1 coadds x   1.750s --     3.4 um      3.40um -- 27mas/pix -- median= 10056.000 counts
+; 117    11     7            linearity00012   400x 200    1 coadds x   1.750s --     3.4 um      3.40um -- 27mas/pix -- median= 10060.000 counts
+; 118    11     8            linearity00012   400x 200    1 coadds x   1.750s --     3.4 um      3.40um -- 27mas/pix -- median= 10057.000 counts
+; 119    11     9            linearity00012   400x 200    1 coadds x   1.750s --     3.4 um      3.40um -- 27mas/pix -- median= 10057.000 counts
+; 120    12     0            linearity00013   400x 200    1 coadds x   2.000s --     3.4 um      3.40um -- 27mas/pix -- median= 10439.000 counts
+; 121    12     1            linearity00013   400x 200    1 coadds x   2.000s --     3.4 um      3.40um -- 27mas/pix -- median= 10449.000 counts
+; 122    12     2            linearity00013   400x 200    1 coadds x   2.000s --     3.4 um      3.40um -- 27mas/pix -- median= 10453.000 counts
+; 123    12     3            linearity00013   400x 200    1 coadds x   2.000s --     3.4 um      3.40um -- 27mas/pix -- median= 10447.000 counts
+; 124    12     4            linearity00013   400x 200    1 coadds x   2.000s --     3.4 um      3.40um -- 27mas/pix -- median= 10448.000 counts
+; 125    12     5            linearity00013   400x 200    1 coadds x   2.000s --     3.4 um      3.40um -- 27mas/pix -- median= 10449.000 counts
+; 126    12     6            linearity00013   400x 200    1 coadds x   2.000s --     3.4 um      3.40um -- 27mas/pix -- median= 10449.000 counts
+; 127    12     7            linearity00013   400x 200    1 coadds x   2.000s --     3.4 um      3.40um -- 27mas/pix -- median= 10454.000 counts
+; 128    12     8            linearity00013   400x 200    1 coadds x   2.000s --     3.4 um      3.40um -- 27mas/pix -- median= 10449.000 counts
+; 129    12     9            linearity00013   400x 200    1 coadds x   2.000s --     3.4 um      3.40um -- 27mas/pix -- median= 10449.000 counts
+; 130    13     0            linearity00014   400x 200    1 coadds x   2.250s --     3.4 um      3.40um -- 27mas/pix -- median= 10752.000 counts
+; 131    13     1            linearity00014   400x 200    1 coadds x   2.250s --     3.4 um      3.40um -- 27mas/pix -- median= 10768.000 counts
+; 132    13     2            linearity00014   400x 200    1 coadds x   2.250s --     3.4 um      3.40um -- 27mas/pix -- median= 10772.000 counts
+; 133    13     3            linearity00014   400x 200    1 coadds x   2.250s --     3.4 um      3.40um -- 27mas/pix -- median= 10782.000 counts
+; 134    13     4            linearity00014   400x 200    1 coadds x   2.250s --     3.4 um      3.40um -- 27mas/pix -- median= 10774.000 counts
+; 135    13     5            linearity00014   400x 200    1 coadds x   2.250s --     3.4 um      3.40um -- 27mas/pix -- median= 10775.000 counts
+; 136    13     6            linearity00014   400x 200    1 coadds x   2.250s --     3.4 um      3.40um -- 27mas/pix -- median= 10776.000 counts
+; 137    13     7            linearity00014   400x 200    1 coadds x   2.250s --     3.4 um      3.40um -- 27mas/pix -- median= 10789.000 counts
+; 138    13     8            linearity00014   400x 200    1 coadds x   2.250s --     3.4 um      3.40um -- 27mas/pix -- median= 10778.000 counts
+; 139    13     9            linearity00014   400x 200    1 coadds x   2.250s --     3.4 um      3.40um -- 27mas/pix -- median= 10763.000 counts
+; 140    14     0            linearity00015   400x 200    1 coadds x   2.500s --     3.4 um      3.40um -- 27mas/pix -- median= 11029.000 counts
+; 141    14     1            linearity00015   400x 200    1 coadds x   2.500s --     3.4 um      3.40um -- 27mas/pix -- median= 11040.000 counts
+; 142    14     2            linearity00015   400x 200    1 coadds x   2.500s --     3.4 um      3.40um -- 27mas/pix -- median= 11038.000 counts
+; 143    14     3            linearity00015   400x 200    1 coadds x   2.500s --     3.4 um      3.40um -- 27mas/pix -- median= 11046.000 counts
+; 144    14     4            linearity00015   400x 200    1 coadds x   2.500s --     3.4 um      3.40um -- 27mas/pix -- median= 11035.000 counts
+; 145    14     5            linearity00015   400x 200    1 coadds x   2.500s --     3.4 um      3.40um -- 27mas/pix -- median= 11040.000 counts
+; 146    14     6            linearity00015   400x 200    1 coadds x   2.500s --     3.4 um      3.40um -- 27mas/pix -- median= 11045.000 counts
+; 147    14     7            linearity00015   400x 200    1 coadds x   2.500s --     3.4 um      3.40um -- 27mas/pix -- median= 11043.000 counts
+; 148    14     8            linearity00015   400x 200    1 coadds x   2.500s --     3.4 um      3.40um -- 27mas/pix -- median= 11044.000 counts
+; 149    14     9            linearity00015   400x 200    1 coadds x   2.500s --     3.4 um      3.40um -- 27mas/pix -- median= 11040.000 counts
+; 150    15     0            linearity00016   400x 200    1 coadds x   2.750s --     3.4 um      3.40um -- 27mas/pix -- median= 11276.000 counts
+; 151    15     1            linearity00016   400x 200    1 coadds x   2.750s --     3.4 um      3.40um -- 27mas/pix -- median= 11299.000 counts
+; 152    15     2            linearity00016   400x 200    1 coadds x   2.750s --     3.4 um      3.40um -- 27mas/pix -- median= 11282.000 counts
+; 153    15     3            linearity00016   400x 200    1 coadds x   2.750s --     3.4 um      3.40um -- 27mas/pix -- median= 11284.000 counts
+; 154    15     4            linearity00016   400x 200    1 coadds x   2.750s --     3.4 um      3.40um -- 27mas/pix -- median= 11288.000 counts
+; 155    15     5            linearity00016   400x 200    1 coadds x   2.750s --     3.4 um      3.40um -- 27mas/pix -- median= 11289.000 counts
+; 156    15     6            linearity00016   400x 200    1 coadds x   2.750s --     3.4 um      3.40um -- 27mas/pix -- median= 11292.000 counts
+; 157    15     7            linearity00016   400x 200    1 coadds x   2.750s --     3.4 um      3.40um -- 27mas/pix -- median= 11289.000 counts
+; 158    15     8            linearity00016   400x 200    1 coadds x   2.750s --     3.4 um      3.40um -- 27mas/pix -- median= 11287.000 counts
+; 159    15     9            linearity00016   400x 200    1 coadds x   2.750s --     3.4 um      3.40um -- 27mas/pix -- median= 11283.000 counts
+; 160    16     0            linearity00017   400x 200    1 coadds x   3.000s --     3.4 um      3.40um -- 27mas/pix -- median= 11539.000 counts
+; 161    16     1            linearity00017   400x 200    1 coadds x   3.000s --     3.4 um      3.40um -- 27mas/pix -- median= 11550.000 counts
+; 162    16     2            linearity00017   400x 200    1 coadds x   3.000s --     3.4 um      3.40um -- 27mas/pix -- median= 11551.000 counts
+; 163    16     3            linearity00017   400x 200    1 coadds x   3.000s --     3.4 um      3.40um -- 27mas/pix -- median= 11550.000 counts
+; 164    16     4            linearity00017   400x 200    1 coadds x   3.000s --     3.4 um      3.40um -- 27mas/pix -- median= 11551.000 counts
+; 165    16     5            linearity00017   400x 200    1 coadds x   3.000s --     3.4 um      3.40um -- 27mas/pix -- median= 11555.000 counts
+; 166    16     6            linearity00017   400x 200    1 coadds x   3.000s --     3.4 um      3.40um -- 27mas/pix -- median= 11550.000 counts
+; 167    16     7            linearity00017   400x 200    1 coadds x   3.000s --     3.4 um      3.40um -- 27mas/pix -- median= 11552.000 counts
+; 168    16     8            linearity00017   400x 200    1 coadds x   3.000s --     3.4 um      3.40um -- 27mas/pix -- median= 11548.000 counts
+; 169    16     9            linearity00017   400x 200    1 coadds x   3.000s --     3.4 um      3.40um -- 27mas/pix -- median= 11560.000 counts
+; 170    17     0            linearity00018   400x 200    1 coadds x   3.250s --     3.4 um      3.40um -- 27mas/pix -- median= 11787.000 counts
+; 171    17     1            linearity00018   400x 200    1 coadds x   3.250s --     3.4 um      3.40um -- 27mas/pix -- median= 11799.000 counts
+; 172    17     2            linearity00018   400x 200    1 coadds x   3.250s --     3.4 um      3.40um -- 27mas/pix -- median= 11807.000 counts
+; 173    17     3            linearity00018   400x 200    1 coadds x   3.250s --     3.4 um      3.40um -- 27mas/pix -- median= 11813.000 counts
+; 174    17     4            linearity00018   400x 200    1 coadds x   3.250s --     3.4 um      3.40um -- 27mas/pix -- median= 11812.000 counts
+; 175    17     5            linearity00018   400x 200    1 coadds x   3.250s --     3.4 um      3.40um -- 27mas/pix -- median= 11807.000 counts
+; 176    17     6            linearity00018   400x 200    1 coadds x   3.250s --     3.4 um      3.40um -- 27mas/pix -- median= 11808.000 counts
+; 177    17     7            linearity00018   400x 200    1 coadds x   3.250s --     3.4 um      3.40um -- 27mas/pix -- median= 11805.000 counts
+; 178    17     8            linearity00018   400x 200    1 coadds x   3.250s --     3.4 um      3.40um -- 27mas/pix -- median= 11801.000 counts
+; 179    17     9            linearity00018   400x 200    1 coadds x   3.250s --     3.4 um      3.40um -- 27mas/pix -- median= 11804.000 counts
+; 180    18     0            linearity00019   400x 200    1 coadds x   3.500s --     3.4 um      3.40um -- 27mas/pix -- median= 12046.000 counts
+; 181    18     1            linearity00019   400x 200    1 coadds x   3.500s --     3.4 um      3.40um -- 27mas/pix -- median= 12064.000 counts
+; 182    18     2            linearity00019   400x 200    1 coadds x   3.500s --     3.4 um      3.40um -- 27mas/pix -- median= 12062.000 counts
+; 183    18     3            linearity00019   400x 200    1 coadds x   3.500s --     3.4 um      3.40um -- 27mas/pix -- median= 12069.000 counts
+; 184    18     4            linearity00019   400x 200    1 coadds x   3.500s --     3.4 um      3.40um -- 27mas/pix -- median= 12066.000 counts
+; 185    18     5            linearity00019   400x 200    1 coadds x   3.500s --     3.4 um      3.40um -- 27mas/pix -- median= 12059.000 counts
+; 186    18     6            linearity00019   400x 200    1 coadds x   3.500s --     3.4 um      3.40um -- 27mas/pix -- median= 12059.000 counts
+; 187    18     7            linearity00019   400x 200    1 coadds x   3.500s --     3.4 um      3.40um -- 27mas/pix -- median= 12058.000 counts
+; 188    18     8            linearity00019   400x 200    1 coadds x   3.500s --     3.4 um      3.40um -- 27mas/pix -- median= 12048.000 counts
+; 189    18     9            linearity00019   400x 200    1 coadds x   3.500s --     3.4 um      3.40um -- 27mas/pix -- median= 12062.000 counts
+; 190    19     0            linearity00020   400x 200    1 coadds x   3.750s --     3.4 um      3.40um -- 27mas/pix -- median= 12352.000 counts
+; 191    19     1            linearity00020   400x 200    1 coadds x   3.750s --     3.4 um      3.40um -- 27mas/pix -- median= 12389.000 counts
+; 192    19     2            linearity00020   400x 200    1 coadds x   3.750s --     3.4 um      3.40um -- 27mas/pix -- median= 12397.000 counts
+; 193    19     3            linearity00020   400x 200    1 coadds x   3.750s --     3.4 um      3.40um -- 27mas/pix -- median= 12390.000 counts
+; 194    19     4            linearity00020   400x 200    1 coadds x   3.750s --     3.4 um      3.40um -- 27mas/pix -- median= 12393.000 counts
+; 195    19     5            linearity00020   400x 200    1 coadds x   3.750s --     3.4 um      3.40um -- 27mas/pix -- median= 12390.000 counts
+; 196    19     6            linearity00020   400x 200    1 coadds x   3.750s --     3.4 um      3.40um -- 27mas/pix -- median= 12401.000 counts
+; 197    19     7            linearity00020   400x 200    1 coadds x   3.750s --     3.4 um      3.40um -- 27mas/pix -- median= 12389.000 counts
+; 198    19     8            linearity00020   400x 200    1 coadds x   3.750s --     3.4 um      3.40um -- 27mas/pix -- median= 12390.000 counts
+; 199    19     9            linearity00020   400x 200    1 coadds x   3.750s --     3.4 um      3.40um -- 27mas/pix -- median= 12384.000 counts
+; 200    20     0            linearity00021   400x 200    1 coadds x   4.000s --     3.4 um      3.40um -- 27mas/pix -- median= 12769.000 counts
+; 201    20     1            linearity00021   400x 200    1 coadds x   4.000s --     3.4 um      3.40um -- 27mas/pix -- median= 12822.000 counts
+; 202    20     2            linearity00021   400x 200    1 coadds x   4.000s --     3.4 um      3.40um -- 27mas/pix -- median= 12837.000 counts
+; 203    20     3            linearity00021   400x 200    1 coadds x   4.000s --     3.4 um      3.40um -- 27mas/pix -- median= 12834.000 counts
+; 204    20     4            linearity00021   400x 200    1 coadds x   4.000s --     3.4 um      3.40um -- 27mas/pix -- median= 12835.000 counts
+;;;                                              readclio.pro: Images read and de-coadded!                                                    ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+nim = (size(cube))[3]
+ints = fltarr(nim)
+for k=0,nim-1 do ints[k]=sxpar(head[*,k],'INT')
+rectanglemask = fltarr(400,200)
+rectanglemask[200:350,0:*]=1.0
+counts = fltarr(nim)
+for k=0,nim-1 do begin im=cube[*,*,k]  &  counts[k]=median(im[where(rectanglemask eq 1)])
+n_int = n_elements(uniq(ints))
+stddevmean = fltarr(n_int)
+ints_uniq = ints[uniq(ints)]
+print,ints_uniq
+;      43.0000      100.000      150.000      200.000      300.000      400.000      500.000      750.000      1000.00      1250.00      1500.00      1750.00      2000.00      2250.00
+;      2500.00      2750.00      3000.00      3250.00      3500.00      3750.00      4000.00
+for k=0,n_int-1 do stddevmean[k] = stddev(counts[where(ints eq ints_uniq[k])])/mean(counts[where(ints eq ints_uniq[k])])
+print,stddevmean
+;   0.00514615   0.00368525   0.00302414   0.00238278   0.00175322   0.00139406   0.00119084   0.00100722  0.000962926   0.00112731   0.00108266   0.00109732   0.00120140   0.00131032
+;   0.00115250   0.00141267   0.00143605   0.00152249   0.00156244  0.000590484  0.000151749
+counts_mean = fltarr(n_int)
+for k=0,n_int-1 do counts_mean[k] = mean(counts[where(ints eq ints_uniq[k])])
+print,counts_mean
+;      5470.80      6239.40      6931.00      7630.10      9034.70      10446.9      11858.9      15388.0      18899.9      22385.8      25837.5      29225.3      32558.6      35832.9
+;      39044.7      42172.1      45193.2      48096.0      50914.0      52842.4      53251.4
+counts_stddev = fltarr(n_int)
+for k=0,n_int-1 do counts_stddev[k] = stddev(counts[where(ints eq ints_uniq[k])])
+print,counts_stddev
+;      28.1535      22.9937      20.9603      18.1809      15.8398      14.5637      14.1221      15.4991      18.1992      25.2358      27.9732      32.0695      39.1158      46.9526
+;      44.9989      59.5752      64.8996      73.2257      79.5501      31.2026      8.08084
+ints_true_coeff = linfit(ints_uniq,counts_mean)
+ints_true_coeff = linfit(counts_mean,ints_uniq)
+ints_true_coeff = linfit(ints_uniq,counts_mean)
+ints_true_coeff = linfit(ints_uniq,counts_mean,yfit=ints_true)
+ints_true_coeff = linfit(ints_uniq[where(ints_uniq gt 500 and ints_uniq lt 2000)],counts_mean[where(ints_uniq gt 500 and ints_uniq lt 2000)])
+counts_true = ints_true_coeff[0]+ints_uniq*ints_true_coeff[1]
+print,counts_mean
+;      5470.80      6239.40      6931.00      7630.10      9034.70      10446.9      11858.9      15388.0      18899.9      22385.8      25837.5      29225.3      32558.6      35832.9
+;      39044.7      42172.1      45193.2      48096.0      50914.0      52842.4      53251.4
+print,counts_true
+;      5636.53      6425.69      7117.93      7810.18      9194.66      10579.2      11963.6      15424.9      18886.1      22347.3      25808.5      29269.7      32731.0      36192.2
+;      39653.4      43114.6      46575.8      50037.1      53498.3      56959.5      60420.7
+counts_linear_coeff1 = linfit(counts_true,counts_mean)
+counts_linear_coeff1 = linfit(counts_true,counts_mean,yfit=counts_fit)
+counts_linear_coeff2 = poly_fit(counts_true,counts_mean,2,yfit=counts_fit2)
+counts_linear_coeff3 = poly_fit(counts_true,counts_mean,3,yfit=counts_fit3)
+counts_linear_coeff4 = poly_fit(counts_true[where(ints_uniq gt 1000)],counts_mean[where(ints_uniq gt 1000)],4,yfit=counts_fit4)
+counts_linear_coeff3 = poly_fit(counts_true[where(ints_uniq gt 1000)],counts_mean[where(ints_uniq gt 1000)],3,yfit=counts_fit3)
+idx = where(ints_uniq gt 1000)
+idx = where(ints_uniq gt 1000 and ints_uniq lt 3000)
+counts_linear_coeff3 = poly_fit(counts_true[idx],counts_mean[idx],3,yfit=counts_fit3)
+counts_linear_coeff4 = poly_fit(counts_true[idx],counts_mean[idx],4,yfit=counts_fit4)
+coeff3 = poly_fit(counts_true[idx],counts_mean[idx],3,yfit=counts_fit3)
+coeff4 = poly_fit(counts_true[idx],counts_mean[idx],4,yfit=counts_fit4)
+yfit3 = coeff3[0] + counts_true*coeff3[1] + counts_true^2.*coeff3[2] + counts_true^3.*coeff3[3]
+yfit4 = coeff4[0] + counts_true*coeff4[1] + counts_true^2.*coeff4[2] + counts_true^3.*coeff4[3] + counts_true^4.*coeff4[4]
+idx = where(ints_uniq gt 1000 and ints_uniq lt 2500)
+counts_linear_coeff3 = poly_fit(counts_true[idx],counts_mean[idx],3,yfit=counts_fit3)
+coeff3 = poly_fit(counts_true[idx],counts_mean[idx],3,yfit=counts_fit3)
+coeff4 = poly_fit(counts_true[idx],counts_mean[idx],4,yfit=counts_fit4)
+yfit3 = coeff3[0] + counts_true*coeff3[1] + counts_true^2.*coeff3[2] + counts_true^3.*coeff3[3]
+yfit4 = coeff4[0] + counts_true*coeff4[1] + counts_true^2.*coeff4[2] + counts_true^3.*coeff4[3] + counts_true^4.*coeff4[4]
+idx = where(ints_uniq gt 1000 and ints_uniq lt 5000)
+coeff3 = poly_fit(counts_true[idx],counts_mean[idx],3,yfit=counts_fit3)
+coeff4 = poly_fit(counts_true[idx],counts_mean[idx],4,yfit=counts_fit4)
+yfit3 = coeff3[0] + counts_true*coeff3[1] + counts_true^2.*coeff3[2] + counts_true^3.*coeff3[3]
+yfit4 = coeff4[0] + counts_true*coeff4[1] + counts_true^2.*coeff4[2] + counts_true^3.*coeff4[3] + counts_true^4.*coeff4[4]
+idx = where(ints_uniq gt 500 and ints_uniq lt 4000)
+coeff3 = poly_fit(counts_true[idx],counts_mean[idx],3,yfit=counts_fit3)
+coeff4 = poly_fit(counts_true[idx],counts_mean[idx],4,yfit=counts_fit4)
+yfit3 = coeff3[0] + counts_true*coeff3[1] + counts_true^2.*coeff3[2] + counts_true^3.*coeff3[3]
+yfit4 = coeff4[0] + counts_true*coeff4[1] + counts_true^2.*coeff4[2] + counts_true^3.*coeff4[3] + counts_true^4.*coeff4[4]
+idx = where(ints_uniq gt 1000 and ints_uniq lt 3000)
+coeff3 = poly_fit(counts_true[idx],counts_mean[idx],3,yfit=counts_fit3)
+coeff4 = poly_fit(counts_true[idx],counts_mean[idx],4,yfit=counts_fit4)
+yfit3 = coeff3[0] + counts_true*coeff3[1] + counts_true^2.*coeff3[2] + counts_true^3.*coeff3[3]
+yfit4 = coeff4[0] + counts_true*coeff4[1] + counts_true^2.*coeff4[2] + counts_true^3.*coeff4[3] + counts_true^4.*coeff4[4]
+idx = where(ints_uniq gt 1000 and ints_uniq lt 4000)
+coeff3 = poly_fit(counts_true[idx],counts_mean[idx],3,yfit=counts_fit3)
+coeff4 = poly_fit(counts_true[idx],counts_mean[idx],4,yfit=counts_fit4)
+yfit3 = coeff3[0] + counts_true*coeff3[1] + counts_true^2.*coeff3[2] + counts_true^3.*coeff3[3]
+yfit4 = coeff4[0] + counts_true*coeff4[1] + counts_true^2.*coeff4[2] + counts_true^3.*coeff4[3] + counts_true^4.*coeff4[4]
+idx = where(counts_mean gt 2e4 and counts_mean lt 3e4)
+coeff3 = poly_fit(counts_true[idx],counts_mean[idx],3,yfit=counts_fit3)
+coeff4 = poly_fit(counts_true[idx],counts_mean[idx],4,yfit=counts_fit4)
+yfit3 = coeff3[0] + counts_true*coeff3[1] + counts_true^2.*coeff3[2] + counts_true^3.*coeff3[3]
+yfit4 = coeff4[0] + counts_true*coeff4[1] + counts_true^2.*coeff4[2] + counts_true^3.*coeff4[3] + counts_true^4.*coeff4[4]
+idx = where(counts_mean gt 1e4 and counts_mean lt 4e4)
+coeff3 = poly_fit(counts_true[idx],counts_mean[idx],3,yfit=counts_fit3)
+coeff4 = poly_fit(counts_true[idx],counts_mean[idx],4,yfit=counts_fit4)
+yfit3 = coeff3[0] + counts_true*coeff3[1] + counts_true^2.*coeff3[2] + counts_true^3.*coeff3[3]
+yfit4 = coeff4[0] + counts_true*coeff4[1] + counts_true^2.*coeff4[2] + counts_true^3.*coeff4[3] + counts_true^4.*coeff4[4]
+plot,counts_true,(counts_true-counts_mean)/counts_true,thick=2
+oplot,counts_true,(counts_true-yfit3)/counts_true,color=fsc_color('green'),thick=2
+oplot,counts_true,(counts_true-yfit4)/counts_true,color=fsc_color('purple'),thick=2
+window,1
+plot,counts_true,counts_mean
+;; new -- strictly linear regime
+ints_true_coeff = linfit(ints_uniq[where(ints_uniq gt 500 and ints_uniq lt 1500)],counts_mean[where(ints_uniq gt 500 and ints_uniq lt 1500)])
+idx = where(ints_uniq gt 500 and ints_uniq lt 1500)
+print,idx
+;           7           8           9
+print,ints_uniq[idx]
+;      750.000      1000.00      1250.00
+idx = where(ints_uniq ge 500 and ints_uniq le 1500)
+print,idx
+;           6           7           8           9          10
+print,ints_uniq[idx]
+;      500.000      750.000      1000.00      1250.00      1500.00
+ints_true_coeff = linfit(ints_uniq[idx],counts_mean[idx])
+counts_true = ints_true_coeff[0]+ints_uniq*ints_true_coeff[1]
+print,ints_true_coeff
+;      4892.02      13.9820
+print,counts_true
+;      5493.25      6290.22      6989.32      7688.42      9086.62      10484.8      11883.0      15378.5      18874.0      22369.5      25865.0      29360.5      32856.0      36351.5
+;      39847.0      43342.5      46838.0      50333.5      53829.0      57324.5      60820.0
+print,counts_meas
+; % PRINT: Variable is undefined: COUNTS_MEAS.
+print,counts_mean
+;      5470.80      6239.40      6931.00      7630.10      9034.70      10446.9      11858.9      15388.0      18899.9      22385.8      25837.5      29225.3      32558.6      35832.9
+;      39044.7      42172.1      45193.2      48096.0      50914.0      52842.4      53251.4
+retall
+plot,counts_true,counts_meas
+; % PLOT: Expression must be an array in this context: COUNTS_MEAS.
+retall
+plot,counts_true,counts_mean
+psplot_start, 'linefit_linearity.ps'
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts'
+psplot_stop
+psplot_start, 'linefit_linearity.ps',/nobold
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts'
+psplot_stop
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts'
+oplot,counts_true,counts_true,color=fsc_color('red')
+psplot_start, 'linefit_linearity.ps'
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',thick=2,xthick=2,ythick=2
+oplot,counts_true,counts_true,color=fsc_color('red'),thick=2
+psplot_stop
+psplot_start, 'linefit_linearity.ps'
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',thick=4,xthick=4,ythick=4
+oplot,counts_true,counts_true,color=fsc_color('red'),thick=4
+psplot_stop
+psplot_start, 'linefit_linearity.ps'
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',thick=4,xthick=4,ythick=4,psym=-5
+oplot,counts_true,counts_true,color=fsc_color('red'),thick=4
+psplot_stop
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',thick=4,xthick=4,ythick=4,psym=-6
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',thick=4,xthick=4,ythick=4,psym=-7
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',thick=4,xthick=4,ythick=4,psym=-1
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',thick=4,xthick=4,ythick=4,psym=-2
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',thick=4,xthick=4,ythick=4,psym=-3
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',thick=4,xthick=4,ythick=4,psym=-4
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',thick=4,xthick=4,ythick=4,psym=-5
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',thick=4,xthick=4,ythick=4,psym=-1
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',xthick=4,ythick=4,psym=-1
+psplot_start, 'linefit_linearity.ps'
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',thick=4,xthick=4,ythick=4,psym=-1
+oplot,counts_true,counts_true,color=fsc_color('red'),thick=4
+psplot_stop
+psplot_start, 'linefit_linearity.ps'
+plot,counts_true,counts_mean,xtitle='True counts',ytitle='Measured counts',thick=4,xthick=4,ythick=4,psym=-1,xrange=[0,6.5e4],yrange=[0,6.5e4],/xstyle,/ystyle
+oplot,counts_true,counts_true,color=fsc_color('red'),thick=4
+psplot_stop
+plot,ints_uniq,counts_mean,xtitle='int (ms)',ytitle='Measured counts (DN)',thick=4,xthick=4,ythick=4,psym=-1,xrange=[0,6.5e4],yrange=[0,6.5e4],/xstyle,/ystyle
+plot,ints_uniq,counts_mean,xtitle='int (ms)',ytitle='Measured counts (DN)',thick=4,xthick=4,ythick=4,psym=-1
+oplot,ints_uniq,counts_true,color=fsc_color('red'),thick=4
+psplot_start, 'linearity_data.ps'
+plot,ints_uniq,counts_mean,xtitle='int (ms)',ytitle='Measured counts (DN)',thick=4,xthick=4,ythick=4,psym=-1
+oplot,ints_uniq,counts_true,color=fsc_color('red'),thick=4
+psplot_stop
+wdelete,1
+idx = where(counts_mean gt 1e4 and counts_mean lt 4e4)
+coeff3 = poly_fit(counts_true[idx],counts_mean[idx],3,yfit=counts_fit3)
+coeff4 = poly_fit(counts_true[idx],counts_mean[idx],4,yfit=counts_fit4)
+yfit3 = coeff3[0] + counts_true*coeff3[1] + counts_true^2.*coeff3[2] + counts_true^3.*coeff3[3]
+yfit4 = coeff4[0] + counts_true*coeff4[1] + counts_true^2.*coeff4[2] + counts_true^3.*coeff4[3] + counts_true^4.*coeff4[4]
+plot,counts_true,(counts_true-counts_mean)/counts_true,thick=2
+oplot,counts_true,(counts_true-yfit3)/counts_true,color=fsc_color('green'),thick=2
+oplot,counts_true,(counts_true-yfit4)/counts_true,color=fsc_color('purple'),thick=2
+print,ints_true_coeff
+;      4892.02      13.9820
+? linfit
+print,ints_uniq
+;      43.0000      100.000      150.000      200.000      300.000      400.000      500.000      750.000      1000.00      1250.00      1500.00      1750.00      2000.00      2250.00
+;      2500.00      2750.00      3000.00      3250.00      3500.00      3750.00      4000.00
+print,counts_mean
+;      5470.80      6239.40      6931.00      7630.10      9034.70      10446.9      11858.9      15388.0      18899.9      22385.8      25837.5      29225.3      32558.6      35832.9
+;      39044.7      42172.1      45193.2      48096.0      50914.0      52842.4      53251.4
+plot,counts_true,(counts_true-counts_mean)/counts_true,thick=2
+oplot,counts_true,(counts_true-yfit3)/counts_true,color=fsc_color('green'),thick=2
+oplot,counts_true,(counts_true-yfit4)/counts_true,color=fsc_color('purple'),thick=2
+oplot,counts_true,counts_true - counts_fit,color=fsc_color('red'),thick=2
+plot,counts_true,(counts_true-counts_mean)/counts_true,thick=2
+oplot,counts_true,(counts_true-counts_fit)/counts_true,color=fsc_color('red'),thick=2
+plot,counts_true,(counts_true-counts_mean)/counts_true,thick=2
+oplot,counts_true,(counts_fit-counts_true)/counts_true,color=fsc_color('red'),thick=2
+plot,counts_true,(counts_true-counts_mean)/counts_true,thick=2
+yfit2 = coeff2[0] + counts_true*coeff2[1] + counts_true^2.*coeff2[2]
+; % Variable is undefined: COEFF2.
+retall
+coeff2 = poly_fit(counts_true,counts_mean,2,yfit=counts_fit2)
+yfit2 = coeff2[0] + counts_true*coeff2[1] + counts_true^2.*coeff2[2]
+plot,counts_true,(counts_true-counts_mean)/counts_true,thick=2
+oplot,counts_true,(counts_true-yfit2)/counts_true,color=fsc_color('red'),thick=2
+oplot,counts_true,(counts_true-yfit3)/counts_true,color=fsc_color('green'),thick=2
+oplot,counts_true,(counts_true-yfit4)/counts_true,color=fsc_color('purple'),thick=2
+coeff2 = poly_fit(counts_true[idx],counts_mean[idx],2)
+yfit2 = coeff2[0] + counts_true*coeff2[1] + counts_true^2.*coeff2[2]
+plot,counts_true,(counts_true-counts_mean)/counts_true,thick=2
+oplot,counts_true,(counts_true-yfit2)/counts_true,color=fsc_color('red'),thick=2
+oplot,counts_true,(counts_true-yfit3)/counts_true,color=fsc_color('green'),thick=2
+oplot,counts_true,(counts_true-yfit4)/counts_true,color=fsc_color('purple'),thick=2
+al_legend,['Desired relationship','2nd-order polynomial','3rd-order polynomial','4th-order polynomial'],color=fsc_color(['white','red','green','purple']),linestyle=0,thick=2,$
+/top,/left,charsize=1.8
+plot,counts_true,(counts_true-counts_mean)/counts_true,thick=2
+oplot,counts_true,(counts_true-yfit2)/counts_true,color=fsc_color('red'),thick=2
+oplot,counts_true,(counts_true-yfit3)/counts_true,color=fsc_color('green'),thick=2
+oplot,counts_true,(counts_true-yfit4)/counts_true,color=fsc_color('purple'),thick=2
+al_legend,['Desired relationship','2nd-order polynomial','3rd-order polynomial','4th-order polynomial'],linestyle=0,thick=2,/top,/left,charsize=1.8,$
+color=[fsc_color('white'),fsc_color('red'),fsc_color('green'),fsc_color('purple')]
+plot,counts_true,(counts_true-counts_mean)/counts_true,xtitle='True counts (DN)',ytitle='Departure from linearity = (True - Measured)/True',charsize=1.8
+psplot_start, 'departure_from_linearity.ps'
+plot,counts_true,(counts_true-counts_mean)/counts_true,xtitle='True counts (DN)',ytitle='Departure from linearity = (True - Measured)/True',thick=4,charthick=4,xthick=4,ythick=4
+oplot,counts_true,(counts_true-yfit2)/counts_true,color=fsc_color('red'),thick=4
+oplot,counts_true,(counts_true-yfit3)/counts_true,color=fsc_color('green'),thick=4
+oplot,counts_true,(counts_true-yfit4)/counts_true,color=fsc_color('purple'),thick=4
+al_legend,['Desired relationship','2nd-order polynomial','3rd-order polynomial','4th-order polynomial'],linestyle=0,thick=4,/top,/left,charsize=1.5,$
+color=[fsc_color('white'),fsc_color('red'),fsc_color('green'),fsc_color('purple')]
+psplot_stop
+psplot_start, 'departure_from_linearity.ps'
+plot,counts_true,(counts_true-counts_mean)/counts_true,xtitle='True counts (DN)',ytitle='Departure from linearity = (True - Measured)/True',thick=4,charthick=4,xthick=4,ythick=4
+oplot,counts_true,(counts_true-yfit2)/counts_true,color=fsc_color('red'),thick=4
+oplot,counts_true,(counts_true-yfit3)/counts_true,color=fsc_color('green'),thick=4
+oplot,counts_true,(counts_true-yfit4)/counts_true,color=fsc_color('purple'),thick=4
+al_legend,['Desired relationship','2nd-order polynomial','3rd-order polynomial','4th-order polynomial'],linestyle=0,thick=4,/top,/left,charsize=0.8,$
+color=[fsc_color('white'),fsc_color('red'),fsc_color('green'),fsc_color('purple')]
+psplot_stop
+psplot_start, 'departure_from_linearity.ps'
+plot,counts_true,(counts_true-counts_mean)/counts_true,xtitle='True counts (DN)',ytitle='Departure from linearity = (True - Measured)/True',thick=4,charthick=4,xthick=4,ythick=4
+oplot,counts_true,(counts_true-yfit2)/counts_true,color=fsc_color('red'),thick=4
+oplot,counts_true,(counts_true-yfit3)/counts_true,color=fsc_color('green'),thick=4
+oplot,counts_true,(counts_true-yfit4)/counts_true,color=fsc_color('purple'),thick=4
+al_legend,['Desired relationship','2nd-order polynomial','3rd-order polynomial','4th-order polynomial'],linestyle=0,thick=4,/top,/left,/nobox,$
+color=[fsc_color('black'),fsc_color('red'),fsc_color('green'),fsc_color('purple')]
+; % Keyword NOBOX not allowed in call to: AL_LEGEND
+al_legend,['Desired relationship','2nd-order polynomial','3rd-order polynomial','4th-order polynomial'],linestyle=0,thick=4,/top,/left,box=0,$
+color=[fsc_color('black'),fsc_color('red'),fsc_color('green'),fsc_color('purple')]
+psplot_stop
+print,coeffs3
+; % PRINT: Variable is undefined: COEFFS3.
+print,coef3
+; % PRINT: Variable is undefined: COEF3.
+retall
+print,coeff3
+;     -186.934
+;      1.01011
+;  7.16388e-07
+; -3.41415e-11
+.compile linearize_clio1
+help,name='*cube*'
+cube0 = cube
+help,name='*rectangle*'
+for k=0,(size(cube))[3]-1 do cube[*,*,k] = linearize_clio1(cube0[*,*,k])
+nim0 = (size(cube0))[3]
+nim = (size(cube))[3]
+nim2 = (size(cube))[3]
+ints2 = fltarr(nim2)
+for k=0,nim2-1 do ints2[k] = sxpar(head[*,k],'INT')
+print,ints2
+;      43.0000      43.0000      43.0000      43.0000      43.0000      43.0000      43.0000      43.0000      43.0000      43.0000      100.000      100.000      100.000      100.000
+;      100.000      100.000      100.000      100.000      100.000      100.000      150.000      150.000      150.000      150.000      150.000      150.000      150.000      150.000
+;      150.000      150.000      200.000      200.000      200.000      200.000      200.000      200.000      200.000      200.000      200.000      200.000      300.000      300.000
+;      300.000      300.000      300.000      300.000      300.000      300.000      300.000      300.000      400.000      400.000      400.000      400.000      400.000      400.000
+;      400.000      400.000      400.000      400.000      500.000      500.000      500.000      500.000      500.000      500.000      500.000      500.000      500.000      500.000
+;      750.000      750.000      750.000      750.000      750.000      750.000      750.000      750.000      750.000      750.000      1000.00      1000.00      1000.00      1000.00
+;      1000.00      1000.00      1000.00      1000.00      1000.00      1000.00      1250.00      1250.00      1250.00      1250.00      1250.00      1250.00      1250.00      1250.00
+;      1250.00      1250.00      1500.00      1500.00      1500.00      1500.00      1500.00      1500.00      1500.00      1500.00      1500.00      1500.00      1750.00      1750.00
+;      1750.00      1750.00      1750.00      1750.00      1750.00      1750.00      1750.00      1750.00      2000.00      2000.00      2000.00      2000.00      2000.00      2000.00
+;      2000.00      2000.00      2000.00      2000.00      2250.00      2250.00      2250.00      2250.00      2250.00      2250.00      2250.00      2250.00      2250.00      2250.00
+;      2500.00      2500.00      2500.00      2500.00      2500.00      2500.00      2500.00      2500.00      2500.00      2500.00      2750.00      2750.00      2750.00      2750.00
+;      2750.00      2750.00      2750.00      2750.00      2750.00      2750.00      3000.00      3000.00      3000.00      3000.00      3000.00      3000.00      3000.00      3000.00
+;      3000.00      3000.00      3250.00      3250.00      3250.00      3250.00      3250.00      3250.00      3250.00      3250.00      3250.00      3250.00      3500.00      3500.00
+;      3500.00      3500.00      3500.00      3500.00      3500.00      3500.00      3500.00      3500.00      3750.00      3750.00      3750.00      3750.00      3750.00      3750.00
+;      3750.00      3750.00      3750.00      3750.00      4000.00      4000.00      4000.00      4000.00      4000.00
+counts2 = fltarr(nim2)
+cube2 = cube
+for k=0,nim2-1 do begin im=cube2[*,*,k]  &  counts2[k]=median(im[where(rectanglemask eq 1)])
+print,counts2
+;      5419.00      5439.00      5452.00      5460.00      5473.00      5477.00      5488.00      5494.00      5500.00      5506.00      6195.00      6216.00      6225.00      6231.00
+;      6239.00      6246.00      6252.00      6259.00      6263.00      6268.00      6890.00      6910.00      6917.00      6924.00      6930.00      6940.00      6942.00      6949.00
+;      6953.00      6955.00      7593.00      7612.00      7618.00      7626.00      7633.00      7636.00      7640.00      7643.00      7648.00      7652.00      9001.00      9017.00
+;      9029.00      9032.00      9037.00      9039.00      9043.00      9048.00      9050.00      9051.00      10413.0      10435.0      10441.0      10448.0      10449.0      10452.0
+;      10454.0      10454.0      10458.0      10465.0      11825.0      11847.0      11854.0      11858.0      11864.0      11866.0      11868.0      11870.0      11866.0      11871.0
+;      15346.0      15384.0      15385.0      15395.0      15396.0      15396.0      15397.0      15397.0      15393.0      15391.0      18851.0      18893.0      18901.0      18910.0
+;      18904.0      18906.0      18910.0      18914.0      18901.0      18909.0      22318.0      22375.0      22384.0      22398.0      22398.0      22393.0      22391.0      22402.0
+;      22399.0      22400.0      25759.0      25836.0      25841.0      25848.0      25848.0      25847.0      25852.0      25846.0      25851.0      25847.0  8.45130e+08  8.50564e+08
+;  8.50392e+08  8.51309e+08  8.50736e+08  8.51137e+08  8.50908e+08  8.50965e+08  8.51023e+08  8.50793e+08  1.04411e+09  1.05155e+09  1.05206e+09  1.05130e+09  1.05187e+09  1.05206e+09
+;  1.05174e+09  1.05181e+09  1.05218e+09  1.05218e+09  1.25788e+09  1.26741e+09  1.26823e+09  1.26830e+09  1.26782e+09  1.26782e+09  1.26789e+09  1.26775e+09  1.26823e+09  1.26858e+09
+;  1.48652e+09  1.49699e+09  1.49662e+09  1.49699e+09  1.49662e+09  1.49736e+09  1.49714e+09  1.49729e+09  1.49707e+09  1.49677e+09  1.72110e+09  1.73514e+09  1.73577e+09  1.73577e+09
+;  1.73593e+09  1.73609e+09  1.73648e+09  1.73562e+09  1.73601e+09  1.73577e+09  1.96313e+09  1.97944e+09  1.98068e+09  1.98043e+09  1.97993e+09  1.98035e+09  1.98043e+09  1.97969e+09
+;  1.98002e+09  1.97969e+09  2.20675e+09  2.22572e+09  2.22572e+09  2.22590e+09  2.22676e+09  2.22694e+09  2.22668e+09  2.22694e+09  2.22746e+09  2.22798e+09  2.45375e+09  2.47636e+09
+;  2.47699e+09  2.47690e+09  2.47591e+09  2.47672e+09  2.47582e+09  2.47582e+09  2.47627e+09  2.47654e+09  2.64206e+09  2.65047e+09  2.65111e+09  2.65139e+09  2.65130e+09  2.65111e+09
+;  2.65102e+09  2.65121e+09  2.65148e+09  2.65111e+09  2.68678e+09  2.68836e+09  2.68854e+09  2.68845e+09  2.68845e+09
+plot,ints2,counts2
+.compile linearize_clio1
+for k=0,nim2-1 do cube2[*,*,k] = linearize_clio1(cube0[*,*,k])
+for k=0,nim2-1 do begin im=cube2[*,*,k]  &  counts2[k]=median(im[where(rectanglemask eq 1)])
+plot,ints2,counts2
+wdelete
+.compile linearize_clio1
+for k=0,nim2-1 do cube2[*,*,k] = linearize_clio1(cube0[*,*,k])
+for k=0,nim2-1 do begin im=cube2[*,*,k]  &  counts2[k]=median(im[where(rectanglemask eq 1)])
+plot,ints2,counts2
+.compile linearize_clio1
+for k=0,nim2-1 do cube2[*,*,k] = linearize_clio1(cube0[*,*,k])
+for k=0,nim2-1 do begin im=cube2[*,*,k]  &  counts2[k]=median(im[where(rectanglemask eq 1)])
+plot,ints2,counts2
+.compile linearize_clio1
+for k=0,nim2-1 do cube2[*,*,k] = linearize_clio1(cube0[*,*,k])
+for k=0,nim2-1 do begin im=cube2[*,*,k]  &  counts2[k]=median(im[where(rectanglemask eq 1)])
+plot,ints2,counts2
+coeff3 = poly_fit(counts_true[idx],counts_mean[idx],3,yfit=counts_fit3)
+coeff3new = poly_fit(counts_mean[idx],counts_true[idx],3)
+print,coeff3new
+;      112.575
+;      1.00273
+; -1.40776e-06
+;  4.59015e-11
+.compile linearize_clio1
+for k=0,nim2-1 do cube2[*,*,k] = linearize_clio1(cube0[*,*,k])
+for k=0,nim2-1 do begin im=cube2[*,*,k]  &  counts2[k]=median(im[where(rectanglemask eq 1)])
+plot,ints2,counts2
+.compile linearize_clio1
+for k=0,nim2-1 do cube2[*,*,k] = linearize_clio1(cube0[*,*,k])
+for k=0,nim2-1 do begin im=cube2[*,*,k]  &  counts2[k]=median(im[where(rectanglemask eq 1)])
+plot,ints2,counts2
+oplot,ints,counts_true,color=fsc_color('red')
+oplot,ints_uniq,counts_true,color=fsc_color('red')
+plot,ints2,counts2,xtitle='integration time (ms)',ytitle='counts (DN)'
+oplot,ints_uniq,counts_true,color=fsc_color('red')
+psplot_start, 'linearity_corrected_data.ps'
+plot,ints2,counts2,xtitle='integration time (ms)',ytitle='counts (DN)',xthick=3,ythick=3,charthick=2,thick=4,psym=-1
+oplot,ints_uniq,counts_true,color=fsc_color('red'),thick=4
+psplot_stop
+print,ints_uniq
+;      43.0000      100.000      150.000      200.000      300.000      400.000      500.000      750.000      1000.00      1250.00      1500.00      1750.00      2000.00      2250.00
+;      2500.00      2750.00      3000.00      3250.00      3500.00      3750.00      4000.00
+print,counts_meas
+; % PRINT: Variable is undefined: COUNTS_MEAS.
+print,counts_mean
+;      5470.80      6239.40      6931.00      7630.10      9034.70      10446.9      11858.9      15388.0      18899.9      22385.8      25837.5      29225.3      32558.6      35832.9
+;      39044.7      42172.1      45193.2      48096.0      50914.0      52842.4      53251.4
+print,counts_mean[where(ints_uniq eq 3000)]
+;      45193.2
