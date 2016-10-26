@@ -9,7 +9,8 @@ Clio calibration project by undergraduate intern for 2016-2017
 5. [Git tutorial](https://try.github.io/levels/1/challenges/1)
 
 ## Clio Linearity Data
-1. [2014B](https://zero.as.arizona.edu/wiki/pages/M5G9b1f4/Calibration_Data__2014B.html)
+1. [2013A](https://zero.as.arizona.edu/wiki/pages/L7A5s5d/Calibration_Data__2013A.html)
+2. [2014B](https://zero.as.arizona.edu/wiki/pages/M5G9b1f4/Calibration_Data__2014B.html)
 
 ## Skills/Concepts in the Project
 1. Astronomical Instrumentation, Adaptive Optics
