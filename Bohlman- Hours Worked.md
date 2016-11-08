@@ -26,7 +26,7 @@
 |11/3/2016         |3.25              |worked on fixfor ds9, trie reinstalling certain programs like cygwin to see if that was the root of the problem and posted to forum, tried to clean up code for original data to make it fit better, worked on new linearity report for original data. uploaded that |
 |11/4/2016         |3                  |Attempted a fix to ds9, contributor says that he's still using appveyor to fix the program, will try more next week and see if cygwin is updated, started wrapping up original data linearity report and program for analysis of the original data, uploaded those|
 
-To do:
+**To do:**
 
 * set up different modules in different files to allow for universal programming with those seperate modules
 * revise writing report in style of scientific journal (rough draft)
