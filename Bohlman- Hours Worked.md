@@ -31,6 +31,12 @@ set up different modules in different files to allow for universal programming w
 revise writing report in style of scientific journal (rough draft)
 work on pyds9 fix(when Katie is gone)
 Make a document write up of the second data set I worked with
+Mess with coeffcients of data of original to see if I can get closer linear measurements
+Organize data in the table
+Using the exact same pixels in the mask? check this on both thingies
+Check mean vs. median measurements
+check staring pixel of pythin compared to idl
+row column/column row?
 
 SKYPE KATIE AROUND 11 OR 12 TUCSON TIME
 Send emails with regular progress reports
