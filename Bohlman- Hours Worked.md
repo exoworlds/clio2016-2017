@@ -25,7 +25,7 @@
 |11/1/2016         |2                |worked on the fix for ds9, got stuck, emailed Katie for guidance, starting working on making sure a second order equation wuld have no error in my second order error, found out that for perfectly second ordered equations, there's an error of about 10^-13. For perfect third order equations, error is 10^-12. Unsure if that has an effect on my data.|
 |11/3/2016         |3.25              |worked on fixfor ds9, trie reinstalling certain programs like cygwin to see if that was the root of the problem and posted to forum, tried to clean up code for original data to make it fit better, worked on new linearity report for original data. uploaded that |
 |11/4/2016         |3                  |Attempted a fix to ds9, contributor says that he's still using appveyor to fix the program, will try more next week and see if cygwin is updated, started wrapping up original data linearity report and program for analysis of the original data, uploaded those|
-|11/8/2016         |4             |Spoke with Katie on skype to update each other on the progress being made for data, organized to do list into bullet list/formatted with md, error wasn't due to pixel count due to both 200 thrugh 350 and going from 0 to 200, katie did mean for the counts, I believe I did the same thing (I added them up and divided by 5)|
+|11/8/2016         |2.5             |Spoke with Katie on skype to update each other on the progress being made for data, organized to do list into bullet list/formatted with md, error wasn't due to pixel count due to both 200 thrugh 350 and going from 0 to 200, katie did mean for the counts, I believe I did the same thing (I added them up and divided by 5)|
 
 **To do:**
 
@@ -34,5 +34,4 @@
 * work on pyds9 fix(when Katie is gone)
 * Mess with coeffcients of data of original to see if I can get closer linear measurements
 * Organize data in the table
-* check staring pixel of python compared to idl
 * Send emails with regular progress reports
