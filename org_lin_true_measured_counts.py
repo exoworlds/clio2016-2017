@@ -34,6 +34,7 @@ ds9x2 = 350
 ds9y1 = 0
 ds9y2 = 200
 
+#testing to see if polyfit works using a second order equation
 """
 x = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 #y = [1,4,9,16,25,36,49,64,81,100,121,144,169,196,225,256,289,324,361,400]
@@ -57,6 +58,7 @@ print(str(y))
 #plt.plot(true_exp,error_exp)
 #plt.show()
 """
+
 while i < imageAmount:
 	if i < 9:
 		fname = "Linearity0000"+str(i+1)+".fit"
@@ -139,16 +141,14 @@ while number < end_number:
 true_counts_np_2 = numpy.array(true_counts_3)
 error3 = (true_counts_np_2 - numpy_mean_counts)/true_counts_np_2
 
+#printing out linear relationship of true counts vs just the measured counts
+
 plt.plot(true_counts,counts,'b')
 plt.plot(true_counts,true_counts,'g')
 
 plt.ylabel('true counts')
 plt.xlabel('measured counts')
 plt.title('True Counts vs. Counts',fontsize = 10)
-
-#plt.plot(true_counts,error,'k')
-#plt.plot(true_counts_np,error2,'k')
-#plt.plot(true_counts_np_2,error3,'k')
 
 plt.show()
 

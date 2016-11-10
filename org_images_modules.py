@@ -126,7 +126,8 @@ def error_true_counts(true_counts):
 	return error
 
 def print_graph():
-	# Feed data into pyplot.
+
+	#Prints out true counts vs. error of linearity for desired, second, third, and fourth order relationship
 	"""
 	plt.plot(true_counts_1,error_1,'k')
 	plt.plot(true_counts_2,error_2,'r')
@@ -141,6 +142,8 @@ def print_graph():
 	"""
 	#-------------------------------------#
 	
+	#Prints out true counts vs counts for desired, second, third, and fourth order relationships
+	
 	plt.plot(true_counts_1,counts,'k')
 	plt.plot(true_counts_2,counts,'r')
 	plt.plot(true_counts_3,counts,'b')
@@ -153,6 +156,8 @@ def print_graph():
 	plt.text(40000,2000,'Desired relationship: Black, 2nd order polynomial: Red, 3rd order polynomial: Blue', fontsize=9, horizontalalignment='center')
 	
 	#-------------------------------------#
+	
+	#Prints out raw data vs raw counts
 	"""
 	plt.title('Ints vs. measured counts',fontsize = 15)
 	#plt.text(2500,2000,'Data: Black, Linearity correction: Red',fontsize=9, horizontalalignment='center')
@@ -160,6 +165,7 @@ def print_graph():
 	plt.plot(raw_ints,raw_counts,'r')
 	"""
 
+	#Shows graph
 	plt.show()
 	return
 
