@@ -1,47 +1,48 @@
 Initial Time: 12:35 PM
-Time Elapsed (min)    Temp Sensor 4           Temp Sensor 7         Outer Vessel        Inner Vessel
-0                     295.72                  295.27                0.5 funnel          0
-5                     295.6                   295.07                0.5 funnel          0
-8                     295.19                  294.73                0.5 funnel          0
-11                    294.46                  294.09                0.5 funnel
-13                    293.9                   293.53                0.5 funnel
-16                    292.8                   292.37                0.5 funnel
-20                    291.37                  290.8                 0.5 funnel
-23                    289.71                  288.79
-26                    288.1                   286.79
-29                    286.41                  284.56
-31                    Maximum liquid nitro was approaching, so I was able to start directly filling dewar outer up
-                      After about 4 funnel fulls, the dewar was close to being filled since the liquid nitorgen was boiling out of the top
-33                    282.57                  279.61
-40                    277.78                  273.61
-45                    272.96                  267.77
-55                    n/a (stopped working)   258.9                 0.5
-60                                            256.5                 0.5
-At this point, I filled it up with the equivalent of 2 funnels, and the dewar was filled again on the outside.
-63                                            255.2               
-65                                            254.28
-70                                            253.31
-75                                            252.06
-80                                            251.00
-At minute 81, we put half pf a funnel into the inner wall. Temp dropped too rapidly, so we removed it when there was still left in the funnel
-90                                             242.89                                    .1
-95                                             237.76
-100                                            237.51                                    .1
-105                                            236.0                                     .2, shot down 7 degrees, stabilized at 6 degrees lower
-110                                            230                                       .05, shot down 3.5 degrees, stabilized at 227
-115                                            226                                       .025, shot down 1 degree, stabilized
-120                                            225.2                                     .05, went down 1.5 degrees, stabilized
-125                                            223.2                                     .1, went down 4 degrees, stabilized at 220
-130                                            220.5                                     .1, went down 2.5 degrees
-135                                            220                                       .2, went down 9 degrees
-140                                            211                                       .1, went down 3 degrees
-145                                            208                                       .2, went down 5 degress
-150                                            204                                       .25, went down 10 degrees, stabilized at 195
-155                                            195                                       .3, went down 5 degrees, stabilized at 192
-160                                            192                                       .3, stabilized at 188
-165                                            188                                       .3, stabilized at 183.5
-170                                            184.6                                     .3, stabilized at 180
-175                                            180.25                                    .3, stabilized at 176, realized funnel has leak, END
+|Time Elapsed (min)    |Temp Sensor 4           |Temp Sensor 7         |Outer Vessel        |Inner Vessel|
+|---|---|---|---|---|
+|0                     |295.72                  |295.27                |0.5 funnel          |0|
+|5                     |295.6                   |295.07                |0.5 funnel          |0|
+|8                     |295.19                  |294.73                |0.5 funnel          |0|
+|11                    |294.46                  |294.09                |0.5 funnel          |  |
+|13                    |293.9                   |293.53                |0.5 funnel          | |
+|16                    |292.8                   |292.37                |0.5 funnel          |   |
+|20                    |291.37                  |290.8                 |0.5 funnel          |   |
+|23                    |289.71                  |288.79               |                     |    |
+|26                    |288.1                   |286.79                 |                  |      |
+|29                    |286.41                  |284.56               |                  |         |
+|31                    |Maximum liquid nitro was approaching, so I was able to start directly filling dewar outer up
+                      |After about 4 funnel fulls, the dewar was close to being filled since the liquid nitorgen was boiling out of the top
+|33                    |282.57                  |279.61                 |                    |      |
+|40                    |277.78                  |273.61                 |                   |       |
+|45                    |272.96                  |267.77               |                       |        |
+|55                    |n/a (stopped working)   |258.9                 |0.5               |         |
+|60                     |                       |256.5                  |0.5                |         |
+|At this point, I filled it up with the equivalent of 2 funnels, and the dewar was filled again on the outside.
+|63                     |                       |255.2               |                  |             |
+|65                     |                       |254.28               |                     |   |
+|70                     |                       |253.31               |                     |   |
+|75                     |                       |252.06               |                     |   |
+|80                     |                       |251.00               |                     |   |
+|At minute 81, we put half pf a funnel into the inner wall. Temp dropped too rapidly, so we removed it when there was still left in the funnel|
+|90                      |                       |242.89               |                     |.1|
+|95                      |                       |237.76               | 
+|100                     |                       |237.51               |                     |.1|
+|105                     |                       |236.0                |                     |.2, shot down 7 degrees, stabilized at 6 degrees lower|
+|110                     |                       |230                  |                     |.05, shot down 3.5 degrees, stabilized at 227|
+|115                     |                       |226                  |                     |.025, shot down 1 degree, stabilized|
+|120                     |                       |225.2                |                     |.05, went down 1.5 degrees, stabilized|
+|125                     |                       |223.2                |                     |.1, went down 4 degrees, stabilized at 220|
+|130                     |                       |220.5                |                     |.1, went down 2.5 degrees|
+|135                     |                       |220                  |                     |.2, went down 9 degrees|
+|140                     |                       |211                  |                     |.1, went down 3 degrees|
+|145                     |                       |208                  |                     |.2, went down 5 degress|
+|150                     |                       |204                  |                     |.25, went down 10 degrees, stabilized at 195|
+|155                     |                       |195                  |                     |.3, went down 5 degrees, stabilized at 192|
+|160                     |                       |192                  |                     |.3, stabilized at 188|
+|165                      |                      |188                  |                     |.3, stabilized at 183.5|
+|170                      |                      |184.6                |                     |.3, stabilized at 180|
+|175                      |                      |180.25               |                     |.3, stabilized at 176, realized funnel has leak, END|
 
 The funnel having a leak may have thrown off the last couple of measurements. i.e. more was pured in than what made it in the dewar.
 
