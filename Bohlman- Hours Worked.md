@@ -26,7 +26,8 @@
 |11/3/2016         |3.25              |worked on fixfor ds9, trie reinstalling certain programs like cygwin to see if that was the root of the problem and posted to forum, tried to clean up code for original data to make it fit better, worked on new linearity report for original data. uploaded that |
 |11/4/2016         |3                  |Attempted a fix to ds9, contributor says that he's still using appveyor to fix the program, will try more next week and see if cygwin is updated, started wrapping up original data linearity report and program for analysis of the original data, uploaded those|
 |11/8/2016         |2.5             |Spoke with Katie on skype to update each other on the progress being made for data, organized to do list into bullet list/formatted with md, error wasn't due to pixel count due to both 200 thrugh 350 and going from 0 to 200, katie did mean for the counts, I believe I did the same thing (I added them up and divided by 5), started playing with linear coefficients to see if changing them helps, will finish next time|
-|11/10/2016        |3               |Finished organizing/commented the programs used to analyze the original data, sucked at making an md file so I decided to create a pull request and work on that later,
+|11/10/2016        |3               |Finished organizing/commented the programs used to analyze the original data, sucked at making an md file so I decided to create a pull request and work on that later
+|11/15/2016       |2.5              |Finished the md file, needs to be approved and added to master branch? (not exactly sure on this, but it's finished in the pull request,  
 
 **To do:**
 
