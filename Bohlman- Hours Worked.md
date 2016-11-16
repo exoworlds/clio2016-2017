@@ -27,7 +27,7 @@
 |11/4/2016         |3                  |Attempted a fix to ds9, contributor says that he's still using appveyor to fix the program, will try more next week and see if cygwin is updated, started wrapping up original data linearity report and program for analysis of the original data, uploaded those|
 |11/8/2016         |2.5             |Spoke with Katie on skype to update each other on the progress being made for data, organized to do list into bullet list/formatted with md, error wasn't due to pixel count due to both 200 thrugh 350 and going from 0 to 200, katie did mean for the counts, I believe I did the same thing (I added them up and divided by 5), started playing with linear coefficients to see if changing them helps, will finish next time|
 |11/10/2016        |3               |Finished organizing/commented the programs used to analyze the original data, sucked at making an md file so I decided to create a pull request and work on that later
-|11/15/2016       |2.5              |Finished the md file, needs to be approved and added to master branch? (not exactly sure on this, but it's finished in the pull request,  
+|11/15/2016       |2.5              |Finished the md file, needs to be approved and added to master branch? (not exactly sure on this, but it's finished in the pull request,  updated report with mroe explanations, tinked with my program to calculate coefficients, will upload that on Github tommorrow.
 
 **To do:**
 
@@ -37,3 +37,4 @@
 * Mess with coeffcients of data of original to see if I can get closer linear measurements
 * Organize data in the table
 * Send emails with regular progress reports
+* COEFFICIENT CALCULATION AND COMPARISON
