@@ -28,13 +28,11 @@
 |11/8/2016         |2.5             |Spoke with Katie on skype to update each other on the progress being made for data, organized to do list into bullet list/formatted with md, error wasn't due to pixel count due to both 200 thrugh 350 and going from 0 to 200, katie did mean for the counts, I believe I did the same thing (I added them up and divided by 5), started playing with linear coefficients to see if changing them helps, will finish next time|
 |11/10/2016        |3               |Finished organizing/commented the programs used to analyze the original data, sucked at making an md file so I decided to create a pull request and work on that later
 |11/15/2016       |2.5              |Finished the md file, needs to be approved and added to master branch? (not exactly sure on this, but it's finished in the pull request,  updated report with mroe explanations, tinked with my program to calculate coefficients, will upload that on Github tommorrow.
+|11/16/2016       |3                |Tried altering coefficients on error of linearity program to what was on the report, CANNOT USE THIRD ORDER COEFFICIENTS BECAUSE I HAVE NO CLUE WHAT THEY ARE (ones in the report aren't the correct ones at all.... do I need to look in the idl file?), worked extensive only coding/ the original report/ looking at idl file to find comparisons between what I did and what Katie did, uploaded those files onto github
 
 **To do:**
 
 * set up different modules in different files to allow for universal programming with those seperate modules
-* revise writing report in style of scientific journal (rough draft)
 * work on pyds9 fix(when Katie is gone)
-* Mess with coeffcients of data of original to see if I can get closer linear measurements
 * Organize data in the table
 * Send emails with regular progress reports
-* COEFFICIENT CALCULATION AND COMPARISON
