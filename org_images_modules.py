@@ -83,7 +83,8 @@ def avg_ints_counts():
 	return
 	
 def make_true_counts():
-	coefficients1 = numpy.polyfit(raw_ints[lower:upper],raw_counts[lower:upper],1)
+	#coefficients1 = numpy.polyfit(raw_ints[lower:upper],raw_counts[lower:upper],1)
+	coefficients1 = [13.9820, 4892.02]
 	print(coefficients1)
 	number = 0
 	end_number = 21
@@ -100,6 +101,7 @@ def make_true_counts():
 		number+= 1
 
 	coefficients3 = numpy.polyfit(raw_ints[lower:upper],raw_counts[lower:upper],3)
+	coefficients3 = [4.6*10 **(-11),-1.41* 10 **(-6),1.00273,112.575]
 	print(coefficients3)
 	number = 0
 	end_number = 21
@@ -128,7 +130,7 @@ def error_true_counts(true_counts):
 def print_graph():
 
 	#Prints out true counts vs. error of linearity for desired, second, third, and fourth order relationship
-	"""
+	
 	plt.plot(true_counts_1,error_1,'k')
 	plt.plot(true_counts_2,error_2,'r')
 	plt.plot(true_counts_3,error_3,'b')
@@ -139,9 +141,9 @@ def print_graph():
 	plt.xlabel('true counts')
 	plt.title('True counts based on linear fit of data between 500ms and 1500 ms vs. departure from linearity',fontsize = 9)
 	plt.text(40000,-.08,'Desired relationship: Black, 2nd order polynomial: Red, 3rd order polynomial: Blue', fontsize=7, horizontalalignment='center')
-	"""
-	#-------------------------------------#
 	
+	#-------------------------------------#
+	"""
 	#Prints out true counts vs counts for desired, second, third, and fourth order relationships
 	
 	plt.plot(true_counts_1,counts,'k')
@@ -154,7 +156,7 @@ def print_graph():
 	plt.xlabel('true counts')
 	plt.title('True counts based on linear fit of data between 500ms and 1500 ms vs. measured counts',fontsize = 10)
 	plt.text(40000,2000,'Desired relationship: Black, 2nd order polynomial: Red, 3rd order polynomial: Blue', fontsize=9, horizontalalignment='center')
-	
+	"""
 	#-------------------------------------#
 	
 	#Prints out raw data vs raw counts
@@ -179,6 +181,12 @@ error_1 = error_true_counts(true_counts_1)
 error_2 = error_true_counts(true_counts_2)
 error_3 = error_true_counts(true_counts_3)
 error_4 = error_true_counts(true_counts_4)
+
+print(counts)
+print(true_counts_1)
+coefficients5 = numpy.polyfit(counts,true_counts_1,3)
+print(coefficients5)
+
 
 print_graph()	
 

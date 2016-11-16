@@ -109,6 +109,7 @@ while one_number < 21:
 numpy_mean_counts = numpy.array(counts)
 
 coefs = numpy.polynomial.polynomial.polyfit(numpy_ints[lower:upper],numpy_counts[lower:upper],1)
+coefs = [ 4892.02, 13.9820]
 print(coefs)
 ffit = numpy.polynomial.polynomial.polyval(xvalues, coefs)
 number = 0
