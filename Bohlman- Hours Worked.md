@@ -29,10 +29,11 @@
 |11/10/2016        |3               |Finished organizing/commented the programs used to analyze the original data, sucked at making an md file so I decided to create a pull request and work on that later
 |11/15/2016       |2.5              |Finished the md file, needs to be approved and added to master branch? (not exactly sure on this, but it's finished in the pull request,  updated report with mroe explanations, tinked with my program to calculate coefficients, will upload that on Github tommorrow.
 |11/16/2016       |3                |Tried altering coefficients on error of linearity program to what was on the report, CANNOT USE THIRD ORDER COEFFICIENTS BECAUSE I HAVE NO CLUE WHAT THEY ARE (ones in the report aren't the correct ones at all.... do I need to look in the idl file?), worked extensive only coding/ the original report/ looking at idl file to find comparisons between what I did and what Katie did, uploaded those files onto github
+|11/18/2016       |3                |I did stuff last Friday but didn't record it and I can't remember it :( I believe it was along the lines of consolidating my code to one file (which I will upload), organizing my project files for this, and working on the project reports for both, as well as emailing Katie exaplaining what I was doing.
+|11/22/2016       |2                |Read http://matplotlib.org/api/pyplot_summary.html, looking for useful coding practices to make my graphs better.
 
 **To do:**
 
 * set up different modules in different files to allow for universal programming with those seperate modules
 * work on pyds9 fix(when Katie is gone)
-* Organize data in the table
 * Send emails with regular progress reports
