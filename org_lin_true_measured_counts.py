@@ -1,4 +1,4 @@
-#This seperates all of the actions into distinct modules and runs the program.
+#disorganized code
 
 import numpy
 import matplotlib.pyplot as plt

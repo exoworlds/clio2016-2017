@@ -1,5 +1,5 @@
 #This seperates all of the actions into distinct modules and runs the program.
-
+import matplotlib.patches as mpatches
 import numpy
 import matplotlib.pyplot as plt
 from astropy.io import fits
@@ -26,15 +26,41 @@ lower = 60
 lower_adj = 6
 upper = 109
 upper_adj = 10
+
+def polyfit2():
+	#testing to see if polyfit works using a second order equation
+	x = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+	#y = [1,4,9,16,25,36,49,64,81,100,121,144,169,196,225,256,289,324,361,400]
+	y = [1,8,27,64,125,216,343,512,729,1000,1331,1728,2197,2744,3375,4096,4913,5832,6859,8000]
+	
+	test_coefs = []
+	true_exp = []
+
+	test_coefs = numpy.polynomial.polynomial.polyfit(x[0:20],y[0:20],3)
+	print(str(test_coefs))
+	number = 0
+	while number < 20:
+		true_exp.append(test_coefs[0]+ test_coefs[1]*x[number] + test_coefs[2]*x[number]*x[number] + test_coefs[3]*x[number]*x[number]*x[number])
+		number = number + 1
+
+	number = 0
+	while number < 20:
+		print(true_exp[number] - y[number])
+		number = number + 1
+	print(str(true_exp))
+	print(str(y))
+	
+	plt.plot(true_exp,error_exp)
+	plt.show()
 	
 def open_images():
 	
 	i = 0
 	count = 0
-	ds9x1 = 210
+	ds9x1 = 200
 	ds9x2 = 350
-	ds9y1 = 20
-	ds9y2 = 180
+	ds9y1 = 0
+	ds9y2 = 200
 
 	while i < imageAmount:
 	
@@ -130,7 +156,7 @@ def error_true_counts(true_counts):
 def print_graph():
 
 	#Prints out true counts vs. error of linearity for desired, second, third, and fourth order relationship
-	
+	"""
 	plt.plot(true_counts_1,error_1,'k')
 	plt.plot(true_counts_2,error_2,'r')
 	plt.plot(true_counts_3,error_3,'b')
@@ -141,10 +167,11 @@ def print_graph():
 	plt.xlabel('true counts')
 	plt.title('True counts based on linear fit of data between 500ms and 1500 ms vs. departure from linearity',fontsize = 9)
 	plt.text(40000,-.08,'Desired relationship: Black, 2nd order polynomial: Red, 3rd order polynomial: Blue', fontsize=7, horizontalalignment='center')
-	
-	#-------------------------------------#
 	"""
+	#-------------------------------------#
+	
 	#Prints out true counts vs counts for desired, second, third, and fourth order relationships
+	"""
 	
 	plt.plot(true_counts_1,counts,'k')
 	plt.plot(true_counts_2,counts,'r')
@@ -160,14 +187,21 @@ def print_graph():
 	#-------------------------------------#
 	
 	#Prints out raw data vs raw counts
-	"""
+	
 	plt.title('Ints vs. measured counts',fontsize = 15)
 	#plt.text(2500,2000,'Data: Black, Linearity correction: Red',fontsize=9, horizontalalignment='center')
 	plt.plot(ints,counts,'k')
 	plt.plot(raw_ints,raw_counts,'r')
-	"""
+	
 
 	#Shows graph
+	#ax.grid(color='k', linestyle='-', linewidth=2)
+	
+	
+	red_patch = mpatches.Patch(color='red', label='Actual data')
+	black_patch = mpatches.Patch(color='black', label='Mean of data')
+
+	plt.legend(handles=[red_patch,black_patch],bbox_to_anchor=(1, .2))
 	plt.show()
 	return
 
@@ -182,11 +216,21 @@ error_2 = error_true_counts(true_counts_2)
 error_3 = error_true_counts(true_counts_3)
 error_4 = error_true_counts(true_counts_4)
 
-print(counts)
-print(true_counts_1)
-coefficients5 = numpy.polyfit(counts,true_counts_1,3)
-print(coefficients5)
-
-
 print_graph()	
+
+"""
+legend
+	legend((line1, line2, line3), ('label1', 'label2', 'label3'))
+
+errorbar
+	errorbar(x, y, yerr=None, xerr=None,
+         fmt='', ecolor=None, elinewidth=None, capsize=None,
+         barsabove=False, lolims=False, uplims=False,
+         xlolims=False, xuplims=False, errorevery=1,
+         capthick=None)
+
+grid
+	ax.grid(color='r', linestyle='-', linewidth=2)
+"""
+
 
