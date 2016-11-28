@@ -40,6 +40,6 @@
 
 * set up different modules in different files to allow for universal programming with those seperate modules
 * wait on pyds9 fix
-* include new graphs in both reports
+* insert updated graphs in both reports (original and new reports)
 * compare idl fit to my data fit
 
