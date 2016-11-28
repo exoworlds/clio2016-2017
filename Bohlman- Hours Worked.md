@@ -32,7 +32,7 @@
 |11/18/2016       |3                |I did stuff last Friday but didn't record it and I can't remember it :( I believe it was along the lines of consolidating my code to one file (which I will upload), organizing my project files for this, and working on the project reports for both, as well as emailing Katie exaplaining what I was doing.|
 |11/22/2016       |2                |Read http://matplotlib.org/api/pyplot_summary.html, looking for useful coding practices to make my graphs better, got started on implementing those pieces of code into the actual code files, tomorrow I will redo the graphs to see what works best and then upload everything to github.|
 |11/23/2016       |2                |finished organizing the files on here and the project files on my laptop, finished writing the code for the better graphs, upload a sample graph to the github page, uploaded the updated coding files I wrote|
-|11/28/2016       |2                |caught up with Katie on projects, discussed fit lines as well as scheduling for this semester and next semester, changed all graphs to have legend/be cleaner|
+|11/28/2016       |2                |caught up with Katie on projects, discussed fit lines as well as scheduling for this semester and next semester, changed all graphs to have legend/be cleaner, uploaded them to the github page|
 |11/29/2016       |?                |???|
 |11/30/2016       |?                |???|
 
