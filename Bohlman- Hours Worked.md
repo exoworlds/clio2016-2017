@@ -33,7 +33,7 @@
 |11/22/2016       |2                |Read http://matplotlib.org/api/pyplot_summary.html, looking for useful coding practices to make my graphs better, got started on implementing those pieces of code into the actual code files, tomorrow I will redo the graphs to see what works best and then upload everything to github.|
 |11/23/2016       |2                |finished organizing the files on here and the project files on my laptop, finished writing the code for the better graphs, upload a sample graph to the github page, uploaded the updated coding files I wrote|
 |11/28/2016       |2                |caught up with Katie on projects, discussed fit lines as well as scheduling for this semester and next semester, changed all graphs to have legend/be cleaner, uploaded them to the github page|
-|11/29/2016       |?                |???|
+|11/29/2016       |?                |Replaced all images in reports with updated graphs, uploaded new reports, organized/deleted files in github, |
 |11/30/2016       |?                |???|
 
 **To do:**
