@@ -34,7 +34,7 @@
 |11/23/2016       |2                |finished organizing the files on here and the project files on my laptop, finished writing the code for the better graphs, upload a sample graph to the github page, uploaded the updated coding files I wrote|
 |11/28/2016       |2                |caught up with Katie on projects, discussed fit lines as well as scheduling for this semester and next semester, changed all graphs to have legend/be cleaner, uploaded them to the github page|
 |11/29/2016       |3                |Replaced all images in reports with updated graphs, uploaded new reports, worked on idl fit with Katie, updated my own wrongdoing in my code, organized/deleted files in github, uploaded updated files|
-|11/30/2016       |?                |???|
+|11/30/2016       |?                |Played with coefficients to determine if there was a good fot for any of the polynomial fits for the data, copared my findings with Katie's,applied corrections to 2014 data/programming set|
 
 **To do:**
 
