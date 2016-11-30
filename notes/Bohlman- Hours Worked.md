@@ -34,11 +34,13 @@
 |11/23/2016       |2                |finished organizing the files on here and the project files on my laptop, finished writing the code for the better graphs, upload a sample graph to the github page, uploaded the updated coding files I wrote|
 |11/28/2016       |2                |caught up with Katie on projects, discussed fit lines as well as scheduling for this semester and next semester, changed all graphs to have legend/be cleaner, uploaded them to the github page|
 |11/29/2016       |3                |Replaced all images in reports with updated graphs, uploaded new reports, worked on idl fit with Katie, updated my own wrongdoing in my code, organized/deleted files in github, uploaded updated files|
-|11/30/2016       |?                |Played with coefficients to determine if there was a good fot for any of the polynomial fits for the data, copared my findings with Katie's,applied corrections to 2014 data/programming set|
+|11/30/2016       |3                |Played with coefficients to determine if there was a good fot for any of the polynomial fits for the data, copared my findings with Katie's,applied corrections to 2014 data/programming set|
+|12/2/2016       |2?               |????|
 
 **To do:**
 
 * set up different modules in different files to allow for universal programming with those seperate modules
 * wait on pyds9 fix
 * compare idl fit to my data fit
+* to get a slope of 1 and a y axis of zero for the best fit line, it looks like the best coefficients for the lower and higher adj were #13,16, and they gave .96, -200, so it wasn't too good. However, I can try slightly messing with the coefficients to see where that gets me in terms of lining the data up. Update all of this in the report. Update/ comment code. Upload everything here. Friday: 1/2 hrs?
 
