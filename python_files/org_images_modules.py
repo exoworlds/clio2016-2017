@@ -22,10 +22,19 @@ error_4 = []
 error_5 = []
 error_6 = []
 true_counts = []
+truer_counts = []
+error_1 = []
+error_2 = []
+error_3 = []
+error_4 = []
+corrected = []
+
 lower = 60
-lower_adj = 6
+lower_adj = 4
 upper = 109
-upper_adj = 10
+upper_adj = 7
+#11,13: .96, 33.9
+xarr = numpy.linspace(5000,60000,21)
 
 def polyfit2():
 	#testing to see if polyfit works using a second order equation
@@ -109,128 +118,222 @@ def avg_ints_counts():
 	return
 	
 def make_true_counts():
-	#coefficients1 = numpy.polyfit(raw_ints[lower:upper],raw_counts[lower:upper],1)
-	coefficients1 = [13.9820, 4892.02]
+	coeffs = numpy.polyfit(ints[lower_adj:upper_adj],counts[lower_adj:upper_adj],1)
+	#print(coeffs)
+	number = 0
+	end_number = 21
+	while number < end_number:
+		true_counts.append(coeffs[0]*ints[number] + coeffs[1])
+		number+= 1
+	
+	#print(true_counts)
+	
+	coefficients1 = numpy.polyfit(true_counts[4:7],counts[4:7],1)
 	print(coefficients1)
 	number = 0
 	end_number = 21
 	while number < end_number:
-		true_counts_1.append(coefficients1[0]*ints[number] + coefficients1[1])
+		true_counts_1.append(coefficients1[0]*xarr[number] + coefficients1[1])
 		number+= 1
 
-	coefficients2 = numpy.polyfit(raw_ints[lower:upper],raw_counts[lower:upper],2)
+	coefficients2 = numpy.polyfit(true_counts[9:14],counts[9:14],2)
 	print(coefficients2)
 	number = 0
 	end_number = 21
 	while number < end_number:
-		true_counts_2.append(coefficients2[0]*ints[number]*ints[number] + coefficients2[1]*ints[number] + coefficients2[2])
+		true_counts_2.append(coefficients2[0]*xarr[number]*xarr[number] + coefficients2[1]*xarr[number] + coefficients2[2])
 		number+= 1
 
-	coefficients3 = numpy.polyfit(raw_ints[lower:upper],raw_counts[lower:upper],3)
-	coefficients3 = [4.6*10 **(-11),-1.41* 10 **(-6),1.00273,112.575]
+	coefficients3 = numpy.polyfit(true_counts[9:14],counts[9:14],3)
 	print(coefficients3)
 	number = 0
 	end_number = 21
 	while number < end_number:
-		true_counts_3.append(coefficients3[0]*ints[number]*ints[number]*ints[number] + coefficients3[1]*ints[number]*ints[number] + coefficients3[2]*ints[number] + coefficients3[3])
+		true_counts_3.append(coefficients3[0]*xarr[number]*xarr[number]*xarr[number] + coefficients3[1]*xarr[number]*xarr[number] + coefficients3[2]*xarr[number] + coefficients3[3])
 		number+= 1
+		
 
-	coefficients4 = numpy.polyfit(raw_ints[lower:upper],raw_counts[lower:upper],4)
+	coefficients4 = numpy.polyfit(true_counts[9:14],counts[9:14],4)
+	print(coefficients4)
 	number = 0
 	end_number = 21
 	while number < end_number:
-		true_counts_4.append(coefficients4[0]*ints[number]*ints[number]*ints[number]*ints[number] + coefficients4[1]*ints[number]*ints[number]*ints[number] + coefficients4[2]*ints[number]*ints[number] + coefficients4[3]*ints[number] + coefficients4[4])
+		true_counts_4.append(coefficients4[0]*xarr[number]*xarr[number]*xarr[number]*xarr[number] + coefficients4[1]*xarr[number]*xarr[number]*xarr[number] + coefficients4[2]*xarr[number]*xarr[number] + coefficients4[3]*xarr[number] + coefficients4[4])
 		number+= 1
+		
+	#================================REPONENING IMAGES================================#
+	i = 0
+	count = 0
+	ds9x1 = 200
+	ds9x2 = 350
+	ds9y1 = 0
+	ds9y2 = 200
+
+	while i < imageAmount:
+	
+		if i < 9:
+			fname = "Linearity0000"+str(i+1)+".fit"
+		elif i >= 9 and i <99:
+			fname = "Linearity000"+str(i+1)+".fit"
+		else:
+			fname = "Linearity00"+str(i+1)+".fit"
+			
+		hdu1 = fits.open(fname)
+		scidata = hdu1[0].data
+		
+		x = 0
+		while i < 20 and x < 10:
+			num = numpy.median(scidata[x,ds9y1:ds9y2,ds9x1:ds9x2])
+			if num > 20000:
+				
+				#num = num*num*coefficients2[0] + num*coefficients2[1] + coefficients2[2]
+				#num = num*num*num*coefficients3[0] + num*num*coefficients3[1] + num*coefficients3[2] + coefficients3[3]			
+				num = num*num*num*num*coefficients4[0] + num*num*num*coefficients4[1] + num*num*coefficients4[2] + num*coefficients4[3] + coefficients4[4]
+
+			corrected.append(num)
+			x += 1
+			count += 1
+			
+		x = 0
+		while i == 20 and x < 5:
+			num = numpy.median(scidata[x,ds9y1:ds9y2,ds9x1:ds9x2])
+			if num > 20000:
+				#num = num*num*coefficients2[0] + num*coefficients2[1] + coefficients2[2]
+				#num = num*num*num*coefficients3[0] + num*num*coefficients3[1] + num*coefficients3[2] + coefficients3[3]			
+				num = num*num*num*num*coefficients4[0] + num*num*num*coefficients4[1] + num*num*coefficients4[2] + num*coefficients4[3] + coefficients4[4]
+
+			corrected.append(num)
+			x += 1
+			count += 1
+		i += 1
+		
+	#print(corrected)
+	#print(raw_counts)
 	return
 
-def error_true_counts(true_counts):		
+def error_true_counts(truer_counts):		
 	#Make that sweet, sweet initial error array
 	error = []
 	number = 0
 	end_number = 21
 	while number < end_number:
-		error.append((true_counts[number]-counts[number])/true_counts[number])
+		error.append((truer_counts[number]-true_counts[number])/truer_counts[number])
 		number+= 1
 	return error
 
 def print_graph():
 
-	#Prints out true counts vs. error of linearity for desired, second, third, and fourth order relationship
+	plt.title('Corrected Ints vs. Measured Counts',fontsize = 15)
+	plt.plot(raw_ints,corrected,'k')
+	plt.plot(raw_ints,raw_counts,'r')
+
+	
+	red_patch = mpatches.Patch(color='red', label='Actual data')
+	black_patch = mpatches.Patch(color='black', label='Corrected data')
+
+	plt.legend(handles=[red_patch,black_patch],bbox_to_anchor=(1, .2))
+	plt.ylabel('counts')
+	plt.xlabel('ints (ms)')
 	"""
+	#Prints out true counts vs. error of linearity for desired, second, third, and fourth order relationship
+	
 	plt.plot(true_counts_1,error_1,'k')
 	plt.plot(true_counts_2,error_2,'r')
 	plt.plot(true_counts_3,error_3,'b')
-	#plt.plot(true_counts_4,error_4,'g')
-	plt.vlines(counts[lower_adj], -.1, .4)
-	plt.vlines(counts[upper_adj], -.1, .4)
+	plt.plot(true_counts_4,error_4,'g')
+	#plt.vlines(counts[lower_adj],-1,1)
+	#plt.vlines(counts[upper_adj],-1,1)
 	plt.ylabel('Error of linearity')
 	plt.xlabel('true counts')
-	plt.title('True counts based on linear fit of data between 500ms and 1500 ms vs. departure from linearity',fontsize = 9)
-	plt.text(40000,-.08,'Desired relationship: Black, 2nd order polynomial: Red, 3rd order polynomial: Blue', fontsize=7, horizontalalignment='center')
+	plt.title('True counts vs. departure from linearity, based on polynomial fit',fontsize = 13)
+	
+	black_patch = mpatches.Patch(color='black', label='Desired Fit')
+	red_patch = mpatches.Patch(color='red', label='2nd Order')
+	blue_patch = mpatches.Patch(color='blue', label='3rd Order')
+	green_patch = mpatches.Patch(color='green', label='4th Order')
+
+	plt.legend(handles=[black_patch,red_patch,blue_patch,green_patch],bbox_to_anchor=(1, 1))
 	"""
+	
 	#-------------------------------------#
-	
-	#Prints out true counts vs counts for desired, second, third, and fourth order relationships
 	"""
+	#Prints out true counts vs counts for desired, second, third, and fourth order relationships
 	
-	plt.plot(true_counts_1,counts,'k')
-	plt.plot(true_counts_2,counts,'r')
-	plt.plot(true_counts_3,counts,'b')
-	plt.plot(true_counts_4,counts,'g')
-	#plt.vlines(counts[lower_adj], 0, 60000)
-	#plt.vlines(counts[upper_adj], 0, 60000)
+	plt.plot(xarr,true_counts_1,'k')
+	plt.plot(xarr,true_counts_2,'r')
+	plt.plot(xarr,true_counts_3,'b')
+	plt.scatter(true_counts,counts)
+	plt.plot(xarr,true_counts_4,'g')
+	plt.vlines(counts[lower_adj], 0, 60000)
+	plt.vlines(counts[upper_adj], 0, 60000)
 	plt.ylabel('measured counts')
 	plt.xlabel('true counts')
-	plt.title('True counts based on linear fit of data between 500ms and 1500 ms vs. measured counts',fontsize = 10)
-	plt.text(40000,2000,'Desired relationship: Black, 2nd order polynomial: Red, 3rd order polynomial: Blue', fontsize=9, horizontalalignment='center')
+	plt.axis([0,60000,0,60000]) #This fixes the axes to go from 0-60,000.
+
+	
+	black_patch = mpatches.Patch(color='black', label='Desired Fit')
+	red_patch = mpatches.Patch(color='red', label='2nd Order')
+	blue_patch = mpatches.Patch(color='blue', label='3rd Order')
+	green_patch = mpatches.Patch(color='green', label='4th Order')
+	blue_circ_patch = mpatches.Patch(edgecolor='black',facecolor = 'blue', label = 'original data')
+
+	plt.legend(handles=[black_patch,red_patch,blue_patch,green_patch,blue_circ_patch],bbox_to_anchor=(1, .3))
+	plt.title('True counts vs. measured counts, based on polynomial fit',fontsize = 15)
+	#plt.text(40000,2000,'Desired relationship: Black, 2nd order polynomial: Red, 3rd order polynomial: Blue', fontsize=9, horizontalalignment='center')
 	"""
 	#-------------------------------------#
-	
+	"""
 	#Prints out raw data vs raw counts
 	
-	plt.title('Ints vs. measured counts',fontsize = 15)
+	plt.title('Ints vs. Measured Counts',fontsize = 15)
 	#plt.text(2500,2000,'Data: Black, Linearity correction: Red',fontsize=9, horizontalalignment='center')
 	plt.plot(ints,counts,'k')
 	plt.plot(raw_ints,raw_counts,'r')
-	
-
-	#Shows graph
-	#ax.grid(color='k', linestyle='-', linewidth=2)
-	
 	
 	red_patch = mpatches.Patch(color='red', label='Actual data')
 	black_patch = mpatches.Patch(color='black', label='Mean of data')
 
 	plt.legend(handles=[red_patch,black_patch],bbox_to_anchor=(1, .2))
+	plt.ylabel('counts')
+	plt.xlabel('ints (ms)')
+	"""
+	
 	plt.show()
 	return
 
+def error():
+	number = 0
+	end_number = 21
+	while number < end_number:
+		error_1.append((true_counts_1[number]-true_counts_1[number])/true_counts_1[number])
+		number+= 1
+	
+	number = 0
+	end_number = 21
+	while number < end_number:
+		error_2.append((true_counts_2[number]-true_counts_1[number])/true_counts_1[number])
+		number+= 1
+	
+	number = 0
+	end_number = 21
+	while number < end_number:
+		error_3.append((true_counts_3[number]-true_counts_1[number])/true_counts_1[number])
+		number+= 1
+	
+	number = 0
+	end_number = 21
+	while number < end_number:
+		error_4.append((true_counts_4[number]-true_counts_1[number])/true_counts_1[number])
+		number+= 1
+	
+	return
+	
 open_images()
 
 avg_ints_counts()
 
 make_true_counts()
 
-error_1 = error_true_counts(true_counts_1)
-error_2 = error_true_counts(true_counts_2)
-error_3 = error_true_counts(true_counts_3)
-error_4 = error_true_counts(true_counts_4)
+error()
 
-print_graph()	
-
-"""
-legend
-	legend((line1, line2, line3), ('label1', 'label2', 'label3'))
-
-errorbar
-	errorbar(x, y, yerr=None, xerr=None,
-         fmt='', ecolor=None, elinewidth=None, capsize=None,
-         barsabove=False, lolims=False, uplims=False,
-         xlolims=False, xuplims=False, errorevery=1,
-         capthick=None)
-
-grid
-	ax.grid(color='r', linestyle='-', linewidth=2)
-"""
-
-
+#print_graph()
