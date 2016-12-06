@@ -30,7 +30,7 @@ for i in xarr:
 	yarr1.append(coeff1[0]*xarr[i] + coeff1[1])
 
 
-idx = numpy.where((counts_true > 2e4) & (counts_true < 4.5e4))
+idx = numpy.where((counts_true > 1e3) & (counts_true < 5e4))
 coeff2 = numpy.polyfit(counts_true[idx], counts_mean[idx], 2)
 yarr2 = []
 for i in xarr:
@@ -48,6 +48,11 @@ yarr4 = []
 for i in xarr:
 	yarr4.append(coeff4[0]*xarr[i]*xarr[i]*xarr[i]*xarr[i] + coeff4[1]*xarr[i]*xarr[i]*xarr[i] + coeff4[2]*xarr[i]*xarr[i] + coeff4[3]*xarr[i] + coeff4[4])
 
+coeff5 = numpy.polyfit(counts_true[idx], counts_mean[idx], 5)
+yarr5 = []
+for i in xarr:
+	yarr5.append(coeff5[0]*xarr[i]*xarr[i]*xarr[i]*xarr[i]*xarr[i] + coeff5[1]*xarr[i]*xarr[i]*xarr[i]*xarr[i] + coeff5[2]*xarr[i]*xarr[i]*xarr[i] + coeff5[3]*xarr[i]*xarr[i] + coeff5[4]*xarr[i] + coeff5[5])
+
 
 ## Plot it
 plt.scatter(counts_true,counts_mean)
@@ -55,6 +60,7 @@ plt.plot(xarr,yarr1)
 plt.plot(xarr,yarr2,'r')
 plt.plot(xarr,yarr3,'g')
 plt.plot(xarr,yarr4,'m')
+plt.plot(xarr,yarr5,'y')
 plt.xlabel('True counts')
 plt.ylabel('Measured counts')
 #plt.title('True counts based on linear fit of data between 500ms and 1500 ms vs. departure from linearity',fontsize = 9)
@@ -64,7 +70,8 @@ blue_patch = mpatches.Patch(color='blue', label='Data; Linear fit')
 red_patch = mpatches.Patch(color='red', label='2nd-order Poly fit')
 green_patch = mpatches.Patch(color='green', label='3rd-order Poly fit')
 purple_patch = mpatches.Patch(color='magenta', label='4th-order Poly fit')
-plt.legend(handles=[blue_patch,red_patch,green_patch,purple_patch],bbox_to_anchor=(1, .2))
+yellow_patch = mpatches.Patch(color='yellow', label='5th-order Poly fit')
+plt.legend(handles=[blue_patch,red_patch,green_patch,purple_patch,yellow_patch],bbox_to_anchor=(1, .2))
 plt.show()
 
 
@@ -85,12 +92,17 @@ yarr4err = []
 for i in xarr:
 	yarr4err.append((yarr4[i]-yarr1[i])/yarr1[i])
 
+yarr5err = []
+for i in xarr:
+	yarr5err.append((yarr5[i]-yarr1[i])/yarr1[i])
+
 
 ## Plot it
 plt.plot(xarr,yarr1err)
 plt.plot(xarr,yarr2err,'r')
 plt.plot(xarr,yarr3err,'g')
 plt.plot(xarr,yarr4err,'m')
+plt.plot(xarr,yarr5err,'y')
 plt.xlabel('True counts')
 plt.ylabel('Departure from linearity')
 #plt.title('True counts based on linear fit of data between 500ms and 1500 ms vs. departure from linearity',fontsize = 9)
@@ -100,5 +112,6 @@ blue_patch = mpatches.Patch(color='blue', label='Data; Linear fit')
 red_patch = mpatches.Patch(color='red', label='2nd-order Poly fit')
 green_patch = mpatches.Patch(color='green', label='3rd-order Poly fit')
 purple_patch = mpatches.Patch(color='magenta', label='4th-order Poly fit')
-plt.legend(handles=[blue_patch,red_patch,green_patch,purple_patch],bbox_to_anchor=(1, .2))
+yellow_patch = mpatches.Patch(color='yellow', label='5th-order Poly fit')
+plt.legend(handles=[blue_patch,red_patch,green_patch,purple_patch,yellow_patch],bbox_to_anchor=(1, .2))
 plt.show()
