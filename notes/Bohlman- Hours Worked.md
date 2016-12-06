@@ -36,6 +36,7 @@
 |11/29/2016       |3                |Replaced all images in reports with updated graphs, uploaded new reports, worked on idl fit with Katie, updated my own wrongdoing in my code, organized/deleted files in github, uploaded updated files|
 |11/30/2016       |3                |Played with coefficients to determine if there was a good fot for any of the polynomial fits for the data, copared my findings with Katie's,applied corrections to 2014 data/programming set|
 |12/2/2016       |2               |Edited the rports to include a more current analysis, uploaded them to the github page, fiinished organizing/deleting items on the github page|
+|12/6/2016       |??              |???|
 
 **To do:**
 
