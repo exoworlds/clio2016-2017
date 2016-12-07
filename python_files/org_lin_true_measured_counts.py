@@ -3,6 +3,7 @@
 import numpy
 import matplotlib.pyplot as plt
 from astropy.io import fits
+import matplotlib.patches as mpatches
 
 imageAmount = 21
 raw_ints = []
@@ -144,12 +145,16 @@ error3 = (true_counts_np_2 - numpy_mean_counts)/true_counts_np_2
 
 #printing out linear relationship of true counts vs just the measured counts
 
-plt.plot(true_counts,counts,'b')
-plt.plot(true_counts,true_counts,'g')
+plt.plot(ints,counts,'b')
+plt.plot(ints,true_counts,'g')
 
-plt.ylabel('true counts')
-plt.xlabel('measured counts')
-plt.title('True Counts vs. Counts',fontsize = 10)
+plt.ylabel('measured counts')
+plt.xlabel('ints (ms)')
+plt.title('Ints vs. Counts, Linear Fit',fontsize = 15)
+red_patch = mpatches.Patch(color='blue', label='measured counts')
+black_patch = mpatches.Patch(color='green', label='true counts')
+
+plt.legend(handles=[red_patch,black_patch],bbox_to_anchor=(1, .2))
 
 plt.show()
 

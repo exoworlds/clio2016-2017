@@ -126,7 +126,7 @@ def make_true_counts():
 		true_counts.append(coeffs[0]*ints[number] + coeffs[1])
 		number+= 1
 	
-	#print(true_counts)
+	print(true_counts)
 	
 	coefficients1 = numpy.polyfit(true_counts[4:7],counts[4:7],1)
 	print(coefficients1)
@@ -136,7 +136,7 @@ def make_true_counts():
 		true_counts_1.append(coefficients1[0]*xarr[number] + coefficients1[1])
 		number+= 1
 
-	coefficients2 = numpy.polyfit(true_counts[9:14],counts[9:14],2)
+	coefficients2 = numpy.polyfit(true_counts[0:14],counts[0:14],2)
 	print(coefficients2)
 	number = 0
 	end_number = 21
@@ -144,8 +144,9 @@ def make_true_counts():
 		true_counts_2.append(coefficients2[0]*xarr[number]*xarr[number] + coefficients2[1]*xarr[number] + coefficients2[2])
 		number+= 1
 
-	coefficients3 = numpy.polyfit(true_counts[9:14],counts[9:14],3)
+	coefficients3 = numpy.polyfit(true_counts[0:14],counts[0:14],3)
 	print(coefficients3)
+	#coefficients3 = [112.575 , 1.00273 , -1.40776e-06 , 4.59015e-11]
 	number = 0
 	end_number = 21
 	while number < end_number:
@@ -153,7 +154,7 @@ def make_true_counts():
 		number+= 1
 		
 
-	coefficients4 = numpy.polyfit(true_counts[9:14],counts[9:14],4)
+	coefficients4 = numpy.polyfit(true_counts[0:14],counts[0:14],4)
 	print(coefficients4)
 	number = 0
 	end_number = 21
@@ -168,6 +169,10 @@ def make_true_counts():
 	ds9x2 = 350
 	ds9y1 = 0
 	ds9y2 = 200
+	
+	coefs_inv = [5.45833636e-11,-2.07662079e-06,1.02835787e+00,-1.38312108e+02]
+	#coefs_inv = numpy.polyfit(counts[0:14],true_counts[0:14],3)
+	print(coefs_inv)
 
 	while i < imageAmount:
 	
@@ -187,10 +192,12 @@ def make_true_counts():
 			if num > 20000:
 				
 				#num = num*num*coefficients2[0] + num*coefficients2[1] + coefficients2[2]
-				#num = num*num*num*coefficients3[0] + num*num*coefficients3[1] + num*coefficients3[2] + coefficients3[3]			
-				num = num*num*num*num*coefficients4[0] + num*num*num*coefficients4[1] + num*num*coefficients4[2] + num*coefficients4[3] + coefficients4[4]
+				corrected.append(num*num*num*coefs_inv[0] + num*num*coefs_inv[1] + num*coefs_inv[2] + coefs_inv[3])	
+				#num = num*num*num*num*coefficients4[0] + num*num*num*coefficients4[1] + num*num*coefficients4[2] + num*coefficients4[3] + coefficients4[4]
+				#num = num*num*num*coefficients3[3] + num*num*coefficients3[2] + num*coefficients3[1] + coefficients3[0]			
+			else:
+				corrected.append(num)
 
-			corrected.append(num)
 			x += 1
 			count += 1
 			
@@ -199,10 +206,12 @@ def make_true_counts():
 			num = numpy.median(scidata[x,ds9y1:ds9y2,ds9x1:ds9x2])
 			if num > 20000:
 				#num = num*num*coefficients2[0] + num*coefficients2[1] + coefficients2[2]
-				#num = num*num*num*coefficients3[0] + num*num*coefficients3[1] + num*coefficients3[2] + coefficients3[3]			
-				num = num*num*num*num*coefficients4[0] + num*num*num*coefficients4[1] + num*num*coefficients4[2] + num*coefficients4[3] + coefficients4[4]
-
-			corrected.append(num)
+				corrected.append(num*num*num*coefs_inv[0] + num*num*coefs_inv[1] + num*coefs_inv[2] + coefs_inv[3])		
+				#num = num*num*num*num*coefficients4[0] + num*num*num*coefficients4[1] + num*num*coefficients4[2] + num*coefficients4[3] + coefficients4[4]
+				#num = num*num*num*coefficients3[3] + num*num*coefficients3[2] + num*coefficients3[1] + coefficients3[0]			
+			else:
+				corrected.append(num)
+				
 			x += 1
 			count += 1
 		i += 1
@@ -224,8 +233,13 @@ def error_true_counts(truer_counts):
 def print_graph():
 
 	plt.title('Corrected Ints vs. Measured Counts',fontsize = 15)
-	plt.plot(raw_ints,corrected,'k')
-	plt.plot(raw_ints,raw_counts,'r')
+	plt.scatter(raw_ints,corrected,color = 'black')
+	#plt.plot(raw_ints,raw_counts,'r')
+	
+	
+	xarr = numpy.linspace(0,4000,20)
+	yarr = numpy.linspace(4800,61000,20)
+	plt.plot(xarr,yarr,'r')
 
 	
 	red_patch = mpatches.Patch(color='red', label='Actual data')
@@ -234,6 +248,7 @@ def print_graph():
 	plt.legend(handles=[red_patch,black_patch],bbox_to_anchor=(1, .2))
 	plt.ylabel('counts')
 	plt.xlabel('ints (ms)')
+	plt.axis([0,4000,0,60000])
 	"""
 	#Prints out true counts vs. error of linearity for desired, second, third, and fourth order relationship
 	
@@ -336,4 +351,4 @@ make_true_counts()
 
 error()
 
-#print_graph()
+print_graph()
