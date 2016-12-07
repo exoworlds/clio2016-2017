@@ -120,15 +120,10 @@ plt.show()
 
 
 ## Now create new data array where we correct the counts to be linear:
-#counts_mean = np.array([5470.80,6239.40,6931.00,7630.10,9034.70,10446.9,11858.9,15388.0,18899.9,22385.8,25837.5,29225.3,32558.6,35832.9,39044.7,42172.1,45193.2,48096.0,50914.0,52842.4,53251.4])
-#yarr3.append(coeff3[0]*xarr[i]*xarr[i]*xarr[i] + coeff3[1]*xarr[i]*xarr[i] + coeff3[2]*xarr[i] + coeff3[3])
-#xarr = range(num,end,1) #range([start], stop[, step])
-#counts_corrected.append(coeff3[0]*counts_mean[i]*counts_mean[i]*counts_mean[i] + coeff3[1]*counts_mean[i]*counts_mean[i] + coeff3[2]*counts_mean[i] + coeff3[3])
-
 coeff3inverse = np.polyfit(counts_mean[idx],counts_true[idx], 3)
 counts_corrected = []
 for i in range(0,counts_mean.size,1):
-	if counts_mean[j] > 20000:
+	if counts_mean[i] > 20000:
 		counts_corrected.append(coeff3inverse[0]*counts_mean[i]*counts_mean[i]*counts_mean[i] + coeff3inverse[1]*counts_mean[i]*counts_mean[i] + coeff3inverse[2]*counts_mean[i] + coeff3inverse[3])
 	else:
 		counts_corrected.append(counts_mean[i])
