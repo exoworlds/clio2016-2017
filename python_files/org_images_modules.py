@@ -14,6 +14,7 @@ true_counts_3 = []
 true_counts_4 = []
 true_counts_5 = []
 true_counts_6 = []
+error_0 = []
 error_1 = []
 error_2 = []
 error_3 = []
@@ -184,6 +185,7 @@ def print_graph():
 
 	#Prints out true counts vs. error of linearity for desired, second, third, and fourth order relationship
 	
+	plt.scatter(true_counts,error_0)
 	plt.plot(true_counts_1,error_1,'k')
 	plt.plot(true_counts_2,error_2,'r')
 	plt.plot(true_counts_3,error_3,'b')
@@ -192,7 +194,7 @@ def print_graph():
 	plt.xlabel('true counts')
 	plt.title('True counts vs. departure from linearity, based on polynomial fit',fontsize = 13)
 	
-	black_patch = mpatches.Patch(color='black', label='Desired Fit')
+	black_patch = mpatches.Patch(color='black', label='Linear Fit')
 	red_patch = mpatches.Patch(color='red', label='2nd Order')
 	blue_patch = mpatches.Patch(color='blue', label='3rd Order')
 	green_patch = mpatches.Patch(color='green', label='4th Order')
@@ -215,7 +217,7 @@ def print_graph():
 	plt.xlabel('true counts')
 	plt.axis([0,60000,0,60000]) #This fixes the axes to go from 0-60,000.
 	
-	black_patch = mpatches.Patch(color='black', label='Desired Fit')
+	black_patch = mpatches.Patch(color='black', label='Linear Fit')
 	red_patch = mpatches.Patch(color='red', label='2nd Order')
 	blue_patch = mpatches.Patch(color='blue', label='3rd Order')
 	green_patch = mpatches.Patch(color='green', label='4th Order')
@@ -263,6 +265,13 @@ def print_graph():
 	return
 
 def error():
+
+	number = 0
+	end_number = 21
+	while number < end_number:
+		error_0.append((counts[number]-true_counts_1[number])/true_counts_1[number])
+		number+= 1
+		
 	number = 0
 	end_number = 21
 	while number < end_number:
