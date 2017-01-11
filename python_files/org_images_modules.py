@@ -1,4 +1,3 @@
-#This seperates all of the actions into distinct modules and runs the program.
 import matplotlib.patches as mpatches
 import numpy
 import matplotlib.pyplot as plt
@@ -23,47 +22,15 @@ error_5 = []
 error_6 = []
 true_counts = []
 truer_counts = []
-error_1 = []
-error_2 = []
-error_3 = []
-error_4 = []
 corrected = []
 
 lower = 60
 lower_adj = 4
 upper = 109
 upper_adj = 7
-#11,13: .96, 33.9
 xarr = numpy.linspace(5000,60000,21)
 
-def polyfit2():
-	#testing to see if polyfit works using a second order equation
-	x = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-	#y = [1,4,9,16,25,36,49,64,81,100,121,144,169,196,225,256,289,324,361,400]
-	y = [1,8,27,64,125,216,343,512,729,1000,1331,1728,2197,2744,3375,4096,4913,5832,6859,8000]
-	
-	test_coefs = []
-	true_exp = []
-
-	test_coefs = numpy.polynomial.polynomial.polyfit(x[0:20],y[0:20],3)
-	print(str(test_coefs))
-	number = 0
-	while number < 20:
-		true_exp.append(test_coefs[0]+ test_coefs[1]*x[number] + test_coefs[2]*x[number]*x[number] + test_coefs[3]*x[number]*x[number]*x[number])
-		number = number + 1
-
-	number = 0
-	while number < 20:
-		print(true_exp[number] - y[number])
-		number = number + 1
-	print(str(true_exp))
-	print(str(y))
-	
-	plt.plot(true_exp,error_exp)
-	plt.show()
-	
 def open_images():
-	
 	i = 0
 	count = 0
 	ds9x1 = 200
@@ -72,7 +39,6 @@ def open_images():
 	ds9y2 = 200
 
 	while i < imageAmount:
-	
 		if i < 9:
 			fname = "Linearity0000"+str(i+1)+".fit"
 		elif i >= 9 and i <99:
@@ -88,7 +54,6 @@ def open_images():
 			raw_ints.append(float(hdu1[0].header["INT"]))
 			raw_counts.append(numpy.median(scidata[x,ds9y1:ds9y2,ds9x1:ds9x2]))
 			x += 1
-			#print (str(count)+"\t"+str(i)+"\t"+str(raw_ints[count])+"\t"+str(raw_counts[count])+"\n")
 			count += 1
 			
 		x = 0
@@ -96,7 +61,6 @@ def open_images():
 			raw_ints.append(float(hdu1[0].header["INT"]))
 			raw_counts.append(numpy.median(scidata[x,ds9y1:ds9y2,ds9x1:ds9x2]))
 			x += 1
-			#print (str(count)+"\t"+str(i)+"\t"+str(raw_ints[count])+"\t"+str(raw_counts[count])+"\n")
 			count += 1
 		i += 1
 	return
@@ -119,17 +83,13 @@ def avg_ints_counts():
 	
 def make_true_counts():
 	coeffs = numpy.polyfit(ints[lower_adj:upper_adj],counts[lower_adj:upper_adj],1)
-	#print(coeffs)
 	number = 0
 	end_number = 21
 	while number < end_number:
 		true_counts.append(coeffs[0]*ints[number] + coeffs[1])
 		number+= 1
 	
-	print(true_counts)
-	
 	coefficients1 = numpy.polyfit(true_counts[4:7],counts[4:7],1)
-	print(coefficients1)
 	number = 0
 	end_number = 21
 	while number < end_number:
@@ -137,7 +97,6 @@ def make_true_counts():
 		number+= 1
 
 	coefficients2 = numpy.polyfit(true_counts[0:14],counts[0:14],2)
-	print(coefficients2)
 	number = 0
 	end_number = 21
 	while number < end_number:
@@ -145,17 +104,13 @@ def make_true_counts():
 		number+= 1
 
 	coefficients3 = numpy.polyfit(true_counts[0:14],counts[0:14],3)
-	print(coefficients3)
-	#coefficients3 = [112.575 , 1.00273 , -1.40776e-06 , 4.59015e-11]
 	number = 0
 	end_number = 21
 	while number < end_number:
 		true_counts_3.append(coefficients3[0]*xarr[number]*xarr[number]*xarr[number] + coefficients3[1]*xarr[number]*xarr[number] + coefficients3[2]*xarr[number] + coefficients3[3])
 		number+= 1
-		
 
 	coefficients4 = numpy.polyfit(true_counts[0:14],counts[0:14],4)
-	print(coefficients4)
 	number = 0
 	end_number = 21
 	while number < end_number:
@@ -163,6 +118,7 @@ def make_true_counts():
 		number+= 1
 		
 	#================================REPONENING IMAGES================================#
+	
 	i = 0
 	count = 0
 	ds9x1 = 200
@@ -170,12 +126,9 @@ def make_true_counts():
 	ds9y1 = 0
 	ds9y2 = 200
 	
-	coefs_inv = [5.45833636e-11,-2.07662079e-06,1.02835787e+00,-1.38312108e+02]
-	#coefs_inv = numpy.polyfit(counts[0:14],true_counts[0:14],3)
-	print(coefs_inv)
+	coefs_inv = numpy.polyfit(counts[0:14],true_counts[0:14],3)	
 
 	while i < imageAmount:
-	
 		if i < 9:
 			fname = "Linearity0000"+str(i+1)+".fit"
 		elif i >= 9 and i <99:
@@ -190,14 +143,9 @@ def make_true_counts():
 		while i < 20 and x < 10:
 			num = numpy.median(scidata[x,ds9y1:ds9y2,ds9x1:ds9x2])
 			if num > 20000:
-				
-				#num = num*num*coefficients2[0] + num*coefficients2[1] + coefficients2[2]
 				corrected.append(num*num*num*coefs_inv[0] + num*num*coefs_inv[1] + num*coefs_inv[2] + coefs_inv[3])	
-				#num = num*num*num*num*coefficients4[0] + num*num*num*coefficients4[1] + num*num*coefficients4[2] + num*coefficients4[3] + coefficients4[4]
-				#num = num*num*num*coefficients3[3] + num*num*coefficients3[2] + num*coefficients3[1] + coefficients3[0]			
 			else:
 				corrected.append(num)
-
 			x += 1
 			count += 1
 			
@@ -205,44 +153,25 @@ def make_true_counts():
 		while i == 20 and x < 5:
 			num = numpy.median(scidata[x,ds9y1:ds9y2,ds9x1:ds9x2])
 			if num > 20000:
-				#num = num*num*coefficients2[0] + num*coefficients2[1] + coefficients2[2]
 				corrected.append(num*num*num*coefs_inv[0] + num*num*coefs_inv[1] + num*coefs_inv[2] + coefs_inv[3])		
-				#num = num*num*num*num*coefficients4[0] + num*num*num*coefficients4[1] + num*num*coefficients4[2] + num*coefficients4[3] + coefficients4[4]
-				#num = num*num*num*coefficients3[3] + num*num*coefficients3[2] + num*coefficients3[1] + coefficients3[0]			
 			else:
 				corrected.append(num)
-				
 			x += 1
 			count += 1
 		i += 1
-		
-	#print(corrected)
-	#print(raw_counts)
 	return
 
-def error_true_counts(truer_counts):		
-	#Make that sweet, sweet initial error array
-	error = []
-	number = 0
-	end_number = 21
-	while number < end_number:
-		error.append((truer_counts[number]-true_counts[number])/truer_counts[number])
-		number+= 1
-	return error
-
 def print_graph():
-
+	"""
+	#------------------------------------#
 	plt.title('Corrected Ints vs. Measured Counts',fontsize = 15)
 	plt.scatter(raw_ints,corrected,color = 'black')
-	#plt.plot(raw_ints,raw_counts,'r')
-	
 	
 	xarr = numpy.linspace(0,4000,20)
 	yarr = numpy.linspace(4800,61000,20)
 	plt.plot(xarr,yarr,'r')
-
 	
-	red_patch = mpatches.Patch(color='red', label='Actual data')
+	red_patch = mpatches.Patch(color='red', label='A line')
 	black_patch = mpatches.Patch(color='black', label='Corrected data')
 
 	plt.legend(handles=[red_patch,black_patch],bbox_to_anchor=(1, .2))
@@ -250,14 +179,15 @@ def print_graph():
 	plt.xlabel('ints (ms)')
 	plt.axis([0,4000,0,60000])
 	"""
+	
+	#-------------------------------------#
+
 	#Prints out true counts vs. error of linearity for desired, second, third, and fourth order relationship
 	
 	plt.plot(true_counts_1,error_1,'k')
 	plt.plot(true_counts_2,error_2,'r')
 	plt.plot(true_counts_3,error_3,'b')
 	plt.plot(true_counts_4,error_4,'g')
-	#plt.vlines(counts[lower_adj],-1,1)
-	#plt.vlines(counts[upper_adj],-1,1)
 	plt.ylabel('Error of linearity')
 	plt.xlabel('true counts')
 	plt.title('True counts vs. departure from linearity, based on polynomial fit',fontsize = 13)
@@ -268,10 +198,10 @@ def print_graph():
 	green_patch = mpatches.Patch(color='green', label='4th Order')
 
 	plt.legend(handles=[black_patch,red_patch,blue_patch,green_patch],bbox_to_anchor=(1, 1))
-	"""
 	
-	#-------------------------------------#
 	"""
+	#-------------------------------------#
+	
 	#Prints out true counts vs counts for desired, second, third, and fourth order relationships
 	
 	plt.plot(xarr,true_counts_1,'k')
@@ -284,7 +214,6 @@ def print_graph():
 	plt.ylabel('measured counts')
 	plt.xlabel('true counts')
 	plt.axis([0,60000,0,60000]) #This fixes the axes to go from 0-60,000.
-
 	
 	black_patch = mpatches.Patch(color='black', label='Desired Fit')
 	red_patch = mpatches.Patch(color='red', label='2nd Order')
@@ -294,24 +223,41 @@ def print_graph():
 
 	plt.legend(handles=[black_patch,red_patch,blue_patch,green_patch,blue_circ_patch],bbox_to_anchor=(1, .3))
 	plt.title('True counts vs. measured counts, based on polynomial fit',fontsize = 15)
-	#plt.text(40000,2000,'Desired relationship: Black, 2nd order polynomial: Red, 3rd order polynomial: Blue', fontsize=9, horizontalalignment='center')
+	"""
 	"""
 	#-------------------------------------#
-	"""
-	#Prints out raw data vs raw counts
 	
+	#Prints out raw data
+
 	plt.title('Ints vs. Measured Counts',fontsize = 15)
-	#plt.text(2500,2000,'Data: Black, Linearity correction: Red',fontsize=9, horizontalalignment='center')
 	plt.plot(ints,counts,'k')
 	plt.plot(raw_ints,raw_counts,'r')
 	
 	red_patch = mpatches.Patch(color='red', label='Actual data')
-	black_patch = mpatches.Patch(color='black', label='Mean of data')
+	black_patch = mpatches.Patch(color='black', label='Mean of Data')
 
 	plt.legend(handles=[red_patch,black_patch],bbox_to_anchor=(1, .2))
 	plt.ylabel('counts')
 	plt.xlabel('ints (ms)')
 	"""
+	"""
+	#-------------------------------------#
+	
+	#Prints out raw data and linear fit to data
+	
+	plt.title('Ints vs. Measured Counts with Linear Fit',fontsize = 15)
+	plt.plot(ints,counts,'k')
+	plt.plot(ints,true_counts,'g')
+
+	black_patch = mpatches.Patch(color='black', label='Data')
+	green_patch = mpatches.Patch(color='green', label='Linear Fit')
+
+	plt.legend(handles=[black_patch,green_patch],bbox_to_anchor=(1, .2))
+	plt.ylabel('counts')
+	plt.xlabel('ints (ms)')
+	"""
+	
+	#-------------------------------------#
 	
 	plt.show()
 	return
@@ -340,7 +286,6 @@ def error():
 	while number < end_number:
 		error_4.append((true_counts_4[number]-true_counts_1[number])/true_counts_1[number])
 		number+= 1
-	
 	return
 	
 open_images()
