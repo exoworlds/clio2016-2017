@@ -38,7 +38,7 @@
 |12/2/2016       |2               |Edited the rports to include a more current analysis, uploaded them to the github page, fiinished organizing/deleting items on the github page|
 |12/6/2016       |3.5              |Fixed code and came up with coefficients that were similar to Katie's coefficients, tried to apply corrections to data in order to finish this project, failed so I will come back tomorrow and hopefully finish it before the end of the semester|
 |12/7/2016       |3             |tried to fix code to apply linearity correctly, original coefficients were put in, but the graph ended up being the same as before, trying to find why the correction does not hold as a straight line when I apply it to the data, fixed it and came up with a correct graph, updated reports, uploaded everything to the github page, wrapped up the remaining topics of this year|
-|1/11/2016       |??             |refreshed myself on what I did last year, starting organizing my code so that it's legible and concise and started consolidating my results into the report format|
+|1/11/2016       |4             |refreshed myself on what I did last year, starting organizing my code so that it's legible and concise and started consolidating my results into the report format|
 
 **To do:**
 
