@@ -162,8 +162,40 @@ def make_true_counts():
 		i += 1
 	return
 
+def error():
+	number = 0
+	end_number = 21
+	while number < end_number:
+		error_0.append((counts[number]-true_counts[number])/true_counts[number])
+		number+= 1
+		
+	number = 0
+	end_number = 21
+	while number < end_number:
+		error_1.append((true_counts_1[number]-true_counts_1[number])/true_counts_1[number])
+		number+= 1
+	
+	number = 0
+	end_number = 21
+	while number < end_number:
+		error_2.append((true_counts_2[number]-true_counts_1[number])/true_counts_1[number])
+		number+= 1
+	
+	number = 0
+	end_number = 21
+	while number < end_number:
+		error_3.append((true_counts_3[number]-true_counts_1[number])/true_counts_1[number])
+		number+= 1
+	
+	number = 0
+	end_number = 21
+	while number < end_number:
+		error_4.append((true_counts_4[number]-true_counts_1[number])/true_counts_1[number])
+		number+= 1
+	return
+	
 def print_graph():
-	"""
+	
 	#------------------------------------#
 	plt.title('Corrected Ints vs. Measured Counts',fontsize = 15)
 	plt.scatter(raw_ints,corrected,color = 'black')
@@ -172,15 +204,14 @@ def print_graph():
 	yarr = numpy.linspace(4800,61000,20)
 	plt.plot(xarr,yarr,'r')
 	
-	red_patch = mpatches.Patch(color='red', label='A line')
 	black_patch = mpatches.Patch(color='black', label='Corrected data')
 
-	plt.legend(handles=[red_patch,black_patch],bbox_to_anchor=(1, .2))
+	plt.legend(handles=[black_patch],bbox_to_anchor=(1, .13))
 	plt.ylabel('counts')
 	plt.xlabel('ints (ms)')
 	plt.axis([0,4000,0,60000])
-	"""
 	
+	"""
 	#-------------------------------------#
 
 	#Prints out true counts vs. error of linearity for desired, second, third, and fourth order relationship
@@ -198,14 +229,15 @@ def print_graph():
 	red_patch = mpatches.Patch(color='red', label='2nd Order')
 	blue_patch = mpatches.Patch(color='blue', label='3rd Order')
 	green_patch = mpatches.Patch(color='green', label='4th Order')
+	blue_circ_patch = mpatches.Patch(edgecolor='black',facecolor = 'blue', label = 'Original Data')
 
-	plt.legend(handles=[black_patch,red_patch,blue_patch,green_patch],bbox_to_anchor=(1, 1))
-	
+
+	plt.legend(handles=[black_patch,red_patch,blue_patch,green_patch, blue_circ_patch],bbox_to_anchor=(1, 1))
+	"""
 	"""
 	#-------------------------------------#
 	
 	#Prints out true counts vs counts for desired, second, third, and fourth order relationships
-	
 	plt.plot(xarr,true_counts_1,'k')
 	plt.plot(xarr,true_counts_2,'r')
 	plt.plot(xarr,true_counts_3,'b')
@@ -221,9 +253,9 @@ def print_graph():
 	red_patch = mpatches.Patch(color='red', label='2nd Order')
 	blue_patch = mpatches.Patch(color='blue', label='3rd Order')
 	green_patch = mpatches.Patch(color='green', label='4th Order')
-	blue_circ_patch = mpatches.Patch(edgecolor='black',facecolor = 'blue', label = 'original data')
+	blue_circ_patch = mpatches.Patch(edgecolor='black',facecolor = 'blue', label = 'Original Data')
 
-	plt.legend(handles=[black_patch,red_patch,blue_patch,green_patch,blue_circ_patch],bbox_to_anchor=(1, .3))
+	plt.legend(handles=[black_patch,red_patch,blue_patch,green_patch,blue_circ_patch],bbox_to_anchor=(1, .365))
 	plt.title('True counts vs. measured counts, based on polynomial fit',fontsize = 15)
 	"""
 	"""
@@ -264,39 +296,6 @@ def print_graph():
 	plt.show()
 	return
 
-def error():
-
-	number = 0
-	end_number = 21
-	while number < end_number:
-		error_0.append((counts[number]-true_counts_1[number])/true_counts_1[number])
-		number+= 1
-		
-	number = 0
-	end_number = 21
-	while number < end_number:
-		error_1.append((true_counts_1[number]-true_counts_1[number])/true_counts_1[number])
-		number+= 1
-	
-	number = 0
-	end_number = 21
-	while number < end_number:
-		error_2.append((true_counts_2[number]-true_counts_1[number])/true_counts_1[number])
-		number+= 1
-	
-	number = 0
-	end_number = 21
-	while number < end_number:
-		error_3.append((true_counts_3[number]-true_counts_1[number])/true_counts_1[number])
-		number+= 1
-	
-	number = 0
-	end_number = 21
-	while number < end_number:
-		error_4.append((true_counts_4[number]-true_counts_1[number])/true_counts_1[number])
-		number+= 1
-	return
-	
 open_images()
 
 avg_ints_counts()
