@@ -39,10 +39,12 @@
 |12/6/2016       |3.5              |Fixed code and came up with coefficients that were similar to Katie's coefficients, tried to apply corrections to data in order to finish this project, failed so I will come back tomorrow and hopefully finish it before the end of the semester|
 |12/7/2016       |3             |tried to fix code to apply linearity correctly, original coefficients were put in, but the graph ended up being the same as before, trying to find why the correction does not hold as a straight line when I apply it to the data, fixed it and came up with a correct graph, updated reports, uploaded everything to the github page, wrapped up the remaining topics of this year|
 |1/11/2017       |4             |refreshed myself on what I did last year, starting organizing my code so that it's legible and concise and started consolidating my results into the report format, deleted and optimized code so that I could get it to it's final state, tried to fix error of linearity graph by comparing it to Katies graph, almost got it but it's still messed up|
-|1/12/2017       |2             |---|
+|1/12/2017       |2             |Fixed report and freshened up code for the original data, uploaded it to github. Katie is going to review the report and tell me her thoughts, at which point I'll correct my report as needed, and then try to fix the newer data, because I left that project at an unfinished point because I was having problems with it, and I have solved the issues now.|
 |1/13/2017       |3             |---|
 
 **To do:**
 
+* review report for original data that I corrected
+* apply fixes to new data
 * set up different modules in different files to allow for universal programming with those seperate modules
 * wait on pyds9 fix
