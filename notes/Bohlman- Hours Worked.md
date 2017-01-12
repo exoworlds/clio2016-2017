@@ -48,3 +48,4 @@
 * apply fixes to new data
 * set up different modules in different files to allow for universal programming with those seperate modules
 * wait on pyds9 fix
+* do stuff with the detector in the dewar
