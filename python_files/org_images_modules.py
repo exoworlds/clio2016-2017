@@ -127,7 +127,7 @@ def make_true_counts():
 	ds9y1 = 0
 	ds9y2 = 200
 	
-	coefs_inv = numpy.polyfit(counts[0:14],true_counts[0:14],3)	
+	coefs_inv = numpy.polyfit(counts[0:14],true_counts[0:14],4)	
 
 	while i < imageAmount:
 		if i < 9:
@@ -141,6 +141,7 @@ def make_true_counts():
 		scidata = hdu1[0].data
 		
 		x = 0
+		
 		while i < 20 and x < 10:
 			num = numpy.median(scidata[x,ds9y1:ds9y2,ds9x1:ds9x2])
 			if num > 20000:
@@ -159,6 +160,26 @@ def make_true_counts():
 				corrected.append(num)
 			x += 1
 			count += 1
+		"""
+		while i < 20 and x < 10:
+			num = numpy.median(scidata[x,ds9y1:ds9y2,ds9x1:ds9x2])
+			if num > 20000:
+				corrected.append(num*num*num*num*coefs_inv[0] + num*num*num*coefs_inv[1] + num*num*coefs_inv[2] + num*coefs_inv[3] + coefs_inv[4])	
+			else:
+				corrected.append(num)
+			x += 1
+			count += 1
+			
+		x = 0
+		while i == 20 and x < 5:
+			num = numpy.median(scidata[x,ds9y1:ds9y2,ds9x1:ds9x2])
+			if num > 20000:
+				corrected.append(num*num*num*num*coefs_inv[0] + num*num*num*coefs_inv[1] + num*num*coefs_inv[2] + num*coefs_inv[3] + coefs_inv[4])	
+			else:
+				corrected.append(num)
+			x += 1
+			count += 1
+		"""
 		i += 1
 	return
 
@@ -289,10 +310,14 @@ def print_graph():
 	plt.legend(handles=[black_patch,green_patch],bbox_to_anchor=(1, .2))
 	plt.ylabel('counts')
 	plt.xlabel('ints (ms)')
-	"""
+	
+	plt.vlines(ints[lower_adj], 0, 60000)
+	plt.vlines(ints[upper_adj], 0, 60000)
+	plt.axis([0,4000,0,60000]) #This fixes the axes to go from 0-60,000.
+
 	
 	#-------------------------------------#
-	
+	"""
 	plt.show()
 	return
 
