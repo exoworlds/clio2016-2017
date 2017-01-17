@@ -41,12 +41,13 @@
 |1/11/2017       |4             |refreshed myself on what I did last year, starting organizing my code so that it's legible and concise and started consolidating my results into the report format, deleted and optimized code so that I could get it to it's final state, tried to fix error of linearity graph by comparing it to Katie's graph, almost got it but it's still messed up|
 |1/12/2017       |2             |Fixed report and freshened up code for the original data, uploaded it to github. Katie is going to review the report and tell me her thoughts, at which point I'll correct my report as needed, and then try to fix the newer data, because I left that project at an unfinished point because I was having problems with it, and I have solved the issues now.|
 |1/13/2017       |2.5             |Katie had already looked at my report and marked it up, so I attempted to fix the comments on it. Got through fixing all of it, updated my code and finally cleaned it up, and put it all on the github. My departure from linearity graph is still a little eh, but I tried fixing it the best I could. Katie said she'll graph the data herself soon to see what the gets for third/fourth order for departure from linearity. Organized work files on computer and on github, consolidated code and organized everything so the process will become automated once I fix the later data set's code, started repurposing report for new data in order to make it up to speed so the fixing of the code can be a litle bit easier later|
-|1/17/2017       |2             |Started applying corrections to my old code, it's outputting graphs, but they are wrong, so I gotta nitpick in my code and see what I translated wrong over to the new data's code|
+|1/17/2017       |2             |Applied corrections to old code in order to analyze the newer data set, did that, fixed the report for the new data, uploaded both files to github, error of linearity is still off so I'll have to check out what fixes I will have to make to the code|
 
 I OWE KATIE AN EXTRA HALF AN HOUR DUE TO SURPLUS TIME ON 1/13/2017
 
 **To do:**
 
+* fix error of linearity for both projects
 * set up different modules in different files to allow for universal programming with those seperate modules
 * wait on pyds9 fix
 * do stuff with the detector in the dewar
