@@ -47,7 +47,8 @@ I OWE KATIE AN EXTRA HALF AN HOUR DUE TO SURPLUS TIME ON 1/13/2017
 
 **To do:**
 
-* fix error of linearity for both projects
+* fix error of linearity for both projects, maybe it's due to where I'm taking the fit for true counts since both are about 38,000? Try messing with that number and seeing what happens to the error of linearity
+* Graphs only display up to 4000 ints, want to fix that in new data report, unsure about what it looks like in the old data report.
 * set up different modules in different files to allow for universal programming with those seperate modules
 * wait on pyds9 fix
 * do stuff with the detector in the dewar
