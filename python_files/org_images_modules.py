@@ -26,9 +26,9 @@ truer_counts = []
 corrected = []
 
 lower = 60
-lower_adj = 4
+lower_adj = 5
 upper = 109
-upper_adj = 7
+upper_adj = 8
 xarr = numpy.linspace(5000,60000,21)
 
 def open_images():
@@ -88,9 +88,8 @@ def make_true_counts():
 	end_number = 21
 	while number < end_number:
 		true_counts.append(coeffs[0]*ints[number] + coeffs[1])
-		number+= 1
-	
-	coefficients1 = numpy.polyfit(true_counts[4:7],counts[4:7],1)
+		number+= 1	
+	coefficients1 = numpy.polyfit(true_counts[lower_adj:upper_adj],counts[lower_adj:upper_adj],1)
 	number = 0
 	end_number = 21
 	while number < end_number:
@@ -127,7 +126,8 @@ def make_true_counts():
 	ds9y1 = 0
 	ds9y2 = 200
 	
-	coefs_inv = numpy.polyfit(counts[0:14],true_counts[0:14],4)	
+	coefs_inv = numpy.polyfit(counts[0:14],true_counts[0:14],3)	
+	print(coefs_inv)
 
 	while i < imageAmount:
 		if i < 9:
@@ -217,23 +217,69 @@ def error():
 	
 def print_graph():
 	
-	#------------------------------------#
-	plt.title('Corrected Ints vs. Measured Counts',fontsize = 15)
-	plt.scatter(raw_ints,corrected,color = 'black')
+	#-------------------------------------#
 	
-	xarr = numpy.linspace(0,4000,20)
-	yarr = numpy.linspace(4800,61000,20)
-	plt.plot(xarr,yarr,'r')
-	
-	black_patch = mpatches.Patch(color='black', label='Corrected data')
+	#Prints out raw data
 
-	plt.legend(handles=[black_patch],bbox_to_anchor=(1, .13))
+	plt.title('Ints vs. Measured Counts',fontsize = 15)
+	plt.plot(ints,counts,'k')
+	plt.plot(raw_ints,raw_counts,'r')
+	
+	red_patch = mpatches.Patch(color='red', label='Actual data')
+	black_patch = mpatches.Patch(color='black', label='Mean of Data')
+
+	plt.legend(handles=[red_patch,black_patch],bbox_to_anchor=(1, .18))
 	plt.ylabel('counts')
 	plt.xlabel('ints (ms)')
-	plt.axis([0,4000,0,60000])
+	plt.show()
 	
-	"""
 	#-------------------------------------#
+	
+	#Prints out raw data and linear fit to data
+	
+	plt.title('Ints vs. Measured Counts with Linear Fit',fontsize = 15)
+	plt.plot(ints,counts,'k')
+	plt.plot(ints,true_counts,'g')
+
+	black_patch = mpatches.Patch(color='black', label='Data')
+	green_patch = mpatches.Patch(color='green', label='Linear Fit')
+
+	plt.legend(handles=[black_patch,green_patch],bbox_to_anchor=(1, .18))
+	plt.ylabel('counts')
+	plt.xlabel('ints (ms)')
+	
+	plt.vlines(ints[lower_adj], 0, 60000)
+	plt.vlines(ints[upper_adj], 0, 60000)
+	plt.axis([0,4000,0,60000]) #This fixes the axes to go from 0-60,000.
+	plt.show()
+	
+	#-------------------------------------#
+	
+	#Prints out true counts vs counts for desired, second, third, and fourth order relationships
+	xarr = numpy.linspace(5000,60000,21)
+
+	plt.plot(xarr,true_counts_1,'k')
+	plt.plot(xarr,true_counts_2,'r')
+	plt.plot(xarr,true_counts_3,'b')
+	plt.scatter(true_counts,counts)
+	plt.plot(xarr,true_counts_4,'g')
+	plt.vlines(counts[lower_adj], 0, 60000)
+	plt.vlines(counts[upper_adj], 0, 60000)
+	plt.ylabel('measured counts')
+	plt.xlabel('true counts')
+	plt.axis([0,60000,0,60000]) #This fixes the axes to go from 0-60,000.
+	
+	black_patch = mpatches.Patch(color='black', label='Linear Fit')
+	red_patch = mpatches.Patch(color='red', label='2nd Order')
+	blue_patch = mpatches.Patch(color='blue', label='3rd Order')
+	green_patch = mpatches.Patch(color='green', label='4th Order')
+	blue_circ_patch = mpatches.Patch(edgecolor='black',facecolor = 'blue', label = 'Original Data')
+
+	plt.legend(handles=[black_patch,red_patch,blue_patch,green_patch,blue_circ_patch],bbox_to_anchor=(1, .36))
+	plt.title('True counts vs. measured counts, based on polynomial fit',fontsize = 15)
+	plt.show()
+		
+	#------------------------------------#
 
 	#Prints out true counts vs. error of linearity for desired, second, third, and fourth order relationship
 	
@@ -254,71 +300,32 @@ def print_graph():
 
 
 	plt.legend(handles=[black_patch,red_patch,blue_patch,green_patch, blue_circ_patch],bbox_to_anchor=(1, 1))
-	"""
-	"""
-	#-------------------------------------#
-	
-	#Prints out true counts vs counts for desired, second, third, and fourth order relationships
-	plt.plot(xarr,true_counts_1,'k')
-	plt.plot(xarr,true_counts_2,'r')
-	plt.plot(xarr,true_counts_3,'b')
-	plt.scatter(true_counts,counts)
-	plt.plot(xarr,true_counts_4,'g')
-	plt.vlines(counts[lower_adj], 0, 60000)
-	plt.vlines(counts[upper_adj], 0, 60000)
-	plt.ylabel('measured counts')
-	plt.xlabel('true counts')
-	plt.axis([0,60000,0,60000]) #This fixes the axes to go from 0-60,000.
-	
-	black_patch = mpatches.Patch(color='black', label='Linear Fit')
-	red_patch = mpatches.Patch(color='red', label='2nd Order')
-	blue_patch = mpatches.Patch(color='blue', label='3rd Order')
-	green_patch = mpatches.Patch(color='green', label='4th Order')
-	blue_circ_patch = mpatches.Patch(edgecolor='black',facecolor = 'blue', label = 'Original Data')
+	plt.axis([0,60000,-.1,.02])
 
-	plt.legend(handles=[black_patch,red_patch,blue_patch,green_patch,blue_circ_patch],bbox_to_anchor=(1, .365))
-	plt.title('True counts vs. measured counts, based on polynomial fit',fontsize = 15)
-	"""
-	"""
-	#-------------------------------------#
-	
-	#Prints out raw data
-
-	plt.title('Ints vs. Measured Counts',fontsize = 15)
-	plt.plot(ints,counts,'k')
-	plt.plot(raw_ints,raw_counts,'r')
-	
-	red_patch = mpatches.Patch(color='red', label='Actual data')
-	black_patch = mpatches.Patch(color='black', label='Mean of Data')
-
-	plt.legend(handles=[red_patch,black_patch],bbox_to_anchor=(1, .2))
-	plt.ylabel('counts')
-	plt.xlabel('ints (ms)')
-	"""
-	"""
-	#-------------------------------------#
-	
-	#Prints out raw data and linear fit to data
-	
-	plt.title('Ints vs. Measured Counts with Linear Fit',fontsize = 15)
-	plt.plot(ints,counts,'k')
-	plt.plot(ints,true_counts,'g')
-
-	black_patch = mpatches.Patch(color='black', label='Data')
-	green_patch = mpatches.Patch(color='green', label='Linear Fit')
-
-	plt.legend(handles=[black_patch,green_patch],bbox_to_anchor=(1, .2))
-	plt.ylabel('counts')
-	plt.xlabel('ints (ms)')
-	
-	plt.vlines(ints[lower_adj], 0, 60000)
-	plt.vlines(ints[upper_adj], 0, 60000)
-	plt.axis([0,4000,0,60000]) #This fixes the axes to go from 0-60,000.
-
-	
-	#-------------------------------------#
-	"""
 	plt.show()
+	
+	#------------------------------------#
+	
+	plt.title('Corrected Ints vs. Measured Counts',fontsize = 15)
+	plt.scatter(raw_ints,corrected,color = 'black')
+	
+	xarr = numpy.linspace(0,4000,21)
+	yarr = numpy.linspace(4800,61000,21)
+	plt.plot(xarr,yarr,'r')
+	plt.plot(ints,counts)
+	
+	black_patch = mpatches.Patch(color='black', label='Corrected data')
+	blue_patch = mpatches.Patch(color='blue', label='Original data')
+
+
+	plt.legend(handles=[black_patch,blue_patch],bbox_to_anchor=(1, .178))
+	plt.ylabel('counts')
+	plt.xlabel('ints (ms)')
+	plt.axis([0,4000,0,60000])
+	plt.show()
+	
+	#-------------------------------------#
+	
 	return
 
 open_images()
