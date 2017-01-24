@@ -168,11 +168,11 @@ def error():
 	return
 	
 def print_graph():
-	"""
+	
 	#-------------------------------------#
 	#Prints out raw data
 
-	plt.title('Ints vs. Measured Counts',fontsize = 15)
+	plt.title('Integration Time vs. Measured Counts',fontsize = 15)
 	plt.plot(ints,counts,'k')
 	plt.plot(raw_ints,raw_counts,'r')
 	
@@ -181,7 +181,7 @@ def print_graph():
 
 	plt.legend(handles=[red_patch,black_patch],bbox_to_anchor=(1, .18))
 	plt.ylabel('counts')
-	plt.xlabel('ints (ms)')
+	plt.xlabel('integration time (ms)')
 	plt.show()
 	"""
 	"""
@@ -198,7 +198,7 @@ def print_graph():
 
 	plt.legend(handles=[black_patch,green_patch],bbox_to_anchor=(1, .18))
 	plt.ylabel('counts')
-	plt.xlabel('ints (ms)')
+	plt.xlabel('integration time (ms)')
 	
 	plt.vlines(ints[lower_adj], 0, 70000)
 	plt.vlines(ints[upper_adj], 0, 70000)
@@ -243,6 +243,8 @@ def print_graph():
 	plt.plot(true_counts_2,error_2,'r')
 	plt.plot(true_counts_3,error_3,'b')
 	plt.plot(true_counts_4,error_4,'g')
+	plt.vlines(true_counts[lower_adj], -.08, .015)
+	plt.vlines(true_counts[upper_adj], -.08, .015)
 	plt.ylabel('Error of linearity')
 	plt.xlabel('true counts')
 	plt.title('True counts vs. departure from linearity, based on polynomial fit',fontsize = 13)
@@ -265,7 +267,7 @@ def print_graph():
 	
 	#Prints out ints vs corrected counts
 	
-	plt.title('Corrected Ints vs. Measured Counts',fontsize = 15)
+	plt.title('Integration Time vs. Corrected Counts',fontsize = 15)
 	plt.scatter(raw_ints,corrected,color = 'black')
 	plt.plot(ints,counts)
 	
@@ -278,11 +280,11 @@ def print_graph():
 	
 	plt.legend(handles=[black_patch,blue_patch],bbox_to_anchor=(1, .18))
 	plt.ylabel('counts')
-	plt.xlabel('ints (ms)')
+	plt.xlabel('integration time (ms)')
 	plt.axis([0,5000,0,70000])
 	plt.show()
 
-	"""
+	
 	#-------------------------------------#
 	
 	return

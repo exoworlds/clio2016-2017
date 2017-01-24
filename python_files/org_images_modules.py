@@ -160,26 +160,6 @@ def make_true_counts():
 				corrected.append(num)
 			x += 1
 			count += 1
-		"""
-		while i < 20 and x < 10:
-			num = numpy.median(scidata[x,ds9y1:ds9y2,ds9x1:ds9x2])
-			if num > 20000:
-				corrected.append(num*num*num*num*coefs_inv[0] + num*num*num*coefs_inv[1] + num*num*coefs_inv[2] + num*coefs_inv[3] + coefs_inv[4])	
-			else:
-				corrected.append(num)
-			x += 1
-			count += 1
-			
-		x = 0
-		while i == 20 and x < 5:
-			num = numpy.median(scidata[x,ds9y1:ds9y2,ds9x1:ds9x2])
-			if num > 20000:
-				corrected.append(num*num*num*num*coefs_inv[0] + num*num*num*coefs_inv[1] + num*num*coefs_inv[2] + num*coefs_inv[3] + coefs_inv[4])	
-			else:
-				corrected.append(num)
-			x += 1
-			count += 1
-		"""
 		i += 1
 	return
 
@@ -221,7 +201,7 @@ def print_graph():
 	
 	#Prints out raw data
 
-	plt.title('Ints vs. Measured Counts',fontsize = 15)
+	plt.title('Integration Time vs. Measured Counts',fontsize = 15)
 	plt.plot(ints,counts,'k')
 	plt.plot(raw_ints,raw_counts,'r')
 	
@@ -230,7 +210,7 @@ def print_graph():
 
 	plt.legend(handles=[red_patch,black_patch],bbox_to_anchor=(1, .18))
 	plt.ylabel('counts')
-	plt.xlabel('ints (ms)')
+	plt.xlabel('integration time (ms)')
 	plt.show()
 	
 	#-------------------------------------#
@@ -246,7 +226,7 @@ def print_graph():
 
 	plt.legend(handles=[black_patch,green_patch],bbox_to_anchor=(1, .18))
 	plt.ylabel('counts')
-	plt.xlabel('ints (ms)')
+	plt.xlabel('integration time (ms)')
 	
 	plt.vlines(ints[lower_adj], 0, 60000)
 	plt.vlines(ints[upper_adj], 0, 60000)
@@ -290,6 +270,8 @@ def print_graph():
 	plt.plot(true_counts_4,error_4,'g')
 	plt.ylabel('Error of linearity')
 	plt.xlabel('true counts')
+	plt.vlines(true_counts[lower_adj], -.1, .02)
+	plt.vlines(true_counts[upper_adj], -.1, .02)
 	plt.title('True counts vs. departure from linearity, based on polynomial fit',fontsize = 13)
 	
 	black_patch = mpatches.Patch(color='black', label='Linear Fit')
@@ -306,7 +288,7 @@ def print_graph():
 	
 	#------------------------------------#
 	
-	plt.title('Corrected Ints vs. Measured Counts',fontsize = 15)
+	plt.title('Integration Time vs. Corrected Counts',fontsize = 15)
 	plt.scatter(raw_ints,corrected,color = 'black')
 	
 	xarr = numpy.linspace(0,4000,21)
@@ -320,7 +302,7 @@ def print_graph():
 
 	plt.legend(handles=[black_patch,blue_patch],bbox_to_anchor=(1, .178))
 	plt.ylabel('counts')
-	plt.xlabel('ints (ms)')
+	plt.xlabel('integration time (ms)')
 	plt.axis([0,4000,0,60000])
 	plt.show()
 	
