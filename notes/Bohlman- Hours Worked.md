@@ -44,7 +44,7 @@
 |1/17/2017       |2             |Applied corrections to old code in order to analyze the newer data set, did that, fixed the report for the new data, uploaded both files to github, error of linearity is still off so I'll have to check out what fixes I will have to make to the code|
 |1/18/2017       |4             |Tried to troubleshoot the lienarity graphs, sort of fixed them, but didn't get it to what I precisely wanted. That being said, I tightened up all my graphs and the report, and I can safetly say that I have finished them, to a ceratin extent.|
 |1/19/2017       |1             |Writing up/editing reports and uploading them to github|
-|1/24/2017       |2             |Discussing spacegrant due dates and what needs to be done in order to meet those dates, working on reports and wrapping those up as well.|
+|1/24/2017       |2             |Discussing spacegrant due dates and what needs to be done in order to meet those dates, working on reports and wrapping those up as well, uploaded fixed reports and code to github|
 
 
 I OWE KATIE AN EXTRA HALF AN HOUR DUE TO SURPLUS TIME ON 1/13/2017
