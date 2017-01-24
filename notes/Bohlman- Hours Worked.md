@@ -43,15 +43,15 @@
 |1/13/2017       |2.5             |Katie had already looked at my report and marked it up, so I attempted to fix the comments on it. Got through fixing all of it, updated my code and finally cleaned it up, and put it all on the github. My departure from linearity graph is still a little eh, but I tried fixing it the best I could. Katie said she'll graph the data herself soon to see what the gets for third/fourth order for departure from linearity. Organized work files on computer and on github, consolidated code and organized everything so the process will become automated once I fix the later data set's code, started repurposing report for new data in order to make it up to speed so the fixing of the code can be a litle bit easier later|
 |1/17/2017       |2             |Applied corrections to old code in order to analyze the newer data set, did that, fixed the report for the new data, uploaded both files to github, error of linearity is still off so I'll have to check out what fixes I will have to make to the code|
 |1/18/2017       |4             |Tried to troubleshoot the lienarity graphs, sort of fixed them, but didn't get it to what I precisely wanted. That being said, I tightened up all my graphs and the report, and I can safetly say that I have finished them, to a ceratin extent.|
-|1/19/2017       |1             |I'm not sure but it's exactly for an hour because Katie has to leave|
+|1/19/2017       |1             |Writing up/editing reports and uploading them to github|
+|1/24/2017       |2             |Discussing spacegrant due dates and what needs to be done in order to meet those dates, working on reports and wrapping those up as well.|
+
 
 I OWE KATIE AN EXTRA HALF AN HOUR DUE TO SURPLUS TIME ON 1/13/2017
-Do some surplus time on Friday/over the weekend? Maybe 1 hour, 1.5 hours?
 
 **To do:**
 
-* fix error of linearity for both projects, maybe it's due to where I'm taking the fit for true counts since both are about 38,000? Try messing with that number and seeing what happens to the error of linearity
-* Graphs only display up to 4000 ints, want to fix that in new data report, unsure about what it looks like in the old data report.
+* ABSTRACT FOR SPACEGRANT, DUE MARCH 2017
 * set up different modules in different files to allow for universal programming with those seperate modules
 * wait on pyds9 fix
 * do stuff with the detector in the dewar
