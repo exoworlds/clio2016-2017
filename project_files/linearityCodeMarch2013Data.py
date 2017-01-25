@@ -12,17 +12,12 @@ true_counts_1 = []
 true_counts_2 = []
 true_counts_3 = []
 true_counts_4 = []
-true_counts_5 = []
-true_counts_6 = []
 error_0 = []
 error_1 = []
 error_2 = []
 error_3 = []
 error_4 = []
-error_5 = []
-error_6 = []
 true_counts = []
-truer_counts = []
 corrected = []
 
 lower = 60
@@ -89,6 +84,7 @@ def make_true_counts():
 	while number < end_number:
 		true_counts.append(coeffs[0]*ints[number] + coeffs[1])
 		number+= 1	
+
 	coefficients1 = numpy.polyfit(true_counts[lower_adj:upper_adj],counts[lower_adj:upper_adj],1)
 	number = 0
 	end_number = 21
@@ -127,7 +123,6 @@ def make_true_counts():
 	ds9y2 = 200
 	
 	coefs_inv = numpy.polyfit(counts[0:14],true_counts[0:14],3)	
-	print(coefs_inv)
 
 	while i < imageAmount:
 		if i < 9:
@@ -236,6 +231,7 @@ def print_graph():
 	#-------------------------------------#
 	
 	#Prints out true counts vs counts for desired, second, third, and fourth order relationships
+	
 	xarr = numpy.linspace(5000,60000,21)
 
 	plt.plot(xarr,true_counts_1,'k')
@@ -287,6 +283,8 @@ def print_graph():
 	plt.show()
 	
 	#------------------------------------#
+	
+	#Prints out counts that have had a linearity correction applied to them
 	
 	plt.title('Integration Time vs. Corrected Counts',fontsize = 15)
 	plt.scatter(raw_ints,corrected,color = 'black')

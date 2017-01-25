@@ -27,7 +27,6 @@ upper = 54
 upper_adj = 8
 xarr = numpy.linspace(5000,60000,23)
 corrected = []
-
 	
 def open_images():
 	i = 0
@@ -93,7 +92,6 @@ def make_true_counts():
 		number+= 1
 
 	coefficients4 = numpy.polyfit(true_counts[0:16],counts[0:16],4)
-	print(coefficients4)
 	number = 0
 	end_number = 23
 	while number < end_number:
@@ -124,10 +122,6 @@ def make_true_counts():
 		num = numpy.median(scidata[ds9y1:ds9y2,ds9x1:ds9x2])
 		if num > 20000:
 			corrected.append(num*num*num*num*coefs_inv[0] + num*num*num*coefs_inv[1] + num*num*coefs_inv[2] + num*coefs_inv[3] + coefs_inv[4])
-			"""
-			if num > 20000:
-				corrected.append(num*num*num*coefs_inv[0] + num*num*coefs_inv[1] + num*coefs_inv[2] + coefs_inv[3])
-			"""
 		else:
 			corrected.append(num)
 					
@@ -170,6 +164,7 @@ def error():
 def print_graph():
 	
 	#-------------------------------------#
+	
 	#Prints out raw data
 
 	plt.title('Integration Time vs. Measured Counts',fontsize = 15)
@@ -183,8 +178,7 @@ def print_graph():
 	plt.ylabel('counts')
 	plt.xlabel('integration time (ms)')
 	plt.show()
-	"""
-	"""
+	
 	#-------------------------------------#
 	
 	#Prints out raw data and linear fit to data
@@ -204,8 +198,7 @@ def print_graph():
 	plt.vlines(ints[upper_adj], 0, 70000)
 	plt.axis([0,5000,0,70000]) #This fixes the axes to go from 0-60,000.
 	plt.show()
-	"""
-	"""
+	
 	#-------------------------------------#
 	
 	#Prints out true counts vs counts for desired, second, third, and fourth order relationships
@@ -232,8 +225,7 @@ def print_graph():
 	plt.legend(handles=[black_patch,red_patch,blue_patch,green_patch,blue_circ_patch],bbox_to_anchor=(1, .36))
 	plt.title('True counts vs. measured counts, based on polynomial fit',fontsize = 15)
 	plt.show()
-	"""
-	"""
+	
 	#-------------------------------------#
 	
 	#Prints out true counts vs. error of linearity for desired, second, third, and fourth order relationship
@@ -255,14 +247,10 @@ def print_graph():
 	green_patch = mpatches.Patch(color='green', label='4th Order')
 	blue_circ_patch = mpatches.Patch(edgecolor='black',facecolor = 'blue', label = 'Original Data')
 
-
 	plt.legend(handles=[black_patch,red_patch,blue_patch,green_patch, blue_circ_patch],bbox_to_anchor=(1, 1))
 	plt.axis([0,60000,-.08,.015]) 
-
 	plt.show()
 
-	"""
-	"""
 	#------------------------------------#
 	
 	#Prints out ints vs corrected counts
@@ -283,7 +271,6 @@ def print_graph():
 	plt.xlabel('integration time (ms)')
 	plt.axis([0,5000,0,70000])
 	plt.show()
-
 	
 	#-------------------------------------#
 	
