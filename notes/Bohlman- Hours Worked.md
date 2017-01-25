@@ -45,16 +45,17 @@
 |1/18/2017       |4             |Tried to troubleshoot the lienarity graphs, sort of fixed them, but didn't get it to what I precisely wanted. That being said, I tightened up all my graphs and the report, and I can safetly say that I have finished them, to a ceratin extent.|
 |1/19/2017       |1             |Writing up/editing reports and uploading them to github|
 |1/24/2017       |2             |Discussing spacegrant due dates and what needs to be done in order to meet those dates, working on reports and wrapping those up as well, uploaded fixed reports and code to github|
-|1/25/2017       |2.5             |Recieved both corrected reports back and edited them, renamed and corrected python files, and reuploaded all to github|
-|1/26/2017       |~2?             |???|
-|1/27/2017       |~4?             |???|
+|1/25/2017       |2.5             |Recieved both corrected reports back and edited them, renamed and corrected python files, and reuploaded all to github, Katie recieved them both and will correct them/look at the updated code in time for tomorrow. From then on, I have to refine the code and start making a presentation out of it|
+|1/26/2017       |??             |???|
+|1/27/2017       |??             |???|
 
 
 I OWE KATIE AN EXTRA HALF AN HOUR DUE TO SURPLUS TIME ON 1/13/2017
 
 **To do:**
 
-* ABSTRACT FOR SPACEGRANT, DUE MARCH 2017
+* ABSTRACT FOR SPACEGRANT, DUE MARCH 2017 (Get official dates for when it's due, not on website currently)
+* PRESENTATION FOR SPACEGRANT, DUE MARCH 2017 (But after the abstarct, I presume)
 * set up different modules in different files to allow for universal programming with those seperate modules
 * wait on pyds9 fix
 * do stuff with the detector in the dewar
