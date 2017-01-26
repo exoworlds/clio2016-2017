@@ -46,11 +46,13 @@
 |1/19/2017       |1             |Writing up/editing reports and uploading them to github|
 |1/24/2017       |2             |Discussing spacegrant due dates and what needs to be done in order to meet those dates, working on reports and wrapping those up as well, uploaded fixed reports and code to github|
 |1/25/2017       |2.5             |Recieved both corrected reports back and edited them, renamed and corrected python files, and reuploaded all to github, Katie recieved them both and will correct them/look at the updated code in time for tomorrow. From then on, I have to refine the code and start making a presentation out of it|
-|1/26/2017       |2             |Katie looked over code/reports that I wrote|
+|1/26/2017       |2             |Katie looked over code/reports that I wrote, I worked on my symposium prep and the paragraph for linearity|
 |1/27/2017       |??             |???|
 
 
 I OWE KATIE AN EXTRA HALF AN HOUR DUE TO SURPLUS TIME ON 1/13/2017
+
+3 MONTHS TO PRESENTING IN PHOENIX
 
 **To do:**
 
