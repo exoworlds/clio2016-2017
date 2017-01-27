@@ -15,3 +15,4 @@ General help:
   look under Example of working with 3-d FITS cube link on the front page
 
 Probably won't get that far due to the need to reprogram many things from scratch, but if I can at least write images that have been subtracted, then that will be a good place to be in my the 22nd. Maybe if I work Monday mornings/afternoons, Wednesday mornings/afternoons, and Friday mornings/afternoons, I can get to 10 hours a week while Katie is gone.
+Skype Katie on Fridays
