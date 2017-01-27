@@ -6,4 +6,4 @@ group 2:   4    5   6
 So 1-4, 2-5, 3-6 and so on and so forth
 4. Write a fits file to disk, save to computer, open ds9 to look at them, and depending on how far I get, we will either get the peak pixel (which is kind of a shortcut) or we do a different phptometry method to determine how bright the star is.
 
-
+look under Example of working with 3-d FITS cube link on the front page
