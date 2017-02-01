@@ -49,6 +49,7 @@
 |1/26/2017       |2             |Katie looked over code/reports that I wrote, I worked on my symposium prep and the paragraph for linearity|
 |1/27/2017       |3.5            |Katie was trying to transfer over a different data set, I downloaded it and recieved instructions on how to analyze it. I finished my research on detectors and updated/uploaded my new reports. Uploaded my symposium prep document to the github page, probably won't need to open that for awhile|
 |1/27/2017       |2.5            |Started writing coding files for next data set, uploaded my progresson those to github|
+|1/27/2017       |2            |Decided to try and import 4 files and do the correctiosn on them in order to gain a better understanding of what to do. Started on it, placed the code for it on top of the file I made yesterday, uploaded to github.|
 
 3 MONTHS TO PRESENTING IN PHOENIX
 ** I owe Katie an hour because I'm bad at counting**
