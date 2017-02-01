@@ -48,8 +48,8 @@
 |1/25/2017       |2.5             |Recieved both corrected reports back and edited them, renamed and corrected python files, and reuploaded all to github, Katie recieved them both and will correct them/look at the updated code in time for tomorrow. From then on, I have to refine the code and start making a presentation out of it|
 |1/26/2017       |2             |Katie looked over code/reports that I wrote, I worked on my symposium prep and the paragraph for linearity|
 |1/27/2017       |3.5            |Katie was trying to transfer over a different data set, I downloaded it and recieved instructions on how to analyze it. I finished my research on detectors and updated/uploaded my new reports. Uploaded my symposium prep document to the github page, probably won't need to open that for awhile|
-|1/27/2017       |2.5            |Started writing coding files for next data set, uploaded my progresson those to github|
-|1/27/2017       |2            |Decided to try and import 4 files and do the correctiosn on them in order to gain a better understanding of what to do. Started on it, placed the code for it on top of the file I made yesterday, uploaded to github.|
+|1/31/2017       |2.5            |Started writing coding files for next data set, uploaded my progresson those to github|
+|2/1/2017       |2            |Decided to try and import 4 files and do the correctiosn on them in order to gain a better understanding of what to do. Started on it, placed the code for it on top of the file I made yesterday, uploaded to github.|
 
 3 MONTHS TO PRESENTING IN PHOENIX
 ** I owe Katie an hour because I'm bad at counting**
