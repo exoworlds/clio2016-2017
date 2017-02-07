@@ -51,6 +51,8 @@
 |1/31/2017       |2.5            |Started writing coding files for next data set, uploaded my progresson those to github|
 |2/1/2017       |2            |Decided to try and import 4 files and do the correctiosn on them in order to gain a better understanding of what to do. Started on it, placed the code for it on top of the file I made yesterday, uploaded to github.|
 |2/2/2017       |2            |Attempted to code the process of writing images, subtract the two images, and then making a new image. At the conclusion of my shift, I got my program to output a file, but like, it doesn't have anything on it. I need to find a way to translate values from one array to another in my program, and i will focus on that tomorrow. Code/picture outputted is uploaded|
+|2/3/2017       |1            |Emailed Katie about my weekly progress, continued trying to fix my numpy arrays|
+|2/7/2017       |2            |Literally give up holy crap|
 
 3 MONTHS TO PRESENTING IN PHOENIX
 ** I owe Katie an hour because I'm bad at counting**
