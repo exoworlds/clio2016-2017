@@ -44,6 +44,8 @@ count = 0
 ds9x2 = 400
 ds9y2 = 200
 coefs_inv = [3.67e-16, -7.58e-11, 2.69e-06, 9.66e-01, 1.39e+02]
+s = (200,400)
+array = numpy.zeros(s)
 
 while i < 4:
 	fname = "tau_0000"+str(i+1)+".fit"
@@ -55,7 +57,8 @@ while i < 4:
 	
 	while x < ds9x2:
 		while y < ds9y2:
-			num = numpy.median(scidata[y:y,x:x])
+			num = (float)scidata[y:y,x:x]
+			print(str(num)+"\n")
 			new_num = num*num*num*num*coefs_inv[0] + num*num*num*coefs_inv[1] + num*num*coefs_inv[2] + num*coefs_inv[3] + coefs_inv[4]
 			array[y][x] = new_num
 			y = y+ 1
@@ -63,6 +66,7 @@ while i < 4:
 	
 	hdu = fits.PrimaryHDU(array)
 	hdu.writeto('FIXED_IMG'+str(i+1)+'.fits', clobber = True)
+	i = i + 1
 	
 
 def open_correct_images():
