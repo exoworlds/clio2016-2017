@@ -52,8 +52,8 @@
 |2/1/2017       |2            |Decided to try and import 4 files and do the correctiosn on them in order to gain a better understanding of what to do. Started on it, placed the code for it on top of the file I made yesterday, uploaded to github.|
 |2/2/2017       |2            |Attempted to code the process of writing images, subtract the two images, and then making a new image. At the conclusion of my shift, I got my program to output a file, but like, it doesn't have anything on it. I need to find a way to translate values from one array to another in my program, and i will focus on that tomorrow. Code/picture outputted is uploaded|
 |2/3/2017       |1            |Emailed Katie about my weekly progress, continued trying to fix my numpy arrays|
-|2/7/2017       |2            |Literally give up holy crap|
-|2/8/2017       |2            |No work yesterday because I has the stomach flu :(, but I'm back today! Awaiting Katie's response, but I'm reallt trying here to import data.|
+|2/7/2017       |2            |Literally give up holy crap. Troubleshooting for ~2 hours trying to engineer my program to read in these files and outputting files. Having problems with data remaing in objects and not being pushed to lists, and with numpy arrays.|
+|2/8/2017       |2            |No work yesterday because I has the stomach flu :(, but I'm back today! Awaiting Katie's response, but I'm reallt trying here to import data, discovered problem was with rrading in fits cube, wrote out a band aid solution taht kinda helped the problem, as I am able to read in values now, but I am still outputting black images. Code is updated.|
 
 
 3 MONTHS TO PRESENTING IN PHOENIX
