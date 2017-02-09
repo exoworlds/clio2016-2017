@@ -53,6 +53,8 @@
 |2/2/2017       |2            |Attempted to code the process of writing images, subtract the two images, and then making a new image. At the conclusion of my shift, I got my program to output a file, but like, it doesn't have anything on it. I need to find a way to translate values from one array to another in my program, and i will focus on that tomorrow. Code/picture outputted is uploaded|
 |2/3/2017       |1            |Emailed Katie about my weekly progress, continued trying to fix my numpy arrays|
 |2/7/2017       |2            |Literally give up holy crap|
+|2/8/2017       |2            |No work yesterday because I has the stomach flu :(, but I'm back today! Awaiting Katie's response, but I'm reallt trying here to import data.|
+
 
 3 MONTHS TO PRESENTING IN PHOENIX
 ** I owe Katie an hour because I'm bad at counting**
