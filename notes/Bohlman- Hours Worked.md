@@ -54,11 +54,10 @@
 |2/3/2017       |1            |Emailed Katie about my weekly progress, continued trying to fix my numpy arrays|
 |2/7/2017       |2            |Literally give up holy crap. Troubleshooting for ~2 hours trying to engineer my program to read in these files and outputting files. Having problems with data remaing in objects and not being pushed to lists, and with numpy arrays.|
 |2/8/2017       |2            |No work yesterday because I has the stomach flu :(, but I'm back today! Awaiting Katie's response, but I'm reallt trying here to import data, discovered problem was with rrading in fits cube, wrote out a band aid solution taht kinda helped the problem, as I am able to read in values now, but I am still outputting black images. Code is updated.|
-|2/9/2017       |2.5            |.....|
+|2/9/2017       |2.5            |Fixed the read ins and got the counts for every pixel in the first 4 pictures, but now need to take the list and output it to a picture. Maybe do that with a numpy array...|
 
 
 3 MONTHS TO PRESENTING IN PHOENIX
-** I owe Katie an hour because I'm bad at counting**
  
 **To do:**
 * get started on the new data analysis
