@@ -55,7 +55,7 @@
 |2/8/2017       |2            |Literally give up holy crap. Troubleshooting for ~2 hours trying to engineer my program to read in these files and outputting files. Having problems with data remaing in objects and not being pushed to lists, and with numpy arrays.|
 |2/9/2017       |2            |No work yesterday because I has the stomach flu :(, but I'm back today! Awaiting Katie's response, but I'm reallt trying here to import data, discovered problem was with rrading in fits cube, wrote out a band aid solution taht kinda helped the problem, as I am able to read in values now, but I am still outputting black images. Code is updated.|
 |2/10/2017       |2.5            |Fixed the read ins and got the counts for every pixel in the first 4 pictures, but now need to take the list and output it to a picture. Maybe do that with a numpy array...|
-|2/14/2017       |2.5            |G O T  I T  T O  W O R K  H O W  D O E S  H E  D O  IT|
+|2/14/2017       |2          |Got my program to work for the first 4 images. It reads in an image, reads in every pixel, applys the correction to the pixel, puts every new value into an array, and generates an image and prints that image out.Problems I had with making this included the itemset() function, scidata arguments, and just working with numpy arrays in general. However, I feel like the program now works. Uploaded the working program and the fixed 4 images|
 
 
 3 MONTHS TO PRESENTING IN PHOENIX
