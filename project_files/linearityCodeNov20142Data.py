@@ -37,20 +37,24 @@ while i < 4:
 	fname = "tau_0000"+str(i+1)+".fit"
 	hdu1 = fits.open(fname)
 	scidata = hdu1[0].data
-	array = numpy.zeros((ds9y2,ds9x2))
+	
+	array = numpy.ndarray(shape=(ds9y2,ds9x2))
+
 
 	while x < ds9x2:
 		while y < ds9y2:
 			str_num = str(scidata[0,y,x])
 			num = float(str_num)
 			new_num = num*num*num*num*coefs_inv[0] + num*num*num*coefs_inv[1] + num*num*coefs_inv[2] + num*coefs_inv[3] + coefs_inv[4]
-			array[y][x] = new_num
-			myList.append(new_num)
+			array.itemset((y,x),new_num)
 			y = y + 1
 		y = 0
 		x = x + 1
+		
+	
+	
 
-	hdu = fits.PrimaryHDU(myList)
+	hdu = fits.PrimaryHDU(array)
 	hdu.writeto('FIXED_IMG'+str(i+1)+'.fits', clobber = True)
 	i = i + 1
 	
