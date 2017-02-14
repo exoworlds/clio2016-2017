@@ -52,17 +52,23 @@
 |2/1/2017       |2            |Decided to try and import 4 files and do the correctiosn on them in order to gain a better understanding of what to do. Started on it, placed the code for it on top of the file I made yesterday, uploaded to github.|
 |2/2/2017       |2            |Attempted to code the process of writing images, subtract the two images, and then making a new image. At the conclusion of my shift, I got my program to output a file, but like, it doesn't have anything on it. I need to find a way to translate values from one array to another in my program, and i will focus on that tomorrow. Code/picture outputted is uploaded|
 |2/3/2017       |1            |Emailed Katie about my weekly progress, continued trying to fix my numpy arrays|
-|2/7/2017       |2            |Literally give up holy crap. Troubleshooting for ~2 hours trying to engineer my program to read in these files and outputting files. Having problems with data remaing in objects and not being pushed to lists, and with numpy arrays.|
-|2/8/2017       |2            |No work yesterday because I has the stomach flu :(, but I'm back today! Awaiting Katie's response, but I'm reallt trying here to import data, discovered problem was with rrading in fits cube, wrote out a band aid solution taht kinda helped the problem, as I am able to read in values now, but I am still outputting black images. Code is updated.|
-|2/9/2017       |2.5            |Fixed the read ins and got the counts for every pixel in the first 4 pictures, but now need to take the list and output it to a picture. Maybe do that with a numpy array...|
+|2/8/2017       |2            |Literally give up holy crap. Troubleshooting for ~2 hours trying to engineer my program to read in these files and outputting files. Having problems with data remaing in objects and not being pushed to lists, and with numpy arrays.|
+|2/9/2017       |2            |No work yesterday because I has the stomach flu :(, but I'm back today! Awaiting Katie's response, but I'm reallt trying here to import data, discovered problem was with rrading in fits cube, wrote out a band aid solution taht kinda helped the problem, as I am able to read in values now, but I am still outputting black images. Code is updated.|
+|2/10/2017       |2.5            |Fixed the read ins and got the counts for every pixel in the first 4 pictures, but now need to take the list and output it to a picture. Maybe do that with a numpy array...|
+|2/14/2017       |2.5            |Trying to get these 2d arrays to work, at least I got the pixel counts, but I need to put in those pixel counts to the arrays in order to utput the picture correctly.|
 
 
 3 MONTHS TO PRESENTING IN PHOENIX
  
 **To do:**
-* get started on the new data analysis
-* ABSTRACT FOR SPACEGRANT, DUE MARCH 2017 (Get official dates for when it's due, not on website currently)
-* PRESENTATION FOR SPACEGRANT, DUE MARCH 2017 (But after the abstarct, I presume)
 * set up different modules in different files to allow for universal programming with those seperate modules
 * wait on pyds9 fix
 * do stuff with the detector in the dewar
+
+**Important dates:**
+* March 22, 2017 - Symposium Abstracts DUE NOTE: Late abstracts will not be accepted without a compelling reason and Space Grant Management concurrence.
+* TBA - Mentor & Guest RSVPs DUE
+* April 7, 2017 -  Presentations DUE
+* April 14, 2017 -  ASCEND Presentations DUE
+* April 21, 2017 - Statewide Symposium Banquet
+* April 22, 2017 - Statewide Symposium
