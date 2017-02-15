@@ -56,6 +56,7 @@
 |2/9/2017       |2            |No work yesterday because I has the stomach flu :(, but I'm back today! Awaiting Katie's response, but I'm reallt trying here to import data, discovered problem was with rrading in fits cube, wrote out a band aid solution taht kinda helped the problem, as I am able to read in values now, but I am still outputting black images. Code is updated.|
 |2/10/2017       |2.5            |Fixed the read ins and got the counts for every pixel in the first 4 pictures, but now need to take the list and output it to a picture. Maybe do that with a numpy array...|
 |2/14/2017       |2          |Got my program to work for the first 4 images. It reads in an image, reads in every pixel, applys the correction to the pixel, puts every new value into an array, and generates an image and prints that image out.Problems I had with making this included the itemset() function, scidata arguments, and just working with numpy arrays in general. However, I feel like the program now works. Uploaded the working program and the fixed 4 images|
+|2/15/2017       |2          |Organized my program, and worked on subtracting the paired images from each other. Got a completely white image, so I'm going to have to refine my program tomorrow and see where the problem is.|
 
 
 3 MONTHS TO PRESENTING IN PHOENIX
