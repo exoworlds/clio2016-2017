@@ -11,20 +11,50 @@ subtract_images: takes two new image names,opens them, subtracts them from each 
 
 def main():
 	#opens each image, applies the correction, writes new file.
-	i = 0
-	while i < 4:
-		fname = "tau_0000"+str(i+1)+".fit"
+	i = 1
+	while i <= 56:
+	
+		if i > 9:
+			fname = "tau_000"+str(i)+".fit"
+		else:
+			fname = "tau_0000"+str(i)+".fit"
+		
 		correct_image(fname)
 		i = i + 1
-
-	fname1 = "FIXED_tau_00001.fit"
-	fname2 = "FIXED_tau_00004.fit"
-	fname3 = "FIXED_tau_00002.fit"
-	fname4 = "FIXED_tau_00003.fit"
 	
-	subtract_images(fname1,fname2,1)
+	i = 1
+	x = 1
 	
-	subtract_images(fname3,fname4,2)
+	while i <= 56:
+	
+		if i > 9:
+			fname1 = "FIXED_tau_000"+str(i)+".fit"
+		else:
+			fname1 = "FIXED_tau_0000"+str(i)+".fit"
+		
+		if i + 3 > 9:
+			fname2 = "FIXED_tau_000"+str(i+3)+".fit"
+		else:
+			fname2 = "FIXED_tau_0000"+str(i+3)+".fit"
+			
+		if i + 1 > 9:
+			fname3 = "FIXED_tau_000"+str(i+1)+".fit"
+		else:
+			fname3 = "FIXED_tau_0000"+str(i+1)+".fit"
+			
+		if i + 2 > 9:
+			fname4 = "FIXED_tau_000"+str(i+2)+".fit"
+		else:
+			fname4 = "FIXED_tau_0000"+str(i+2)+".fit"
+		
+	
+		subtract_images(fname1,fname2,x)
+		
+		subtract_images(fname3,fname4,x+1)
+		
+		x = x + 2
+		i = i + 4
+	
 
 
 def correct_image(fname):
