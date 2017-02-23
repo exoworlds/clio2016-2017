@@ -60,6 +60,8 @@
 |2/16/2017       |2          |tried to subtract the images better, so I don't get whitespace. Got it to work for the first 2 images, modified my code to produce it for the next two images. In the near future, I will modidy my code to work universally with different files.|
 |2/17/2017       |2          |Started organizing my code to optimize it, waiting for Katie's response so I know what to do with the numbering of the pictures.|
 |2/21/2017       |2          |Can't work tomorrow, have a dr's appt at one ish. Anyways, today, I started taking in all of the files names so I can run the program for every single file. I then tried to work on the code for subtracting the files after taking them in in groups of 4|
+|2/23/2017       |2          |Analyzed my program to make sure it works tried to add the rest of the file names to the program. Trying to optimize my code.|
+|2/24/2017       |2          |The future|
 
 
 3 MONTHS TO PRESENTING IN PHOENIX
