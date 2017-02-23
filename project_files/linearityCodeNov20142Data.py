@@ -11,6 +11,9 @@ subtract_images: takes two new image names,opens them, subtracts them from each 
 
 def main():
 	#opens each image, applies the correction, writes new file.
+	
+	#for tau
+	
 	i = 1
 	while i <= 56:
 	
@@ -48,14 +51,106 @@ def main():
 			fname4 = "FIXED_tau_0000"+str(i+2)+".fit"
 		
 	
-		subtract_images(fname1,fname2,x)
+		subtract_images(fname1,fname2,x,1)
 		
-		subtract_images(fname3,fname4,x+1)
+		subtract_images(fname3,fname4,x+1,1)
 		
 		x = x + 2
 		i = i + 4
 	
+	
+	#for tau_sat
+	
+	i = 1
+	while i <= 60:
+	
+		if i > 9:
+			fname = "tau_sat_000"+str(i)+".fit"
+		else:
+			fname = "tau_sat_0000"+str(i)+".fit"
+		
+		correct_image(fname)
+		i = i + 1
+	
+	i = 1
+	x = 1
+	
+	while i <= 60:
+	
+		if i > 9:
+			fname1 = "FIXED_tau_sat_000"+str(i)+".fit"
+		else:
+			fname1 = "FIXED_tau_sat_0000"+str(i)+".fit"
+		
+		if i + 3 > 9:
+			fname2 = "FIXED_tau_sat_000"+str(i+3)+".fit"
+		else:
+			fname2 = "FIXED_tau_sat_0000"+str(i+3)+".fit"
+			
+		if i + 1 > 9:
+			fname3 = "FIXED_tau_sat_000"+str(i+1)+".fit"
+		else:
+			fname3 = "FIXED_tau_sat_0000"+str(i+1)+".fit"
+			
+		if i + 2 > 9:
+			fname4 = "FIXED_tau_sat_000"+str(i+2)+".fit"
+		else:
+			fname4 = "FIXED_tau_sat_0000"+str(i+2)+".fit"
+		
+	
+		subtract_images(fname1,fname2,x,2)
+		
+		subtract_images(fname3,fname4,x+1,2)
+		
+		x = x + 2
+		i = i + 4
 
+		
+	#for tau_unsat
+	
+	i = 1
+	while i <= 12:
+	
+		if i > 9:
+			fname = "tau_unsat000"+str(i)+".fit"
+		else:
+			fname = "tau_unsat0000"+str(i)+".fit"
+		
+		correct_image(fname)
+		i = i + 1
+	
+	i = 1
+	x = 1
+	
+	while i <= 12:
+	
+		if i > 9:
+			fname1 = "FIXED_tau_unsat000"+str(i)+".fit"
+		else:
+			fname1 = "FIXED_tau_unsat0000"+str(i)+".fit"
+		
+		if i + 3 > 9:
+			fname2 = "FIXED_tau_unsat000"+str(i+3)+".fit"
+		else:
+			fname2 = "FIXED_tau_unsat0000"+str(i+3)+".fit"
+			
+		if i + 1 > 9:
+			fname3 = "FIXED_tau_unsat000"+str(i+1)+".fit"
+		else:
+			fname3 = "FIXED_tau_unsat0000"+str(i+1)+".fit"
+			
+		if i + 2 > 9:
+			fname4 = "FIXED_tau_unsat000"+str(i+2)+".fit"
+		else:
+			fname4 = "FIXED_tau_unsat0000"+str(i+2)+".fit"
+		
+	
+		subtract_images(fname1,fname2,x,3)
+		
+		subtract_images(fname3,fname4,x+1,3)
+		
+		x = x + 2
+		i = i + 4
 
 def correct_image(fname):
 	x = 0
@@ -82,7 +177,7 @@ def correct_image(fname):
 	hdu.writeto('FIXED_'+fname, clobber = True)
 	
 
-def subtract_images(fname1,fname2,val):
+def subtract_images(fname1,fname2,val,val2):
 	x = 0
 	y = 0
 	ds9x2 = 400
@@ -116,6 +211,14 @@ def subtract_images(fname1,fname2,val):
 	array = numpy.subtract(array1,array2)
 		
 	hdu = fits.PrimaryHDU(array)
-	hdu.writeto('FIXED_sub_IMG'+str(val)+'.fit', clobber = True)
-
+	
+	if val2 == 1:
+		hdu.writeto('FIXED_sub_IMG'+str(val)+'.fit', clobber = True)
+	
+	if val2 == 2:
+		hdu.writeto('FIXED_sub_sat_IMG'+str(val)+'.fit', clobber = True)
+	
+	if val2 == 3:
+		hdu.writeto('FIXED_sub_unsat_IMG'+str(val)+'.fit', clobber = True)
+		
 main()
