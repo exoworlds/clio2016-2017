@@ -61,10 +61,10 @@
 |2/17/2017       |2          |Started organizing my code to optimize it, waiting for Katie's response so I know what to do with the numbering of the pictures.|
 |2/21/2017       |2          |Can't work tomorrow, have a dr's appt at one ish. Anyways, today, I started taking in all of the files names so I can run the program for every single file. I then tried to work on the code for subtracting the files after taking them in in groups of 4|
 |2/23/2017       |2          |Analyzed my program to make sure it works tried to add the rest of the file names to the program. Trying to optimize my code.|
-|2/24/2017       |2          |The future|
+|2/24/2017       |4          |Toay, I analyzed my code and redid the reading of the images in because I realized I was wrong. However, my code concerning that works well now. I also had to format my code to make sure that I also subtracted the non fixed images.|
 
 
-3 MONTHS TO PRESENTING IN PHOENIX
+2 MONTHS TO PRESENTING IN PHOENIX
  
 **To do:**
 * set up different modules in different files to allow for universal programming with those seperate modules
