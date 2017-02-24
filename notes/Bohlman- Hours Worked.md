@@ -61,7 +61,7 @@
 |2/17/2017       |2          |Started organizing my code to optimize it, waiting for Katie's response so I know what to do with the numbering of the pictures.|
 |2/21/2017       |2          |Can't work tomorrow, have a dr's appt at one ish. Anyways, today, I started taking in all of the files names so I can run the program for every single file. I then tried to work on the code for subtracting the files after taking them in in groups of 4|
 |2/23/2017       |2          |Analyzed my program to make sure it works tried to add the rest of the file names to the program. Trying to optimize my code.|
-|2/24/2017       |4          |Toay, I analyzed my code and redid the reading of the images in because I realized I was wrong. However, my code concerning that works well now. I also had to format my code to make sure that I also subtracted the non fixed images.|
+|2/24/2017       |4          |Redid my code and gotit up to the specifications required to subtract all of the images, realized that there may be a problem with my coefficients, as the fixed images are having counts less than the original counts for the images. WHich doesn't make sense. What we are looking for is a slight increase in image counts at any given point, so we have to look at the coefficients I derived in order to see what the hell is going on.|
 
 
 2 MONTHS TO PRESENTING IN PHOENIX
