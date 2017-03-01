@@ -63,7 +63,7 @@
 |2/23/2017       |2          |Analyzed my program to make sure it works tried to add the rest of the file names to the program. Trying to optimize my code.|
 |2/24/2017       |4          |Redid my code and gotit up to the specifications required to subtract all of the images, realized that there may be a problem with my coefficients, as the fixed images are having counts less than the original counts for the images. WHich doesn't make sense. What we are looking for is a slight increase in image counts at any given point, so we have to look at the coefficients I derived in order to see what the hell is going on.|
 |2/28/2017       |1.5          |Worked on my abstract a little, uplaoded the rough draft|
-|3/1/2017        |3.5          |Katie graded my abstract so I applied some corrections to it, finished long form abstract and finished the short form abstract, I worked on the coefficients and realized I put the wrong coefficients in and now my images have a slight increase in counts so that is good.|
+|3/1/2017        |3.5          |Katie graded my abstract so I corrected it, finished long form abstract, finished the short form abstract, I worked on the coefficients for calibrating the second data setand realized I put the wrong coefficients in, images now fixed.|
 
 
 2 MONTHS TO PRESENTING IN PHOENIX
