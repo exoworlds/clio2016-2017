@@ -63,12 +63,13 @@
 |2/23/2017       |2          |Analyzed my program to make sure it works tried to add the rest of the file names to the program. Trying to optimize my code.|
 |2/24/2017       |4          |Redid my code and gotit up to the specifications required to subtract all of the images, realized that there may be a problem with my coefficients, as the fixed images are having counts less than the original counts for the images. WHich doesn't make sense. What we are looking for is a slight increase in image counts at any given point, so we have to look at the coefficients I derived in order to see what the hell is going on.|
 |2/28/2017       |1.5          |Worked on my abstract a little, uplaoded the rough draft|
+|3/1/2017        |3.5          |Katie graded my abstract so I applied some corrections to it (It needs to be 150 words), worked on the coefficients and realized I put the wrong coefficients in and now my images have a slight increase in counts so that is good.|
 
 
 2 MONTHS TO PRESENTING IN PHOENIX
  
 **To do:**
-* set up different modules in different files to allow for universal programming with those seperate modules
+* Ask about hotel accomadations during the symposium
 * wait on pyds9 fix
 * do stuff with the detector in the dewar
 
