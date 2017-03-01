@@ -14,21 +14,49 @@ def main():
 	
 	#for tau
 	
+		
 	i = 1
-	while i <= 56:
+	x = 1
+	flip = 0
+	
+	while i <= 54:
 	
 		if i > 9:
-			fname = "tau_000"+str(i)+".fit"
+			fname1 = "tau_000"+str(i)+".fit"
 		else:
-			fname = "tau_0000"+str(i)+".fit"
+			fname1 = "tau_0000"+str(i)+".fit"
 		
-		correct_image(fname)
-		i = i + 1
+		if i + 3 > 9:
+			fname2 = "tau_000"+str(i+3)+".fit"
+		else:
+			fname2 = "tau_0000"+str(i+3)+".fit"
+			
+		correct_image(fname1)
+		correct_image(fname2)
+		
+		if (flip == 0):
+			subtract_images(fname1,fname2,x,4)
+		else:
+			subtract_images(fname2,fname1,x,4)
+		
+		if(i == 15):
+			i = i + 7
+		elif(x%3 == 0):
+			i = i + 4
+			if (flip == 0):
+				flip = 1
+			else:
+				flip = 0
+		else:
+			i = i + 1
+		
+		x = x + 1
 	
 	i = 1
 	x = 1
+	flip = 0
 	
-	while i <= 56:
+	while i <= 54:
 	
 		if i > 9:
 			fname1 = "FIXED_tau_000"+str(i)+".fit"
@@ -39,43 +67,68 @@ def main():
 			fname2 = "FIXED_tau_000"+str(i+3)+".fit"
 		else:
 			fname2 = "FIXED_tau_0000"+str(i+3)+".fit"
-			
-		if i + 1 > 9:
-			fname3 = "FIXED_tau_000"+str(i+1)+".fit"
+		
+		if (flip == 0):
+			subtract_images(fname1,fname2,x,1)
 		else:
-			fname3 = "FIXED_tau_0000"+str(i+1)+".fit"
-			
-		if i + 2 > 9:
-			fname4 = "FIXED_tau_000"+str(i+2)+".fit"
+			subtract_images(fname2,fname1,x,1)
+				
+		if(i == 15):
+			i = i + 7
+		elif(x%3 == 0):
+			i = i + 4
+			if (flip == 0):
+				flip = 1
+			else:
+				flip = 0
 		else:
-			fname4 = "FIXED_tau_0000"+str(i+2)+".fit"
+			i = i + 1
 		
-	
-		subtract_images(fname1,fname2,x,1)
+		x = x + 1
 		
-		subtract_images(fname3,fname4,x+1,1)
-		
-		x = x + 2
-		i = i + 4
-	
 	
 	#for tau_sat
 	
 	i = 1
-	while i <= 60:
+	x = 1
+	flip = 0
+	
+	while i <= 57:
 	
 		if i > 9:
-			fname = "tau_sat_000"+str(i)+".fit"
+			fname1 = "tau_sat_000"+str(i)+".fit"
 		else:
-			fname = "tau_sat_0000"+str(i)+".fit"
+			fname1 = "tau_sat_0000"+str(i)+".fit"
 		
-		correct_image(fname)
-		i = i + 1
+		if i + 3 > 9:
+			fname2 = "tau_sat_000"+str(i+3)+".fit"
+		else:
+			fname2 = "tau_sat_0000"+str(i+3)+".fit"
+			
+		correct_image(fname1)
+		correct_image(fname2)
+		
+		if (flip == 0):
+			subtract_images(fname1,fname2,x,5)
+		else:
+			subtract_images(fname2,fname1,x,5)
+		
+		if(x%3 == 0):
+			i = i + 4
+			if (flip == 0):
+				flip = 1
+			else:
+				flip = 0
+		else:
+			i = i + 1
+		
+		x = x + 1
 	
 	i = 1
 	x = 1
+	flip = 0
 	
-	while i <= 60:
+	while i <= 57:
 	
 		if i > 9:
 			fname1 = "FIXED_tau_sat_000"+str(i)+".fit"
@@ -86,43 +139,65 @@ def main():
 			fname2 = "FIXED_tau_sat_000"+str(i+3)+".fit"
 		else:
 			fname2 = "FIXED_tau_sat_0000"+str(i+3)+".fit"
-			
-		if i + 1 > 9:
-			fname3 = "FIXED_tau_sat_000"+str(i+1)+".fit"
+		
+		if (flip == 0):
+			subtract_images(fname1,fname2,x,2)
 		else:
-			fname3 = "FIXED_tau_sat_0000"+str(i+1)+".fit"
-			
-		if i + 2 > 9:
-			fname4 = "FIXED_tau_sat_000"+str(i+2)+".fit"
+			subtract_images(fname2,fname1,x,2)
+				
+		if(x%3 == 0):
+			i = i + 4
+			if (flip == 0):
+				flip = 1
+			else:
+				flip = 0
 		else:
-			fname4 = "FIXED_tau_sat_0000"+str(i+2)+".fit"
+			i = i + 1
 		
-	
-		subtract_images(fname1,fname2,x,2)
-		
-		subtract_images(fname3,fname4,x+1,2)
-		
-		x = x + 2
-		i = i + 4
-
+		x = x + 1
 		
 	#for tau_unsat
 	
 	i = 1
-	while i <= 12:
+	x = 1
+	flip = 0
+	
+	while i <= 9:
 	
 		if i > 9:
-			fname = "tau_unsat000"+str(i)+".fit"
+			fname1 = "tau_unsat000"+str(i)+".fit"
 		else:
-			fname = "tau_unsat0000"+str(i)+".fit"
+			fname1 = "tau_unsat0000"+str(i)+".fit"
 		
-		correct_image(fname)
-		i = i + 1
+		if i + 3 > 9:
+			fname2 = "tau_unsat000"+str(i+3)+".fit"
+		else:
+			fname2 = "tau_unsat0000"+str(i+3)+".fit"
+			
+		correct_image(fname1)
+		correct_image(fname2)
+					
+		if (flip == 0):
+			subtract_images(fname1,fname2,x,6)
+		else:
+			subtract_images(fname2,fname1,x,6)
+				
+		if(x%3 == 0):
+			i = i + 4
+			if (flip == 0):
+				flip = 1
+			else:
+				flip = 0
+		else:
+			i = i + 1
+		
+		x = x + 1
 	
 	i = 1
 	x = 1
+	flip = 0
 	
-	while i <= 12:
+	while i <= 9:
 	
 		if i > 9:
 			fname1 = "FIXED_tau_unsat000"+str(i)+".fit"
@@ -133,31 +208,29 @@ def main():
 			fname2 = "FIXED_tau_unsat000"+str(i+3)+".fit"
 		else:
 			fname2 = "FIXED_tau_unsat0000"+str(i+3)+".fit"
-			
-		if i + 1 > 9:
-			fname3 = "FIXED_tau_unsat000"+str(i+1)+".fit"
+					
+		if (flip == 0):
+			subtract_images(fname1,fname2,x,3)
 		else:
-			fname3 = "FIXED_tau_unsat0000"+str(i+1)+".fit"
-			
-		if i + 2 > 9:
-			fname4 = "FIXED_tau_unsat000"+str(i+2)+".fit"
+			subtract_images(fname2,fname1,x,3)
+				
+		if(x%3 == 0):
+			i = i + 4
+			if (flip == 0):
+				flip = 1
+			else:
+				flip = 0
 		else:
-			fname4 = "FIXED_tau_unsat0000"+str(i+2)+".fit"
+			i = i + 1
 		
-	
-		subtract_images(fname1,fname2,x,3)
-		
-		subtract_images(fname3,fname4,x+1,3)
-		
-		x = x + 2
-		i = i + 4
+		x = x + 1
 
 def correct_image(fname):
 	x = 0
 	y = 0
 	ds9x2 = 400
 	ds9y2 = 200
-	coefs_inv = [3.67e-16, -7.58e-11, 2.69e-06, 9.66e-01, 1.39e+02]
+	coefs_inv = [ -6.32644177e-17,5.55450534e-11,-2.19977738e-06,1.02869293e+00,-1.21422072e+02]
 
 	hdu1 = fits.open(fname)
 	scidata = hdu1[0].data
@@ -176,13 +249,11 @@ def correct_image(fname):
 	hdu = fits.PrimaryHDU(array)
 	hdu.writeto('FIXED_'+fname, clobber = True)
 	
-
 def subtract_images(fname1,fname2,val,val2):
 	x = 0
 	y = 0
 	ds9x2 = 400
 	ds9y2 = 200
-	coefs_inv = [3.67e-16, -7.58e-11, 2.69e-06, 9.66e-01, 1.39e+02]
 	
 	hdu1 = fits.open(fname1)
 	scidata1 = hdu1[0].data
@@ -194,16 +265,20 @@ def subtract_images(fname1,fname2,val,val2):
 	while x < ds9x2:
 		while y < ds9y2:
 			#For first image
-			str_num = str(scidata1[y,x])
+			if(val2 == 4 or val2 == 5 or val2 == 6):
+				str_num = str(scidata1[0,y,x])
+			else:
+				str_num = str(scidata1[y,x])
 			num = float(str_num)
-			new_num = num*num*num*num*coefs_inv[0] + num*num*num*coefs_inv[1] + num*num*coefs_inv[2] + num*coefs_inv[3] + coefs_inv[4]
-			array1.itemset((y,x),new_num)
+			array1.itemset((y,x),num)
 			
 			#and the other
-			str_num = str(scidata2[y,x])
+			if(val2 == 4 or val2 == 5 or val2 == 6):
+				str_num = str(scidata2[0,y,x])
+			else:
+				str_num = str(scidata2[y,x])
 			num = float(str_num)
-			new_num = num*num*num*num*coefs_inv[0] + num*num*num*coefs_inv[1] + num*num*coefs_inv[2] + num*coefs_inv[3] + coefs_inv[4]
-			array2.itemset((y,x),new_num)
+			array2.itemset((y,x),num)
 			y = y + 1
 		y = 0
 		x = x + 1
@@ -220,5 +295,14 @@ def subtract_images(fname1,fname2,val,val2):
 	
 	if val2 == 3:
 		hdu.writeto('FIXED_sub_unsat_IMG'+str(val)+'.fit', clobber = True)
+		
+	if val2 == 4:
+		hdu.writeto('sub_IMG'+str(val)+'.fit', clobber = True)
+		
+	if val2 == 5:
+		hdu.writeto('sub_sat_IMG'+str(val)+'.fit', clobber = True)
+		
+	if val2 == 6:
+		hdu.writeto('sub_unsat_IMG'+str(val)+'.fit', clobber = True)
 		
 main()
