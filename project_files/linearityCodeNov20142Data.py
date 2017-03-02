@@ -14,7 +14,6 @@ def main():
 	
 	#for tau
 	
-		
 	i = 1
 	x = 1
 	flip = 0
