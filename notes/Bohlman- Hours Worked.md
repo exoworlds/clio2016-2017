@@ -74,13 +74,13 @@
 * wait on pyds9 fix
 * do stuff with the detector in the dewar
 * work on a graph of a horizontal or vertical slice of pixels so it looks sort of like a gaussian
-     |                       _        
-     |                      / \
-     |                    /     \
-     |              _   /         \    _
-     |_____________/ \_/            \_/  \________________________
-     |
-     |____________________________________________________________
+     |                       _        <br />
+     |                      / \ <br />
+     |                    /     \ <br />
+     |              _   /         \    _ <br />
+     |_____________/ \_/            \_/  \________________________ <br />
+     | <br />
+     |____________________________________________________________ <br />
 
 On the x axis, it's each pixel
 On the y axis, it's number of counts
