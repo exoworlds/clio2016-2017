@@ -67,23 +67,16 @@
 |3/2/2017        |2          |Finzalized my abstract to 158 words, started working on the presentation (uploaded it)|
 
 
-2 MONTHS TO PRESENTING IN PHOENIX
- 
+**2 MONTHS TO PRESENTING IN PHOENIX**
+
 **To do:**
 * Ask about hotel accomadations during the symposium
 * wait on pyds9 fix
 * do stuff with the detector in the dewar
 * work on a graph of a horizontal or vertical slice of pixels so it looks sort of like a gaussian
-     |                       _        <br />
-     |                      / \ <br />
-     |                    /     \ <br />
-     |              _   /         \    _ <br />
-     |_____________/ \_/            \_/  \________________________ <br />
-     | <br />
-     |____________________________________________________________ <br />
+* On the x axis, it's each pixel
+* On the y axis, it's number of counts
 
-On the x axis, it's each pixel
-On the y axis, it's number of counts
 **Important dates:**
 * March 22, 2017 - Symposium Abstracts DUE NOTE: Late abstracts will not be accepted without a compelling reason and Space Grant Management concurrence.
 * TBA - Mentor & Guest RSVPs DUE
