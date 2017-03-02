@@ -64,6 +64,7 @@
 |2/24/2017       |4          |Redid my code and gotit up to the specifications required to subtract all of the images, realized that there may be a problem with my coefficients, as the fixed images are having counts less than the original counts for the images. WHich doesn't make sense. What we are looking for is a slight increase in image counts at any given point, so we have to look at the coefficients I derived in order to see what the hell is going on.|
 |2/28/2017       |1.5          |Worked on my abstract a little, uplaoded the rough draft|
 |3/1/2017        |3.5          |Katie graded my abstract so I corrected it, finished long form abstract, finished the short form abstract, I worked on the coefficients for calibrating the second data setand realized I put the wrong coefficients in, images now fixed.|
+|3/2/2017        |2          |Finzalized my abstract to 158 words, started working on the presentation (uploaded it)|
 
 
 2 MONTHS TO PRESENTING IN PHOENIX
@@ -72,7 +73,17 @@
 * Ask about hotel accomadations during the symposium
 * wait on pyds9 fix
 * do stuff with the detector in the dewar
+* work on a graph of a horizontal or vertical slice of pixels so it looks sort of like a gaussian
+     |                       _        
+     |                      / \
+     |                    /     \
+     |              _   /         \    _
+     |_____________/ \_/            \_/  \________________________
+     |
+     |____________________________________________________________
 
+On the x axis, it's each pixel
+On the y axis, it's number of counts
 **Important dates:**
 * March 22, 2017 - Symposium Abstracts DUE NOTE: Late abstracts will not be accepted without a compelling reason and Space Grant Management concurrence.
 * TBA - Mentor & Guest RSVPs DUE
