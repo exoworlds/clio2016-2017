@@ -65,6 +65,8 @@
 |2/28/2017       |1.5          |Worked on my abstract a little, uplaoded the rough draft|
 |3/1/2017        |3.5          |Katie graded my abstract so I corrected it, finished long form abstract, finished the short form abstract, I worked on the coefficients for calibrating the second data setand realized I put the wrong coefficients in, images now fixed.|
 |3/2/2017        |2          |Finzalized my abstract to 158 words, started working on the presentation (uploaded it)|
+|3/3/2017        |2          |started working on a graph that compared a slice of counts from the regular image to the fixed image|
+
 
 
 **2 MONTHS TO PRESENTING IN PHOENIX**
