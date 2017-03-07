@@ -223,6 +223,9 @@ def main():
 			i = i + 1
 		
 		x = x + 1
+		
+	horiz_slice()
+	vert_slice()
 
 def correct_image(fname):
 	x = 0
@@ -304,36 +307,68 @@ def subtract_images(fname1,fname2,val,val2):
 	if val2 == 6:
 		hdu.writeto('sub_unsat_IMG'+str(val)+'.fit', clobber = True)
 		
-main()
+def horiz_slice():
+	x1 = 0
+	x2 = 400
+	y = 99
+	fname1 = "tau_00001.fit"
+	fname2 = "FIXED_tau_00001.fit"
+	hdu1 = fits.open(fname1)
+	hdu2 = fits.open(fname2)
+	scidata1 = hdu1[0].data
+	scidata2 = hdu2[0].data
 
-x1 = 0
-x2 = 400
-y = 99
-fname1 = "tau_00001.fit"
-fname2 = "FIXED_tau_00001.fit"
-hdu1 = fits.open(fname1)
-hdu2 = fits.open(fname2)
-scidata1 = hdu1[0].data
-scidata2 = hdu2[0].data
+	array1 = numpy.ndarray(x2)
+	array2 = numpy.ndarray(x2)
 
-array1 = numpy.ndarray(x2)
-array2 = numpy.ndarray(x2)
-
-while x1 < x2:
-	str_num = str(scidata1[0,y,x1])
-	num = float(str_num)
-	array1.itemset(x1,num)
-	str_num = str(scidata2[y,x1])
-	num = float(str_num)
-	array2.itemset(x1,num)
-	x1 = x1 + 1
+	while x1 < x2:
+		str_num = str(scidata1[0,y,x1])
+		num = float(str_num)
+		array1.itemset(x1,num)
+		str_num = str(scidata2[y,x1])
+		num = float(str_num)
+		array2.itemset(x1,num)
+		x1 = x1 + 1
 	
-xarr = numpy.arange(0,400,1)
+	xarr = numpy.arange(0,400,1)
 
-plt.scatter(xarr,array1,c = 'r')
-plt.scatter(xarr,array2,c = 'b')
-plt.ylabel('counts')
-plt.xlabel('pixel')
-plt.title('Counts vs. pixels for initial and fixed img',fontsize = 15)
-plt.show()
+	plt.scatter(xarr,array1,c = 'r')
+	plt.scatter(xarr,array2,c = 'b')
+	plt.ylabel('counts')
+	plt.xlabel('pixel')
+	plt.title('Counts vs. pixels for initial and fixed img',fontsize = 15)
+	plt.show()
 
+def vert_slice():
+	y1 = 0
+	y2 = 200
+	x = 99
+	fname1 = "tau_00001.fit"
+	fname2 = "FIXED_tau_00001.fit"
+	hdu1 = fits.open(fname1)
+	hdu2 = fits.open(fname2)
+	scidata1 = hdu1[0].data
+	scidata2 = hdu2[0].data
+	
+	array1 = numpy.ndarray(y2)
+	array2 = numpy.ndarray(y2)
+	
+	while y1 < y2:
+		str_num = str(scidata1[0,y1,x])
+		num = float(str_num)
+		array1.itemset(y1,num)
+		str_num = str(scidata2[y1,x])
+		num = float(str_num)
+		array2.itemset(y1,num)
+		y1 = y1 + 1
+	
+	yarr = numpy.arange(0,200,1)
+	
+	plt.scatter(yarr,array1,c = 'r')
+	plt.scatter(yarr,array2,c = 'b')
+	plt.ylabel('counts')
+	plt.xlabel('pixel')
+	plt.title('Counts vs. pixels for initial and fixed img',fontsize = 15)
+	plt.show()
+
+main()
