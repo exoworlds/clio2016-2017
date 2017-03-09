@@ -67,7 +67,7 @@
 |3/2/2017        |2          |Finzalized my abstract to 158 words, started working on the presentation (uploaded it)|
 |3/3/2017        |2          |started working on a graph that compared a slice of counts from the regular image to the fixed image, uploaded graph and updated code to github|
 |3/7/2017        |2          |I also edited my code to create a graph that took a vertical slice from the pictures as well and graph the pixel vs the counts at that pixel. I also tried to organize my code so it looked cleaner.Uploaded code/pictures of graphs|
-|3/8/2017        |2          |Wednesday|
+|3/8/2017        |2          |Finalized my slice code for both horizontal and vertical, and cleaned up the graphs. I will upload the graphs tomorrow. Looked at the remainder of my time in this internship and started brainstorming how to effectively accomplish everything that is necessay for the symposium|
 |3/9/2017        |2          |Thursday|
 |3/10/2017        |2          |Friday|
 
@@ -79,9 +79,8 @@
 * Ask about hotel accomadations during the symposium
 * wait on pyds9 fix
 * do stuff with the detector in the dewar
-* work on a graph of a horizontal or vertical slice of pixels so it looks sort of like a gaussian
-* On the x axis, it's each pixel
-* On the y axis, it's number of counts
+* Finalize abstract - who do I send it to?
+* Make a list of all pictures I need for my presentation
 
 **Important dates:**
 * March 22, 2017 - Symposium Abstracts DUE NOTE: Late abstracts will not be accepted without a compelling reason and Space Grant Management concurrence.
