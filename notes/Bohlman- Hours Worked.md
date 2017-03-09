@@ -68,7 +68,7 @@
 |3/3/2017        |2          |started working on a graph that compared a slice of counts from the regular image to the fixed image, uploaded graph and updated code to github|
 |3/7/2017        |2          |I also edited my code to create a graph that took a vertical slice from the pictures as well and graph the pixel vs the counts at that pixel. I also tried to organize my code so it looked cleaner.Uploaded code/pictures of graphs|
 |3/8/2017        |2          |Finalized my slice code for both horizontal and vertical, and cleaned up the graphs. I will upload the graphs tomorrow. Looked at the remainder of my time in this internship and started brainstorming how to effectively accomplish everything that is necessay for the symposium|
-|3/9/2017        |2          |Thursday|
+|3/9/2017        |2          |Just kidding, I uploaded the graphs today. I also finalized my abstract and tried to make it as presentable as possible so I could turn it in on time when I return from spring break. I also worked on my presentation fr a bit, which I uploaded as well.|
 |3/10/2017        |2          |Friday|
 
 
