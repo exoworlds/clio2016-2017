@@ -69,7 +69,7 @@
 |3/7/2017        |2          |I also edited my code to create a graph that took a vertical slice from the pictures as well and graph the pixel vs the counts at that pixel. I also tried to organize my code so it looked cleaner.Uploaded code/pictures of graphs|
 |3/8/2017        |2          |Finalized my slice code for both horizontal and vertical, and cleaned up the graphs. I will upload the graphs tomorrow. Looked at the remainder of my time in this internship and started brainstorming how to effectively accomplish everything that is necessay for the symposium|
 |3/9/2017        |2          |Just kidding, I uploaded the graphs today. I also finalized my abstract and tried to make it as presentable as possible so I could turn it in on time when I return from spring break. I also worked on my presentation fr a bit, which I uploaded as well.|
-|3/10/2017        |2          |Friday|
+|3/10/2017        |2          inished presentation/presentation notes. Uploaded it. HAPPY SPRING BREAK!!!!|
 
 
 
@@ -80,7 +80,7 @@
 * wait on pyds9 fix
 * do stuff with the detector in the dewar
 * Finalize abstract - who do I send it to?
-* Make a list of all pictures I need for my presentation
+* Finalize presentation - what do I do now?
 
 **Important dates:**
 * March 22, 2017 - Symposium Abstracts DUE NOTE: Late abstracts will not be accepted without a compelling reason and Space Grant Management concurrence.
