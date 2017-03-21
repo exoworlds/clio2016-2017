@@ -72,11 +72,6 @@
 |3/10/2017        |2          |Finished presentation/presentation notes. Uploaded it. HAPPY SPRING BREAK!!!!|
 |3/21/2017        |2          |Went through my monthly existential crisis of "Oh my god what is college", shaved 8 words off of the abstract and submitted it. All I have left to do is the presentation, and that's already finished, I just need to edit it.|
 
-**To do:**
-* wait on pyds9 fix
-* do stuff with the detector in the dewar
-* Finalize presentation - what do I do now?
-
 **Important dates:**
 * March 22, 2017 - Symposium Abstracts DUE
 * April 7, 2017 -  Presentations DUE
