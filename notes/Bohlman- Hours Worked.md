@@ -72,18 +72,13 @@
 |3/10/2017        |2          |Finished presentation/presentation notes. Uploaded it. HAPPY SPRING BREAK!!!!|
 |3/21/2017        |2          |Went through my monthly existential crisis of "Oh my god what is college", shaved 8 words off of the abstract and submitted it|
 
-
-
-**2 MONTHS TO PRESENTING IN PHOENIX**
-
 **To do:**
 * wait on pyds9 fix
 * do stuff with the detector in the dewar
 * Finalize presentation - what do I do now?
 
 **Important dates:**
-* March 22, 2017 - Symposium Abstracts DUE NOTE: Late abstracts will not be accepted without a compelling reason and Space Grant Management concurrence.
+* March 22, 2017 - Symposium Abstracts DUE
 * April 7, 2017 -  Presentations DUE
-* April 14, 2017 -  ASCEND Presentations DUE
 * April 21, 2017 - Statewide Symposium Banquet
 * April 22, 2017 - Statewide Symposium
