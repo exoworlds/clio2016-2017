@@ -7,6 +7,8 @@ from astropy.io import fits
 main function: provide names of files to open, passes name to correct_image
 correct_image: opens the image, applies the correction, writes new file
 subtract_images: takes two new image names,opens them, subtracts them from each other, writes new file
+horiz_slice: gets a horizontal line of pixels and graphs the counts in each pixel
+vert_slice: gets a horizontal line of pixels and graphs the counts in each pixel
 """
 
 def main():
@@ -311,8 +313,8 @@ def horiz_slice():
 	x1 = 0
 	x2 = 400
 	y = 99
-	fname1 = "tau_00001.fit"
-	fname2 = "FIXED_tau_00001.fit"
+	fname1 = "sub_IMG1.fit"
+	fname2 = "FIXED_sub_IMG1.fit"
 	hdu1 = fits.open(fname1)
 	hdu2 = fits.open(fname2)
 	scidata1 = hdu1[0].data
@@ -322,7 +324,7 @@ def horiz_slice():
 	array2 = numpy.ndarray(x2)
 
 	while x1 < x2:
-		str_num = str(scidata1[0,y,x1])
+		str_num = str(scidata1[y,x1])
 		num = float(str_num)
 		array1.itemset(x1,num)
 		str_num = str(scidata2[y,x1])
@@ -336,15 +338,20 @@ def horiz_slice():
 	plt.scatter(xarr,array2,c = 'b')
 	plt.ylabel('counts')
 	plt.xlabel('pixel')
-	plt.title('Counts vs. pixels for initial and fixed img',fontsize = 15)
+	plt.title('Counts for subtracted initial and fixed image: horizontal',fontsize = 15)
+	red_patch = mpatches.Patch(color='red', label='Original counts')
+	blue_patch = mpatches.Patch(color='blue', label='Adjusted counts')
+	
+	plt.legend(handles=[red_patch,blue_patch],bbox_to_anchor=(1, .18))
+	plt.axis([0,400,0,20000])
 	plt.show()
 
 def vert_slice():
 	y1 = 0
 	y2 = 200
 	x = 99
-	fname1 = "tau_00001.fit"
-	fname2 = "FIXED_tau_00001.fit"
+	fname1 = "sub_IMG1.fit"
+	fname2 = "FIXED_sub_IMG1.fit"
 	hdu1 = fits.open(fname1)
 	hdu2 = fits.open(fname2)
 	scidata1 = hdu1[0].data
@@ -354,7 +361,7 @@ def vert_slice():
 	array2 = numpy.ndarray(y2)
 	
 	while y1 < y2:
-		str_num = str(scidata1[0,y1,x])
+		str_num = str(scidata1[y1,x])
 		num = float(str_num)
 		array1.itemset(y1,num)
 		str_num = str(scidata2[y1,x])
@@ -368,7 +375,12 @@ def vert_slice():
 	plt.scatter(yarr,array2,c = 'b')
 	plt.ylabel('counts')
 	plt.xlabel('pixel')
-	plt.title('Counts vs. pixels for initial and fixed img',fontsize = 15)
+	plt.title('Counts for subtracted initial and fixed image: vertical',fontsize = 15)
+	red_patch = mpatches.Patch(color='red', label='Original counts')
+	blue_patch = mpatches.Patch(color='blue', label='Adjusted counts')
+	
+	plt.legend(handles=[red_patch,blue_patch],bbox_to_anchor=(1, .18))
+	plt.axis([0,400,0,20000])
 	plt.show()
 
 main()
