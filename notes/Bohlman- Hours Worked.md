@@ -71,7 +71,7 @@
 |3/9/2017        |2          |Just kidding, I uploaded the graphs today. I also finalized my abstract and tried to make it as presentable as possible so I could turn it in on time when I return from spring break. I also worked on my presentation fr a bit, which I uploaded as well.|
 |3/10/2017        |2          |Finished presentation/presentation notes. Uploaded it. HAPPY SPRING BREAK!!!!|
 |3/21/2017        |2          |Went through my monthly existential crisis of "Oh my god what is college", shaved 8 words off of the abstract and submitted it. All I have left to do is the presentation, and that's already finished, I just need to edit it.|
-|3/22/2017        |4          |Declared on timesheet|
+|3/22/2017        |4          |Finished presentation and presentation notes, uploaded them for Katie to look at|
 |3/23/2017        |2          |Declared on timesheet|
 |3/24/2017        |2          |Declared on timesheet|
 
