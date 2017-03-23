@@ -46,7 +46,7 @@
 |1/19/2017       |1             |Writing up/editing reports and uploading them to github|
 |1/24/2017       |2             |Discussing spacegrant due dates and what needs to be done in order to meet those dates, working on reports and wrapping those up as well, uploaded fixed reports and code to github|
 |1/25/2017       |2.5             |Recieved both corrected reports back and edited them, renamed and corrected python files, and reuploaded all to github, Katie recieved them both and will correct them/look at the updated code in time for tomorrow. From then on, I have to refine the code and start making a presentation out of it|
-����|1/26/2017       |2             |Katie looked over code/reports that I wrote, I worked on my symposium prep and the paragraph for linearity|
+|1/26/2017       |2             |Katie looked over code/reports that I wrote, I worked on my symposium prep and the paragraph for linearity|
 |1/27/2017       |3.5            |Katie was trying to transfer over a different data set, I downloaded it and recieved instructions on how to analyze it. I finished my research on detectors and updated/uploaded my new reports. Uploaded my symposium prep document to the github page, probably won't need to open that for awhile|
 |1/31/2017       |2.5            |Started writing coding files for next data set, uploaded my progresson those to github|
 |2/1/2017       |2            |Decided to try and import 4 files and do the correctiosn on them in order to gain a better understanding of what to do. Started on it, placed the code for it on top of the file I made yesterday, uploaded to github.|
@@ -72,7 +72,7 @@
 |3/10/2017        |2          |Finished presentation/presentation notes. Uploaded it. HAPPY SPRING BREAK!!!!|
 |3/21/2017        |2          |Went through my monthly existential crisis of "Oh my god what is college", shaved 8 words off of the abstract and submitted it. All I have left to do is the presentation, and that's already finished, I just need to edit it.|
 |3/22/2017        |4          |Finished presentation and presentation notes, uploaded them for Katie to look at, she gave me sample corrections and I edited them|
-|3/23/2017        |2          |Declared on timesheet|
+|3/23/2017        |2          |I am going to do something today|
 |3/24/2017        |2          |Declared on timesheet|
 
 **Important dates:**
