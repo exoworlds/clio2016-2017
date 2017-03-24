@@ -1,6 +1,7 @@
 import matplotlib.patches as mpatches
 import numpy
 import matplotlib.pyplot as plt
+import math
 from astropy.io import fits
 
 """
@@ -380,7 +381,35 @@ def vert_slice():
 	blue_patch = mpatches.Patch(color='blue', label='Adjusted counts')
 	
 	plt.legend(handles=[red_patch,blue_patch],bbox_to_anchor=(1, .18))
-	plt.axis([0,400,0,20000])
+	plt.axis([0,200,0,20000])
+	plt.show()
+		
+	x = 0
+	while x < y2:
+		array1.itemset(x,abs(array1[x]))
+		x = x + 1
+	
+	logarr1 = numpy.ndarray(y2)
+	logarr2 = numpy.ndarray(y2)
+	
+	x = 0
+	while x < y2:
+		if array1[x] != 0:
+			logarr1.itemset(x,math.log10(abs(array1[x])))
+			logarr2.itemset(x,math.log10(abs(array2[x])))
+		
+		x = x + 1
+		
+	plt.scatter(yarr,logarr1,c = 'r')
+	plt.scatter(yarr,logarr2,c = 'b')
+	plt.ylabel('log(counts)')
+	plt.xlabel('pixel')
+	plt.title('Log(counts) for subtracted initial and fixed image: vertical',fontsize = 15)
+	red_patch = mpatches.Patch(color='red', label='Original counts')
+	blue_patch = mpatches.Patch(color='blue', label='Adjusted counts')
+	
+	plt.legend(handles=[red_patch,blue_patch],bbox_to_anchor=(1, .18))
+	plt.axis([0,200,0,5])
 	plt.show()
 
 main()
