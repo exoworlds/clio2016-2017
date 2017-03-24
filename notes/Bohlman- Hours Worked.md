@@ -73,7 +73,7 @@
 |3/21/2017        |2          |Went through my monthly existential crisis of "Oh my god what is college", shaved 8 words off of the abstract and submitted it. All I have left to do is the presentation, and that's already finished, I just need to edit it.|
 |3/22/2017        |4          |Finished presentation and presentation notes, uploaded them for Katie to look at, she gave me sample corrections and I edited them|
 |3/23/2017        |2          |Looked at 2015 symposium presenations, decided mine still looked great but made a couple of minor alterations to it, and then started practicing my presentation by typing out everything that I would would to say on each slide, as if I were presenting to my computer. Got through about half of the presentation|
-|3/24/2017        |2          |Katie told me that I should add images earlier into my presentation, and fix the graphs/subtracted images that I had on the presentation. She would help me with the subtracted images, but it was up to me to do the graphs better. I made the vertical slice one a log graph, and coded/added that to the presentation|
+|3/24/2017        |2          |Katie told me that I should add images earlier into my presentation, and fix the graphs/subtracted images that I had on the presentation. She would help me with the subtracted images, but it was up to me to do the graphs better. I coded the vertical slice graph based off of log for the counts. Next time, I will have to aadd it to the presentation and see if there is anything else I can work on with the presenation itself.|
 
 **Important dates:**
 * April 7, 2017 -  Presentations DUE
