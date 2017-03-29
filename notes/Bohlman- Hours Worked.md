@@ -75,6 +75,7 @@
 |3/23/2017        |2          |Looked at 2015 symposium presenations, decided mine still looked great but made a couple of minor alterations to it, and then started practicing my presentation by typing out everything that I would would to say on each slide, as if I were presenting to my computer. Got through about half of the presentation|
 |3/24/2017        |2          |Katie told me that I should add images earlier into my presentation, and fix the graphs/subtracted images that I had on the presentation. She would help me with the subtracted images, but it was up to me to do the graphs better. I coded the vertical slice graph based off of log for the counts. Next time, I will have to add it to the presentation and see if there is anything else I can work on with the presenation itself.|
 |3/28/2017        |2          |Added amended graphs to the presentation and uploaded it. Had a problem with enviormental variables messing up on my computer due to Anaconda, but I'll leave that for a later point. Finished going through my presentation and perfecting what I want to say in 7 minutes. Uploaded that document as well. There is a practice presentation session Thursday, April 6, 4:00-6:00PM, and hopefully, I'll be able to go to that. I should probably start practicing for my presentation.|
+|3/29/2017        |2.5          |Looked over presentation and presentation notes, started practicing it by myself so I can present it to Katie tomorrow or friday|
 
 **Important dates:**
 * April 7, 2017 -  Presentations DUE
