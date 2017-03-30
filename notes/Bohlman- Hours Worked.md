@@ -79,7 +79,7 @@
 |3/30/2017        |2          |Made notes on what to look for in practice presentation that I will have tomorrow, practiced presentation giving for under 7 minutes, will probably practice tomorrow for Katie to look at the following list of things.|
 
 **What to look for in my presentation:**
-* **TIME**
+* **TIME** but also balancing 
 * flow of content from one slide to the next
 * where the presentation needs more graphics, and which graphics I should put where
 * what to do with the graphicson slide 8: what more could I put on there?
