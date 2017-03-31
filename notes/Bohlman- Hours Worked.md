@@ -77,7 +77,7 @@
 |3/28/2017        |2          |Added amended graphs to the presentation and uploaded it. Had a problem with enviormental variables messing up on my computer due to Anaconda, but I'll leave that for a later point. Finished going through my presentation and perfecting what I want to say in 7 minutes. Uploaded that document as well. There is a practice presentation session Thursday, April 6, 4:00-6:00PM, and hopefully, I'll be able to go to that. I should probably start practicing for my presentation.|
 |3/29/2017        |2.5          |Looked over presentation and presentation notes, started practicing it by myself so I can present it to Katie tomorrow or friday|
 |3/30/2017        |2          |Made notes on what to look for in practice presentation that I will have tomorrow, practiced presentation giving for under 7 minutes, will probably practice tomorrow for Katie to look at the following list of things.|
-|3/31/2017        |4          |Presentation practicing!|
+|3/31/2017        |4          |Presentation practicing! Also laser safety training for my summer work.|
 
 **What to look for in my presentation:**
 * **TIME** but also balancing 
