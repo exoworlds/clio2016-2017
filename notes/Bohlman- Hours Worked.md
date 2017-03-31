@@ -83,7 +83,7 @@
 * **TIME** but also balancing 
 * flow of content from one slide to the next
 * where the presentation needs more graphics, and which graphics I should put where
-* what to do with the graphicson slide 8: what more could I put on there?
+* what to do with the graphics on slide 8: what more could I put on there?
 * filler words/pauses
 
 
