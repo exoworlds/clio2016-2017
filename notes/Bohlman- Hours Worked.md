@@ -79,10 +79,9 @@
 |3/30/2017        |2          |Made notes on what to look for in practice presentation that I will have tomorrow, practiced presentation giving for under 7 minutes, will probably practice tomorrow for Katie to look at the following list of things.|
 |3/31/2017        |2.5          |Presentation practicing! Also laser safety training for my summer work. katie gave tips for my presentation and adding specific data points to it.|
 |4/5/2017        |4          |Finish up the pictures for my presenttion and try to finalize it to turn in, as it's due on friday.|
-|4/6/2017        |2          |Practice presentation|
-|4/7/2017        |3          |Practice presentation - TURN IT IN|
+|4/6/2017        |2          |Worked on a prsentable presentation|
+|4/7/2017        |3          |Turned in my presentation, woo!|
 
 **Important dates:**
-* April 7, 2017 -  Presentations DUE
 * April 21, 2017 - Statewide Symposium Banquet
 * April 22, 2017 - Statewide Symposium
