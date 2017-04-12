@@ -80,8 +80,8 @@
 |3/31/2017        |2.5          |Presentation practicing! Also laser safety training for my summer work. katie gave tips for my presentation and adding specific data points to it.|
 |4/5/2017        |4          |Finish up the pictures for my presenttion and try to finalize it to turn in, as it's due on friday.|
 |4/6/2017        |2          |Worked on a prsentable presentation|
-|4/7/2017        |3          |Turned in my presentation, woo!|
-|4/12/2017        |4          |Edited reports to bring to the symposium, worked out plans for sympsium and what I gotta do|
+|4/7/2017        |3          |Edited and turned in my presentation, woo!|
+|4/12/2017       |4          |Edited reports to bring to the symposium, uploaded necessary documents to d2l. worked out plans for symposium and what I gotta do. Make sure to print out necessary documents|
 
 
 **Important dates:**
