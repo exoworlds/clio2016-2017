@@ -81,6 +81,8 @@
 |4/5/2017        |4          |Finish up the pictures for my presenttion and try to finalize it to turn in, as it's due on friday.|
 |4/6/2017        |2          |Worked on a prsentable presentation|
 |4/7/2017        |3          |Turned in my presentation, woo!|
+|4/12/2017        |4          |Edited reports to bring to the symposium, worked out plans for sympsium and what I gotta do|
+
 
 **Important dates:**
 * April 21, 2017 - Statewide Symposium Banquet
