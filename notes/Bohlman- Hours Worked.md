@@ -82,6 +82,8 @@
 |4/6/2017        |2          |Worked on a prsentable presentation|
 |4/7/2017        |3          |Edited and turned in my presentation, woo!|
 |4/12/2017       |4          |Edited reports to bring to the symposium, uploaded necessary documents to d2l. worked out plans for symposium and what I gotta do. Make sure to print out necessary documents|
+|4/13/2017       |2          |Presentation practice|
+|4/14/2017       |2          |Presentation practice|
 
 
 **Important dates:**
