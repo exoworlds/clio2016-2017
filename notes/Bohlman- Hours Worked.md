@@ -84,8 +84,10 @@
 |4/12/2017       |4          |Edited reports to bring to the symposium, uploaded necessary documents to d2l. worked out plans for symposium and what I gotta do. Make sure to print out necessary documents|
 |4/13/2017       |2          |Presentation practice|
 |4/14/2017       |2          |Presentation practice|
+|4/18/2017       |2          |Presentation practice|
+
 
 
 **Important dates:**
-* April 21, 2017 - Statewide Symposium Banquet
-* April 22, 2017 - Statewide Symposium
+* April 21, 2017 - Statewide Symposium Banquet - 7:00 somewhere in the hotel
+* April 22, 2017 - Statewide Symposium - My presentation is at 8:50 in Rio Salado. 
