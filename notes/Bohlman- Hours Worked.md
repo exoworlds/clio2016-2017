@@ -85,7 +85,9 @@
 |4/13/2017       |2          |Presentation practice|
 |4/14/2017       |2          |Presentation practice|
 |4/18/2017       |2          |Presentation practice|
+|4/19/2017       |4          |Presentation practice|
 |4/19/2017       |2          |Presentation practice|
+
 
 
 
