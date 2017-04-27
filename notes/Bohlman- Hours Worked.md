@@ -87,10 +87,5 @@
 |4/18/2017       |2          |Presentation practice|
 |4/19/2017       |4          |Presentation practice|
 |4/20/2017       |2          |Presentation practice|
-
-
-
-
-**Important dates:**
-* April 21, 2017 - Statewide Symposium Banquet - 7:00 somewhere in the hotel
-* April 22, 2017 - Statewide Symposium - My presentation is at 8:50 in Rio Salado. 
+|4/25/2017       |2          |Got certified to handle lasers. Still missing the confirmation, though.|
+|4/27/2017       |2          |Worked on my final write up for the project. Uploaded it to github.|
