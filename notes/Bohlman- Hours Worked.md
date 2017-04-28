@@ -89,4 +89,4 @@
 |4/20/2017       |2          |Presentation practice|
 |4/25/2017       |2          |Got certified to handle lasers. Still missing the confirmation, though.|
 |4/27/2017       |2          |Worked on my final write up for the project. Uploaded it to github.|
-|4/28/2017       |??          |Cleaned a backpack. Worked on my final write up for the project.|
+|4/28/2017       |??         |Cleaned a backpack. Worked on my final write up for the project. Actually uploaded it today for Katie to view.|
