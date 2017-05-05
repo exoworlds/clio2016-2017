@@ -90,3 +90,6 @@
 |4/25/2017       |2          |Got certified to handle lasers. Still missing the confirmation, though.|
 |4/27/2017       |2          |Worked on my final write up for the project. Uploaded it to github.|
 |4/28/2017       |4          |Cleaned a backpack. Worked on my final write up for the project. Actually uploaded it today for Katie to view. Worked on organizing github/my computer|
+|5/5/2017       |4          |Finalize final write up.|
+
+End of internship, thank you!
